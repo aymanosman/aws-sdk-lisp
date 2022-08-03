@@ -18932,7 +18932,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'ramdisk-id)))
-    (aws-sdk/generator/shape::to-query-params "SecurityGroupIds"
+    (aws-sdk/generator/shape::to-query-params "SecurityGroupId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
