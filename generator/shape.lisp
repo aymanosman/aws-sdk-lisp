@@ -36,21 +36,29 @@
 (defgeneric shape-to-params (shape)
   (:method (shape) shape))
 
+(defvar *request-format* :query)
+
 (defun to-query-params (key value)
   (typecase value
     (null)
     (cons
      (if (alistp value)
-         (mapcar (lambda (kv)
-                   (cons
-                    (format nil "~A.~A" key (car kv))
-                    (cdr kv)))
-                 (loop for (k . v) in value
-                       append (to-query-params k v)))
+         (loop for (k . v) in value
+               append (to-query-params (format nil "~A.~A" key k) v))
          (loop for i from 1
                for v in value
-               collect (cons (format nil "~A.member.~A" key i) v))))
-    (otherwise (list (cons key value)))))
+               append (to-query-params (cond
+                                         ((eq *request-format* :ec2)
+                                          (format nil "~A.~A" key i))
+                                         (t
+                                          (format nil "~A.member.~A" key i)))
+                                       v))))
+    (structure-object
+     (loop for (k . v) in (shape-to-params value)
+           append (to-query-params (format nil "~A.~A" key k)
+                                   v)))
+    (otherwise
+     (list (cons key value)))))
 
 (defun compile-structure-shape (name &key required members)
   `(progn
@@ -66,8 +74,11 @@
                    ',(intern (format nil "~:@(~A-~A~)" '#:make (lispify* name)))))
      (defmethod shape-to-params ((shape ,(lispify* name)))
        (append
-        ,@(loop for key being each hash-key of members
-                collect `(to-query-params ,key
+        ,@(loop for key being each hash-key of members using (hash-value val)
+                collect `(to-query-params ,(or (let ((key (gethash "locationName" val)))
+                                                 (when key
+                                                   (string-upcase key :end 1)))
+                                               key)
                                           (shape-to-params (slot-value shape ',(lispify key)))))))))
 
 (defun compile-list-shape (name member)
