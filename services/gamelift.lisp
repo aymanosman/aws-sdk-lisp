@@ -5212,8 +5212,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"AcceptMatch")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "AcceptMatchOutput" common-lisp:nil)))
  (common-lisp:export 'accept-match))
 (common-lisp:progn
@@ -5231,8 +5232,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateAlias")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateAliasOutput" common-lisp:nil)))
  (common-lisp:export 'create-alias))
 (common-lisp:progn
@@ -5251,8 +5253,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateBuild")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateBuildOutput" common-lisp:nil)))
  (common-lisp:export 'create-build))
 (common-lisp:progn
@@ -5277,8 +5280,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateFleet")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateFleetOutput" common-lisp:nil)))
  (common-lisp:export 'create-fleet))
 (common-lisp:progn
@@ -5301,8 +5305,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateGameSession")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateGameSessionOutput" common-lisp:nil)))
  (common-lisp:export 'create-game-session))
 (common-lisp:progn
@@ -5322,8 +5327,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateGameSessionQueue")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateGameSessionQueueOutput" common-lisp:nil)))
  (common-lisp:export 'create-game-session-queue))
 (common-lisp:progn
@@ -5349,8 +5355,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateMatchmakingConfiguration")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateMatchmakingConfigurationOutput" common-lisp:nil)))
  (common-lisp:export 'create-matchmaking-configuration))
 (common-lisp:progn
@@ -5368,8 +5375,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateMatchmakingRuleSet")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateMatchmakingRuleSetOutput" common-lisp:nil)))
  (common-lisp:export 'create-matchmaking-rule-set))
 (common-lisp:progn
@@ -5387,8 +5395,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreatePlayerSession")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreatePlayerSessionOutput" common-lisp:nil)))
  (common-lisp:export 'create-player-session))
 (common-lisp:progn
@@ -5407,8 +5416,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreatePlayerSessions")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreatePlayerSessionsOutput" common-lisp:nil)))
  (common-lisp:export 'create-player-sessions))
 (common-lisp:progn
@@ -5425,8 +5435,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteAlias")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-alias))
 (common-lisp:progn
@@ -5443,8 +5454,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteBuild")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-build))
 (common-lisp:progn
@@ -5461,8 +5473,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteFleet")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-fleet))
 (common-lisp:progn
@@ -5479,8 +5492,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteGameSessionQueue")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteGameSessionQueueOutput" common-lisp:nil)))
  (common-lisp:export 'delete-game-session-queue))
 (common-lisp:progn
@@ -5498,8 +5512,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteMatchmakingConfiguration")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteMatchmakingConfigurationOutput" common-lisp:nil)))
  (common-lisp:export 'delete-matchmaking-configuration))
 (common-lisp:progn
@@ -5516,8 +5531,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteScalingPolicy")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-scaling-policy))
 (common-lisp:progn
@@ -5534,8 +5550,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeAlias")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeAliasOutput" common-lisp:nil)))
  (common-lisp:export 'describe-alias))
 (common-lisp:progn
@@ -5552,8 +5569,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeBuild")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeBuildOutput" common-lisp:nil)))
  (common-lisp:export 'describe-build))
 (common-lisp:progn
@@ -5571,8 +5589,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeEC2InstanceLimits")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeEC2InstanceLimitsOutput" common-lisp:nil)))
  (common-lisp:export 'describe-ec2instance-limits))
 (common-lisp:progn
@@ -5589,8 +5608,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeFleetAttributes")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeFleetAttributesOutput" common-lisp:nil)))
  (common-lisp:export 'describe-fleet-attributes))
 (common-lisp:progn
@@ -5607,8 +5627,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeFleetCapacity")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeFleetCapacityOutput" common-lisp:nil)))
  (common-lisp:export 'describe-fleet-capacity))
 (common-lisp:progn
@@ -5627,8 +5648,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeFleetEvents")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeFleetEventsOutput" common-lisp:nil)))
  (common-lisp:export 'describe-fleet-events))
 (common-lisp:progn
@@ -5646,8 +5668,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeFleetPortSettings")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeFleetPortSettingsOutput" common-lisp:nil)))
  (common-lisp:export 'describe-fleet-port-settings))
 (common-lisp:progn
@@ -5664,8 +5687,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeFleetUtilization")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeFleetUtilizationOutput" common-lisp:nil)))
  (common-lisp:export 'describe-fleet-utilization))
 (common-lisp:progn
@@ -5686,8 +5710,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeGameSessionDetails")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeGameSessionDetailsOutput" common-lisp:nil)))
  (common-lisp:export 'describe-game-session-details))
 (common-lisp:progn
@@ -5705,8 +5730,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeGameSessionPlacement")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeGameSessionPlacementOutput" common-lisp:nil)))
  (common-lisp:export 'describe-game-session-placement))
 (common-lisp:progn
@@ -5724,8 +5750,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeGameSessionQueues")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeGameSessionQueuesOutput" common-lisp:nil)))
  (common-lisp:export 'describe-game-session-queues))
 (common-lisp:progn
@@ -5745,8 +5772,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeGameSessions")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeGameSessionsOutput" common-lisp:nil)))
  (common-lisp:export 'describe-game-sessions))
 (common-lisp:progn
@@ -5764,8 +5792,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeInstances")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeInstancesOutput" common-lisp:nil)))
  (common-lisp:export 'describe-instances))
 (common-lisp:progn
@@ -5782,8 +5811,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeMatchmaking")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeMatchmakingOutput" common-lisp:nil)))
  (common-lisp:export 'describe-matchmaking))
 (common-lisp:progn
@@ -5803,8 +5833,9 @@
                                 `(("Action"
                                    ,@"DescribeMatchmakingConfigurations")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeMatchmakingConfigurationsOutput" common-lisp:nil)))
  (common-lisp:export 'describe-matchmaking-configurations))
 (common-lisp:progn
@@ -5822,8 +5853,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeMatchmakingRuleSets")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeMatchmakingRuleSetsOutput" common-lisp:nil)))
  (common-lisp:export 'describe-matchmaking-rule-sets))
 (common-lisp:progn
@@ -5844,8 +5876,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribePlayerSessions")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribePlayerSessionsOutput" common-lisp:nil)))
  (common-lisp:export 'describe-player-sessions))
 (common-lisp:progn
@@ -5863,8 +5896,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeRuntimeConfiguration")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeRuntimeConfigurationOutput" common-lisp:nil)))
  (common-lisp:export 'describe-runtime-configuration))
 (common-lisp:progn
@@ -5882,8 +5916,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeScalingPolicies")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeScalingPoliciesOutput" common-lisp:nil)))
  (common-lisp:export 'describe-scaling-policies))
 (common-lisp:progn
@@ -5900,8 +5935,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetGameSessionLogUrl")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetGameSessionLogUrlOutput" common-lisp:nil)))
  (common-lisp:export 'get-game-session-log-url))
 (common-lisp:progn
@@ -5918,8 +5954,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetInstanceAccess")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetInstanceAccessOutput" common-lisp:nil)))
  (common-lisp:export 'get-instance-access))
 (common-lisp:progn
@@ -5938,8 +5975,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListAliases")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListAliasesOutput" common-lisp:nil)))
  (common-lisp:export 'list-aliases))
 (common-lisp:progn
@@ -5956,8 +5994,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListBuilds")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListBuildsOutput" common-lisp:nil)))
  (common-lisp:export 'list-builds))
 (common-lisp:progn
@@ -5974,8 +6013,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListFleets")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListFleetsOutput" common-lisp:nil)))
  (common-lisp:export 'list-fleets))
 (common-lisp:progn
@@ -5997,8 +6037,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"PutScalingPolicy")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "PutScalingPolicyOutput" common-lisp:nil)))
  (common-lisp:export 'put-scaling-policy))
 (common-lisp:progn
@@ -6015,8 +6056,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"RequestUploadCredentials")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "RequestUploadCredentialsOutput" common-lisp:nil)))
  (common-lisp:export 'request-upload-credentials))
 (common-lisp:progn
@@ -6033,8 +6075,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ResolveAlias")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ResolveAliasOutput" common-lisp:nil)))
  (common-lisp:export 'resolve-alias))
 (common-lisp:progn
@@ -6054,8 +6097,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"SearchGameSessions")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "SearchGameSessionsOutput" common-lisp:nil)))
  (common-lisp:export 'search-game-sessions))
 (common-lisp:progn
@@ -6079,8 +6123,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"StartGameSessionPlacement")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "StartGameSessionPlacementOutput" common-lisp:nil)))
  (common-lisp:export 'start-game-session-placement))
 (common-lisp:progn
@@ -6098,8 +6143,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"StartMatchmaking")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "StartMatchmakingOutput" common-lisp:nil)))
  (common-lisp:export 'start-matchmaking))
 (common-lisp:progn
@@ -6117,8 +6163,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"StopGameSessionPlacement")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "StopGameSessionPlacementOutput" common-lisp:nil)))
  (common-lisp:export 'stop-game-session-placement))
 (common-lisp:progn
@@ -6135,8 +6182,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"StopMatchmaking")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "StopMatchmakingOutput" common-lisp:nil)))
  (common-lisp:export 'stop-matchmaking))
 (common-lisp:progn
@@ -6155,8 +6203,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateAlias")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateAliasOutput" common-lisp:nil)))
  (common-lisp:export 'update-alias))
 (common-lisp:progn
@@ -6173,8 +6222,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateBuild")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateBuildOutput" common-lisp:nil)))
  (common-lisp:export 'update-build))
 (common-lisp:progn
@@ -6196,8 +6246,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateFleetAttributes")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateFleetAttributesOutput" common-lisp:nil)))
  (common-lisp:export 'update-fleet-attributes))
 (common-lisp:progn
@@ -6216,8 +6267,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateFleetCapacity")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateFleetCapacityOutput" common-lisp:nil)))
  (common-lisp:export 'update-fleet-capacity))
 (common-lisp:progn
@@ -6238,8 +6290,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateFleetPortSettings")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateFleetPortSettingsOutput" common-lisp:nil)))
  (common-lisp:export 'update-fleet-port-settings))
 (common-lisp:progn
@@ -6260,8 +6313,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateGameSession")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateGameSessionOutput" common-lisp:nil)))
  (common-lisp:export 'update-game-session))
 (common-lisp:progn
@@ -6281,8 +6335,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateGameSessionQueue")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateGameSessionQueueOutput" common-lisp:nil)))
  (common-lisp:export 'update-game-session-queue))
 (common-lisp:progn
@@ -6308,8 +6363,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateMatchmakingConfiguration")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateMatchmakingConfigurationOutput" common-lisp:nil)))
  (common-lisp:export 'update-matchmaking-configuration))
 (common-lisp:progn
@@ -6327,8 +6383,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateRuntimeConfiguration")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateRuntimeConfigurationOutput" common-lisp:nil)))
  (common-lisp:export 'update-runtime-configuration))
 (common-lisp:progn
@@ -6346,7 +6403,8 @@
                                (common-lisp:append
                                 `(("Action" ,@"ValidateMatchmakingRuleSet")
                                   ("Version" ,@"2015-10-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ValidateMatchmakingRuleSetOutput" common-lisp:nil)))
  (common-lisp:export 'validate-matchmaking-rule-set))

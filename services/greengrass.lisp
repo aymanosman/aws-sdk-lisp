@@ -207,7 +207,7 @@
                          (aws-sdk/generator/shape::shape
                           create-core-definition-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AmznClientToken"
+    (aws-sdk/generator/shape::to-query-params "X-Amzn-Client-Token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -296,7 +296,7 @@
                          (aws-sdk/generator/shape::shape
                           create-core-definition-version-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AmznClientToken"
+    (aws-sdk/generator/shape::to-query-params "X-Amzn-Client-Token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -368,7 +368,7 @@
                          (aws-sdk/generator/shape::shape
                           create-deployment-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AmznClientToken"
+    (aws-sdk/generator/shape::to-query-params "X-Amzn-Client-Token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -433,7 +433,7 @@
                          (aws-sdk/generator/shape::shape
                           create-device-definition-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AmznClientToken"
+    (aws-sdk/generator/shape::to-query-params "X-Amzn-Client-Token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -523,7 +523,7 @@
                          (aws-sdk/generator/shape::shape
                           create-device-definition-version-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AmznClientToken"
+    (aws-sdk/generator/shape::to-query-params "X-Amzn-Client-Token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -591,7 +591,7 @@
                          (aws-sdk/generator/shape::shape
                           create-function-definition-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AmznClientToken"
+    (aws-sdk/generator/shape::to-query-params "X-Amzn-Client-Token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -681,7 +681,7 @@
                          (aws-sdk/generator/shape::shape
                           create-function-definition-version-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AmznClientToken"
+    (aws-sdk/generator/shape::to-query-params "X-Amzn-Client-Token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -748,7 +748,7 @@
                          (aws-sdk/generator/shape::shape
                           create-group-certificate-authority-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AmznClientToken"
+    (aws-sdk/generator/shape::to-query-params "X-Amzn-Client-Token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -788,7 +788,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape create-group-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AmznClientToken"
+    (aws-sdk/generator/shape::to-query-params "X-Amzn-Client-Token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -883,7 +883,7 @@
                          (aws-sdk/generator/shape::shape
                           create-group-version-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AmznClientToken"
+    (aws-sdk/generator/shape::to-query-params "X-Amzn-Client-Token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -971,7 +971,7 @@
                          (aws-sdk/generator/shape::shape
                           create-logger-definition-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AmznClientToken"
+    (aws-sdk/generator/shape::to-query-params "X-Amzn-Client-Token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1061,7 +1061,7 @@
                          (aws-sdk/generator/shape::shape
                           create-logger-definition-version-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AmznClientToken"
+    (aws-sdk/generator/shape::to-query-params "X-Amzn-Client-Token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1129,7 +1129,7 @@
                          (aws-sdk/generator/shape::shape
                           create-subscription-definition-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AmznClientToken"
+    (aws-sdk/generator/shape::to-query-params "X-Amzn-Client-Token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1219,7 +1219,7 @@
                          (aws-sdk/generator/shape::shape
                           create-subscription-definition-version-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AmznClientToken"
+    (aws-sdk/generator/shape::to-query-params "X-Amzn-Client-Token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4482,8 +4482,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"AssociateRoleToGroup")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "AssociateRoleToGroupResponse" common-lisp:nil)))
  (common-lisp:export 'associate-role-to-group))
 (common-lisp:progn
@@ -4501,8 +4502,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"AssociateServiceRoleToAccount")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "AssociateServiceRoleToAccountResponse" common-lisp:nil)))
  (common-lisp:export 'associate-service-role-to-account))
 (common-lisp:progn
@@ -4520,8 +4522,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateCoreDefinition")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateCoreDefinitionResponse" common-lisp:nil)))
  (common-lisp:export 'create-core-definition))
 (common-lisp:progn
@@ -4541,8 +4544,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateCoreDefinitionVersion")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateCoreDefinitionVersionResponse" common-lisp:nil)))
  (common-lisp:export 'create-core-definition-version))
 (common-lisp:progn
@@ -4562,8 +4566,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateDeployment")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateDeploymentResponse" common-lisp:nil)))
  (common-lisp:export 'create-deployment))
 (common-lisp:progn
@@ -4581,8 +4586,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateDeviceDefinition")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateDeviceDefinitionResponse" common-lisp:nil)))
  (common-lisp:export 'create-device-definition))
 (common-lisp:progn
@@ -4602,8 +4608,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateDeviceDefinitionVersion")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateDeviceDefinitionVersionResponse" common-lisp:nil)))
  (common-lisp:export 'create-device-definition-version))
 (common-lisp:progn
@@ -4622,8 +4629,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateFunctionDefinition")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateFunctionDefinitionResponse" common-lisp:nil)))
  (common-lisp:export 'create-function-definition))
 (common-lisp:progn
@@ -4644,8 +4652,9 @@
                                 `(("Action"
                                    ,@"CreateFunctionDefinitionVersion")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateFunctionDefinitionVersionResponse" common-lisp:nil)))
  (common-lisp:export 'create-function-definition-version))
 (common-lisp:progn
@@ -4663,8 +4672,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateGroup")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateGroupResponse" common-lisp:nil)))
  (common-lisp:export 'create-group))
 (common-lisp:progn
@@ -4683,8 +4693,9 @@
                                 `(("Action"
                                    ,@"CreateGroupCertificateAuthority")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateGroupCertificateAuthorityResponse" common-lisp:nil)))
  (common-lisp:export 'create-group-certificate-authority))
 (common-lisp:progn
@@ -4708,8 +4719,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateGroupVersion")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateGroupVersionResponse" common-lisp:nil)))
  (common-lisp:export 'create-group-version))
 (common-lisp:progn
@@ -4727,8 +4739,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateLoggerDefinition")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateLoggerDefinitionResponse" common-lisp:nil)))
  (common-lisp:export 'create-logger-definition))
 (common-lisp:progn
@@ -4748,8 +4761,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateLoggerDefinitionVersion")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateLoggerDefinitionVersionResponse" common-lisp:nil)))
  (common-lisp:export 'create-logger-definition-version))
 (common-lisp:progn
@@ -4768,8 +4782,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateSubscriptionDefinition")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateSubscriptionDefinitionResponse" common-lisp:nil)))
  (common-lisp:export 'create-subscription-definition))
 (common-lisp:progn
@@ -4791,8 +4806,9 @@
                                 `(("Action"
                                    ,@"CreateSubscriptionDefinitionVersion")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateSubscriptionDefinitionVersionResponse" common-lisp:nil)))
  (common-lisp:export 'create-subscription-definition-version))
 (common-lisp:progn
@@ -4809,8 +4825,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteCoreDefinition")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteCoreDefinitionResponse" common-lisp:nil)))
  (common-lisp:export 'delete-core-definition))
 (common-lisp:progn
@@ -4827,8 +4844,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteDeviceDefinition")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteDeviceDefinitionResponse" common-lisp:nil)))
  (common-lisp:export 'delete-device-definition))
 (common-lisp:progn
@@ -4846,8 +4864,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteFunctionDefinition")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteFunctionDefinitionResponse" common-lisp:nil)))
  (common-lisp:export 'delete-function-definition))
 (common-lisp:progn
@@ -4864,8 +4883,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteGroup")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteGroupResponse" common-lisp:nil)))
  (common-lisp:export 'delete-group))
 (common-lisp:progn
@@ -4882,8 +4902,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteLoggerDefinition")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteLoggerDefinitionResponse" common-lisp:nil)))
  (common-lisp:export 'delete-logger-definition))
 (common-lisp:progn
@@ -4901,8 +4922,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteSubscriptionDefinition")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteSubscriptionDefinitionResponse" common-lisp:nil)))
  (common-lisp:export 'delete-subscription-definition))
 (common-lisp:progn
@@ -4920,8 +4942,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DisassociateRoleFromGroup")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DisassociateRoleFromGroupResponse" common-lisp:nil)))
  (common-lisp:export 'disassociate-role-from-group))
 (common-lisp:progn
@@ -4947,8 +4970,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetAssociatedRole")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetAssociatedRoleResponse" common-lisp:nil)))
  (common-lisp:export 'get-associated-role))
 (common-lisp:progn
@@ -4965,8 +4989,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetConnectivityInfo")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetConnectivityInfoResponse" common-lisp:nil)))
  (common-lisp:export 'get-connectivity-info))
 (common-lisp:progn
@@ -4983,8 +5008,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetCoreDefinition")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetCoreDefinitionResponse" common-lisp:nil)))
  (common-lisp:export 'get-core-definition))
 (common-lisp:progn
@@ -5004,8 +5030,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetCoreDefinitionVersion")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetCoreDefinitionVersionResponse" common-lisp:nil)))
  (common-lisp:export 'get-core-definition-version))
 (common-lisp:progn
@@ -5022,8 +5049,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetDeploymentStatus")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetDeploymentStatusResponse" common-lisp:nil)))
  (common-lisp:export 'get-deployment-status))
 (common-lisp:progn
@@ -5040,8 +5068,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetDeviceDefinition")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetDeviceDefinitionResponse" common-lisp:nil)))
  (common-lisp:export 'get-device-definition))
 (common-lisp:progn
@@ -5061,8 +5090,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetDeviceDefinitionVersion")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetDeviceDefinitionVersionResponse" common-lisp:nil)))
  (common-lisp:export 'get-device-definition-version))
 (common-lisp:progn
@@ -5079,8 +5109,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetFunctionDefinition")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetFunctionDefinitionResponse" common-lisp:nil)))
  (common-lisp:export 'get-function-definition))
 (common-lisp:progn
@@ -5101,8 +5132,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetFunctionDefinitionVersion")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetFunctionDefinitionVersionResponse" common-lisp:nil)))
  (common-lisp:export 'get-function-definition-version))
 (common-lisp:progn
@@ -5119,8 +5151,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetGroup")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetGroupResponse" common-lisp:nil)))
  (common-lisp:export 'get-group))
 (common-lisp:progn
@@ -5139,8 +5172,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetGroupCertificateAuthority")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetGroupCertificateAuthorityResponse" common-lisp:nil)))
  (common-lisp:export 'get-group-certificate-authority))
 (common-lisp:progn
@@ -5159,8 +5193,9 @@
                                 `(("Action"
                                    ,@"GetGroupCertificateConfiguration")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetGroupCertificateConfigurationResponse" common-lisp:nil)))
  (common-lisp:export 'get-group-certificate-configuration))
 (common-lisp:progn
@@ -5177,8 +5212,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetGroupVersion")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetGroupVersionResponse" common-lisp:nil)))
  (common-lisp:export 'get-group-version))
 (common-lisp:progn
@@ -5195,8 +5231,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetLoggerDefinition")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetLoggerDefinitionResponse" common-lisp:nil)))
  (common-lisp:export 'get-logger-definition))
 (common-lisp:progn
@@ -5216,8 +5253,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetLoggerDefinitionVersion")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetLoggerDefinitionVersionResponse" common-lisp:nil)))
  (common-lisp:export 'get-logger-definition-version))
 (common-lisp:progn
@@ -5244,8 +5282,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetSubscriptionDefinition")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetSubscriptionDefinitionResponse" common-lisp:nil)))
  (common-lisp:export 'get-subscription-definition))
 (common-lisp:progn
@@ -5267,8 +5306,9 @@
                                 `(("Action"
                                    ,@"GetSubscriptionDefinitionVersion")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetSubscriptionDefinitionVersionResponse" common-lisp:nil)))
  (common-lisp:export 'get-subscription-definition-version))
 (common-lisp:progn
@@ -5288,8 +5328,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListCoreDefinitionVersions")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListCoreDefinitionVersionsResponse" common-lisp:nil)))
  (common-lisp:export 'list-core-definition-versions))
 (common-lisp:progn
@@ -5306,8 +5347,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListCoreDefinitions")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListCoreDefinitionsResponse" common-lisp:nil)))
  (common-lisp:export 'list-core-definitions))
 (common-lisp:progn
@@ -5325,8 +5367,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListDeployments")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListDeploymentsResponse" common-lisp:nil)))
  (common-lisp:export 'list-deployments))
 (common-lisp:progn
@@ -5346,8 +5389,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListDeviceDefinitionVersions")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListDeviceDefinitionVersionsResponse" common-lisp:nil)))
  (common-lisp:export 'list-device-definition-versions))
 (common-lisp:progn
@@ -5364,8 +5408,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListDeviceDefinitions")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListDeviceDefinitionsResponse" common-lisp:nil)))
  (common-lisp:export 'list-device-definitions))
 (common-lisp:progn
@@ -5385,8 +5430,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListFunctionDefinitionVersions")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListFunctionDefinitionVersionsResponse" common-lisp:nil)))
  (common-lisp:export 'list-function-definition-versions))
 (common-lisp:progn
@@ -5404,8 +5450,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListFunctionDefinitions")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListFunctionDefinitionsResponse" common-lisp:nil)))
  (common-lisp:export 'list-function-definitions))
 (common-lisp:progn
@@ -5424,8 +5471,9 @@
                                 `(("Action"
                                    ,@"ListGroupCertificateAuthorities")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListGroupCertificateAuthoritiesResponse" common-lisp:nil)))
  (common-lisp:export 'list-group-certificate-authorities))
 (common-lisp:progn
@@ -5443,8 +5491,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListGroupVersions")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListGroupVersionsResponse" common-lisp:nil)))
  (common-lisp:export 'list-group-versions))
 (common-lisp:progn
@@ -5461,8 +5510,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListGroups")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListGroupsResponse" common-lisp:nil)))
  (common-lisp:export 'list-groups))
 (common-lisp:progn
@@ -5482,8 +5532,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListLoggerDefinitionVersions")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListLoggerDefinitionVersionsResponse" common-lisp:nil)))
  (common-lisp:export 'list-logger-definition-versions))
 (common-lisp:progn
@@ -5500,8 +5551,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListLoggerDefinitions")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListLoggerDefinitionsResponse" common-lisp:nil)))
  (common-lisp:export 'list-logger-definitions))
 (common-lisp:progn
@@ -5522,8 +5574,9 @@
                                 `(("Action"
                                    ,@"ListSubscriptionDefinitionVersions")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListSubscriptionDefinitionVersionsResponse" common-lisp:nil)))
  (common-lisp:export 'list-subscription-definition-versions))
 (common-lisp:progn
@@ -5541,8 +5594,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListSubscriptionDefinitions")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListSubscriptionDefinitionsResponse" common-lisp:nil)))
  (common-lisp:export 'list-subscription-definitions))
 (common-lisp:progn
@@ -5559,8 +5613,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateConnectivityInfo")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateConnectivityInfoResponse" common-lisp:nil)))
  (common-lisp:export 'update-connectivity-info))
 (common-lisp:progn
@@ -5577,8 +5632,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateCoreDefinition")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateCoreDefinitionResponse" common-lisp:nil)))
  (common-lisp:export 'update-core-definition))
 (common-lisp:progn
@@ -5595,8 +5651,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateDeviceDefinition")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateDeviceDefinitionResponse" common-lisp:nil)))
  (common-lisp:export 'update-device-definition))
 (common-lisp:progn
@@ -5614,8 +5671,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateFunctionDefinition")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateFunctionDefinitionResponse" common-lisp:nil)))
  (common-lisp:export 'update-function-definition))
 (common-lisp:progn
@@ -5632,8 +5690,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateGroup")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateGroupResponse" common-lisp:nil)))
  (common-lisp:export 'update-group))
 (common-lisp:progn
@@ -5654,8 +5713,9 @@
                                 `(("Action"
                                    ,@"UpdateGroupCertificateConfiguration")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateGroupCertificateConfigurationResponse" common-lisp:nil)))
  (common-lisp:export 'update-group-certificate-configuration))
 (common-lisp:progn
@@ -5672,8 +5732,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateLoggerDefinition")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateLoggerDefinitionResponse" common-lisp:nil)))
  (common-lisp:export 'update-logger-definition))
 (common-lisp:progn
@@ -5692,7 +5753,8 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateSubscriptionDefinition")
                                   ("Version" ,@"2017-06-07"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateSubscriptionDefinitionResponse" common-lisp:nil)))
  (common-lisp:export 'update-subscription-definition))

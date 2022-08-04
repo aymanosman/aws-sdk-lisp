@@ -5801,8 +5801,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"AssignInstance")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'assign-instance))
 (common-lisp:progn
@@ -5819,8 +5820,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"AssignVolume")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'assign-volume))
 (common-lisp:progn
@@ -5837,8 +5839,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"AssociateElasticIp")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'associate-elastic-ip))
 (common-lisp:progn
@@ -5857,8 +5860,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"AttachElasticLoadBalancer")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'attach-elastic-load-balancer))
 (common-lisp:progn
@@ -5888,8 +5892,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CloneStack")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CloneStackResult" common-lisp:nil)))
  (common-lisp:export 'clone-stack))
 (common-lisp:progn
@@ -5911,8 +5916,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateApp")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateAppResult" common-lisp:nil)))
  (common-lisp:export 'create-app))
 (common-lisp:progn
@@ -5932,8 +5938,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateDeployment")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateDeploymentResult" common-lisp:nil)))
  (common-lisp:export 'create-deployment))
 (common-lisp:progn
@@ -5959,8 +5966,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateInstance")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateInstanceResult" common-lisp:nil)))
  (common-lisp:export 'create-instance))
 (common-lisp:progn
@@ -5989,8 +5997,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateLayer")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateLayerResult" common-lisp:nil)))
  (common-lisp:export 'create-layer))
 (common-lisp:progn
@@ -6019,8 +6028,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateStack")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateStackResult" common-lisp:nil)))
  (common-lisp:export 'create-stack))
 (common-lisp:progn
@@ -6040,8 +6050,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateUserProfile")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateUserProfileResult" common-lisp:nil)))
  (common-lisp:export 'create-user-profile))
 (common-lisp:progn
@@ -6058,8 +6069,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteApp")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-app))
 (common-lisp:progn
@@ -6078,8 +6090,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteInstance")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-instance))
 (common-lisp:progn
@@ -6096,8 +6109,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteLayer")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-layer))
 (common-lisp:progn
@@ -6114,8 +6128,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteStack")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-stack))
 (common-lisp:progn
@@ -6132,8 +6147,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteUserProfile")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-user-profile))
 (common-lisp:progn
@@ -6150,8 +6166,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeregisterEcsCluster")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'deregister-ecs-cluster))
 (common-lisp:progn
@@ -6168,8 +6185,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeregisterElasticIp")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'deregister-elastic-ip))
 (common-lisp:progn
@@ -6186,8 +6204,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeregisterInstance")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'deregister-instance))
 (common-lisp:progn
@@ -6205,8 +6224,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeregisterRdsDbInstance")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'deregister-rds-db-instance))
 (common-lisp:progn
@@ -6223,8 +6243,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeregisterVolume")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'deregister-volume))
 (common-lisp:progn
@@ -6241,8 +6262,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeAgentVersions")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeAgentVersionsResult" common-lisp:nil)))
  (common-lisp:export 'describe-agent-versions))
 (common-lisp:progn
@@ -6259,8 +6281,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeApps")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeAppsResult" common-lisp:nil)))
  (common-lisp:export 'describe-apps))
 (common-lisp:progn
@@ -6278,8 +6301,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeCommands")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeCommandsResult" common-lisp:nil)))
  (common-lisp:export 'describe-commands))
 (common-lisp:progn
@@ -6296,8 +6320,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeDeployments")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeDeploymentsResult" common-lisp:nil)))
  (common-lisp:export 'describe-deployments))
 (common-lisp:progn
@@ -6316,8 +6341,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeEcsClusters")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeEcsClustersResult" common-lisp:nil)))
  (common-lisp:export 'describe-ecs-clusters))
 (common-lisp:progn
@@ -6334,8 +6360,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeElasticIps")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeElasticIpsResult" common-lisp:nil)))
  (common-lisp:export 'describe-elastic-ips))
 (common-lisp:progn
@@ -6353,8 +6380,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeElasticLoadBalancers")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeElasticLoadBalancersResult" common-lisp:nil)))
  (common-lisp:export 'describe-elastic-load-balancers))
 (common-lisp:progn
@@ -6371,8 +6399,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeInstances")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeInstancesResult" common-lisp:nil)))
  (common-lisp:export 'describe-instances))
 (common-lisp:progn
@@ -6389,8 +6418,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeLayers")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeLayersResult" common-lisp:nil)))
  (common-lisp:export 'describe-layers))
 (common-lisp:progn
@@ -6408,8 +6438,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeLoadBasedAutoScaling")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeLoadBasedAutoScalingResult" common-lisp:nil)))
  (common-lisp:export 'describe-load-based-auto-scaling))
 (common-lisp:progn
@@ -6435,8 +6466,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribePermissions")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribePermissionsResult" common-lisp:nil)))
  (common-lisp:export 'describe-permissions))
 (common-lisp:progn
@@ -6454,8 +6486,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeRaidArrays")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeRaidArraysResult" common-lisp:nil)))
  (common-lisp:export 'describe-raid-arrays))
 (common-lisp:progn
@@ -6473,8 +6506,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeRdsDbInstances")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeRdsDbInstancesResult" common-lisp:nil)))
  (common-lisp:export 'describe-rds-db-instances))
 (common-lisp:progn
@@ -6492,8 +6526,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeServiceErrors")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeServiceErrorsResult" common-lisp:nil)))
  (common-lisp:export 'describe-service-errors))
 (common-lisp:progn
@@ -6512,8 +6547,9 @@
                                 `(("Action"
                                    ,@"DescribeStackProvisioningParameters")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeStackProvisioningParametersResult" common-lisp:nil)))
  (common-lisp:export 'describe-stack-provisioning-parameters))
 (common-lisp:progn
@@ -6530,8 +6566,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeStackSummary")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeStackSummaryResult" common-lisp:nil)))
  (common-lisp:export 'describe-stack-summary))
 (common-lisp:progn
@@ -6548,8 +6585,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeStacks")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeStacksResult" common-lisp:nil)))
  (common-lisp:export 'describe-stacks))
 (common-lisp:progn
@@ -6567,8 +6605,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeTimeBasedAutoScaling")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeTimeBasedAutoScalingResult" common-lisp:nil)))
  (common-lisp:export 'describe-time-based-auto-scaling))
 (common-lisp:progn
@@ -6585,8 +6624,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeUserProfiles")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeUserProfilesResult" common-lisp:nil)))
  (common-lisp:export 'describe-user-profiles))
 (common-lisp:progn
@@ -6605,8 +6645,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeVolumes")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeVolumesResult" common-lisp:nil)))
  (common-lisp:export 'describe-volumes))
 (common-lisp:progn
@@ -6625,8 +6666,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DetachElasticLoadBalancer")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'detach-elastic-load-balancer))
 (common-lisp:progn
@@ -6643,8 +6685,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DisassociateElasticIp")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'disassociate-elastic-ip))
 (common-lisp:progn
@@ -6661,8 +6704,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetHostnameSuggestion")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetHostnameSuggestionResult" common-lisp:nil)))
  (common-lisp:export 'get-hostname-suggestion))
 (common-lisp:progn
@@ -6680,8 +6724,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GrantAccess")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GrantAccessResult" common-lisp:nil)))
  (common-lisp:export 'grant-access))
 (common-lisp:progn
@@ -6699,8 +6744,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListTags")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListTagsResult" common-lisp:nil)))
  (common-lisp:export 'list-tags))
 (common-lisp:progn
@@ -6717,8 +6763,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"RebootInstance")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'reboot-instance))
 (common-lisp:progn
@@ -6735,8 +6782,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"RegisterEcsCluster")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "RegisterEcsClusterResult" common-lisp:nil)))
  (common-lisp:export 'register-ecs-cluster))
 (common-lisp:progn
@@ -6753,8 +6801,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"RegisterElasticIp")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "RegisterElasticIpResult" common-lisp:nil)))
  (common-lisp:export 'register-elastic-ip))
 (common-lisp:progn
@@ -6775,8 +6824,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"RegisterInstance")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "RegisterInstanceResult" common-lisp:nil)))
  (common-lisp:export 'register-instance))
 (common-lisp:progn
@@ -6795,8 +6845,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"RegisterRdsDbInstance")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'register-rds-db-instance))
 (common-lisp:progn
@@ -6813,8 +6864,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"RegisterVolume")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "RegisterVolumeResult" common-lisp:nil)))
  (common-lisp:export 'register-volume))
 (common-lisp:progn
@@ -6833,8 +6885,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"SetLoadBasedAutoScaling")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'set-load-based-auto-scaling))
 (common-lisp:progn
@@ -6853,8 +6906,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"SetPermission")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'set-permission))
 (common-lisp:progn
@@ -6873,8 +6927,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"SetTimeBasedAutoScaling")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'set-time-based-auto-scaling))
 (common-lisp:progn
@@ -6891,8 +6946,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"StartInstance")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'start-instance))
 (common-lisp:progn
@@ -6909,8 +6965,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"StartStack")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'start-stack))
 (common-lisp:progn
@@ -6927,8 +6984,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"StopInstance")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'stop-instance))
 (common-lisp:progn
@@ -6945,8 +7003,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"StopStack")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'stop-stack))
 (common-lisp:progn
@@ -6963,8 +7022,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"TagResource")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'tag-resource))
 (common-lisp:progn
@@ -6981,8 +7041,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UnassignInstance")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'unassign-instance))
 (common-lisp:progn
@@ -6999,8 +7060,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UnassignVolume")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'unassign-volume))
 (common-lisp:progn
@@ -7017,8 +7079,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UntagResource")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'untag-resource))
 (common-lisp:progn
@@ -7039,8 +7102,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateApp")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'update-app))
 (common-lisp:progn
@@ -7057,8 +7121,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateElasticIp")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'update-elastic-ip))
 (common-lisp:progn
@@ -7081,8 +7146,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateInstance")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'update-instance))
 (common-lisp:progn
@@ -7111,8 +7177,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateLayer")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'update-layer))
 (common-lisp:progn
@@ -7129,8 +7196,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateMyUserProfile")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'update-my-user-profile))
 (common-lisp:progn
@@ -7148,8 +7216,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateRdsDbInstance")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'update-rds-db-instance))
 (common-lisp:progn
@@ -7178,8 +7247,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateStack")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'update-stack))
 (common-lisp:progn
@@ -7199,8 +7269,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateUserProfile")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'update-user-profile))
 (common-lisp:progn
@@ -7217,7 +7288,8 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateVolume")
                                   ("Version" ,@"2013-02-18"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'update-volume))

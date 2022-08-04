@@ -1069,7 +1069,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'id)))
-    (aws-sdk/generator/shape::to-query-params "IfMatch"
+    (aws-sdk/generator/shape::to-query-params "If-Match"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1093,7 +1093,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'id)))
-    (aws-sdk/generator/shape::to-query-params "IfMatch"
+    (aws-sdk/generator/shape::to-query-params "If-Match"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1118,7 +1118,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'id)))
-    (aws-sdk/generator/shape::to-query-params "IfMatch"
+    (aws-sdk/generator/shape::to-query-params "If-Match"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4100,7 +4100,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'id)))
-    (aws-sdk/generator/shape::to-query-params "IfMatch"
+    (aws-sdk/generator/shape::to-query-params "If-Match"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4157,7 +4157,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'id)))
-    (aws-sdk/generator/shape::to-query-params "IfMatch"
+    (aws-sdk/generator/shape::to-query-params "If-Match"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4214,7 +4214,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'id)))
-    (aws-sdk/generator/shape::to-query-params "IfMatch"
+    (aws-sdk/generator/shape::to-query-params "If-Match"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4324,8 +4324,9 @@ common-lisp:nil
                                 `(("Action"
                                    ,@"CreateCloudFrontOriginAccessIdentity")
                                   ("Version" ,@"2017-03-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateCloudFrontOriginAccessIdentityResult" common-lisp:nil)))
  (common-lisp:export 'create-cloud-front-origin-access-identity))
 (common-lisp:progn
@@ -4342,8 +4343,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"CreateDistribution")
                                   ("Version" ,@"2017-03-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateDistributionResult" common-lisp:nil)))
  (common-lisp:export 'create-distribution))
 (common-lisp:progn
@@ -4361,8 +4363,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"CreateDistributionWithTags")
                                   ("Version" ,@"2017-03-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateDistributionWithTagsResult" common-lisp:nil)))
  (common-lisp:export 'create-distribution-with-tags))
 (common-lisp:progn
@@ -4380,8 +4383,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"CreateInvalidation")
                                   ("Version" ,@"2017-03-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateInvalidationResult" common-lisp:nil)))
  (common-lisp:export 'create-invalidation))
 (common-lisp:progn
@@ -4399,8 +4403,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"CreateStreamingDistribution")
                                   ("Version" ,@"2017-03-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateStreamingDistributionResult" common-lisp:nil)))
  (common-lisp:export 'create-streaming-distribution))
 (common-lisp:progn
@@ -4420,8 +4425,9 @@ common-lisp:nil
                                 `(("Action"
                                    ,@"CreateStreamingDistributionWithTags")
                                   ("Version" ,@"2017-03-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateStreamingDistributionWithTagsResult" common-lisp:nil)))
  (common-lisp:export 'create-streaming-distribution-with-tags))
 (common-lisp:progn
@@ -4440,8 +4446,9 @@ common-lisp:nil
                                 `(("Action"
                                    ,@"DeleteCloudFrontOriginAccessIdentity")
                                   ("Version" ,@"2017-03-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-cloud-front-origin-access-identity))
 (common-lisp:progn
@@ -4458,8 +4465,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"DeleteDistribution")
                                   ("Version" ,@"2017-03-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-distribution))
 (common-lisp:progn
@@ -4477,8 +4485,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"DeleteStreamingDistribution")
                                   ("Version" ,@"2017-03-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-streaming-distribution))
 (common-lisp:progn
@@ -4497,8 +4506,9 @@ common-lisp:nil
                                 `(("Action"
                                    ,@"GetCloudFrontOriginAccessIdentity")
                                   ("Version" ,@"2017-03-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetCloudFrontOriginAccessIdentityResult" common-lisp:nil)))
  (common-lisp:export 'get-cloud-front-origin-access-identity))
 (common-lisp:progn
@@ -4517,8 +4527,9 @@ common-lisp:nil
                                 `(("Action"
                                    ,@"GetCloudFrontOriginAccessIdentityConfig")
                                   ("Version" ,@"2017-03-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetCloudFrontOriginAccessIdentityConfigResult" common-lisp:nil)))
  (common-lisp:export 'get-cloud-front-origin-access-identity-config))
 (common-lisp:progn
@@ -4535,8 +4546,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"GetDistribution")
                                   ("Version" ,@"2017-03-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetDistributionResult" common-lisp:nil)))
  (common-lisp:export 'get-distribution))
 (common-lisp:progn
@@ -4553,8 +4565,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"GetDistributionConfig")
                                   ("Version" ,@"2017-03-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetDistributionConfigResult" common-lisp:nil)))
  (common-lisp:export 'get-distribution-config))
 (common-lisp:progn
@@ -4571,8 +4584,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"GetInvalidation")
                                   ("Version" ,@"2017-03-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetInvalidationResult" common-lisp:nil)))
  (common-lisp:export 'get-invalidation))
 (common-lisp:progn
@@ -4590,8 +4604,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"GetStreamingDistribution")
                                   ("Version" ,@"2017-03-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetStreamingDistributionResult" common-lisp:nil)))
  (common-lisp:export 'get-streaming-distribution))
 (common-lisp:progn
@@ -4609,8 +4624,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"GetStreamingDistributionConfig")
                                   ("Version" ,@"2017-03-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetStreamingDistributionConfigResult" common-lisp:nil)))
  (common-lisp:export 'get-streaming-distribution-config))
 (common-lisp:progn
@@ -4629,8 +4645,9 @@ common-lisp:nil
                                 `(("Action"
                                    ,@"ListCloudFrontOriginAccessIdentities")
                                   ("Version" ,@"2017-03-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListCloudFrontOriginAccessIdentitiesResult" common-lisp:nil)))
  (common-lisp:export 'list-cloud-front-origin-access-identities))
 (common-lisp:progn
@@ -4647,8 +4664,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"ListDistributions")
                                   ("Version" ,@"2017-03-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListDistributionsResult" common-lisp:nil)))
  (common-lisp:export 'list-distributions))
 (common-lisp:progn
@@ -4666,8 +4684,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"ListDistributionsByWebACLId")
                                   ("Version" ,@"2017-03-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListDistributionsByWebACLIdResult" common-lisp:nil)))
  (common-lisp:export 'list-distributions-by-web-aclid))
 (common-lisp:progn
@@ -4685,8 +4704,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"ListInvalidations")
                                   ("Version" ,@"2017-03-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListInvalidationsResult" common-lisp:nil)))
  (common-lisp:export 'list-invalidations))
 (common-lisp:progn
@@ -4704,8 +4724,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"ListStreamingDistributions")
                                   ("Version" ,@"2017-03-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListStreamingDistributionsResult" common-lisp:nil)))
  (common-lisp:export 'list-streaming-distributions))
 (common-lisp:progn
@@ -4722,8 +4743,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"ListTagsForResource")
                                   ("Version" ,@"2017-03-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListTagsForResourceResult" common-lisp:nil)))
  (common-lisp:export 'list-tags-for-resource))
 (common-lisp:progn
@@ -4740,8 +4762,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"TagResource")
                                   ("Version" ,@"2017-03-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'tag-resource))
 (common-lisp:progn
@@ -4758,8 +4781,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"UntagResource")
                                   ("Version" ,@"2017-03-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'untag-resource))
 (common-lisp:progn
@@ -4781,8 +4805,9 @@ common-lisp:nil
                                 `(("Action"
                                    ,@"UpdateCloudFrontOriginAccessIdentity")
                                   ("Version" ,@"2017-03-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateCloudFrontOriginAccessIdentityResult" common-lisp:nil)))
  (common-lisp:export 'update-cloud-front-origin-access-identity))
 (common-lisp:progn
@@ -4800,8 +4825,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"UpdateDistribution")
                                   ("Version" ,@"2017-03-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateDistributionResult" common-lisp:nil)))
  (common-lisp:export 'update-distribution))
 (common-lisp:progn
@@ -4821,7 +4847,8 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"UpdateStreamingDistribution")
                                   ("Version" ,@"2017-03-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateStreamingDistributionResult" common-lisp:nil)))
  (common-lisp:export 'update-streaming-distribution))

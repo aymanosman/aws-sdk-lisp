@@ -894,7 +894,7 @@
                          (aws-sdk/generator/shape::shape
                           create-campaign-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -934,7 +934,7 @@
                          (aws-sdk/generator/shape::shape
                           create-import-job-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -975,7 +975,7 @@
                          (aws-sdk/generator/shape::shape
                           create-segment-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1087,7 +1087,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-apns-channel-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1124,7 +1124,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-apns-sandbox-channel-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1157,7 +1157,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape delete-app-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1190,12 +1190,12 @@
                          (aws-sdk/generator/shape::shape
                           delete-campaign-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'application-id)))
-    (aws-sdk/generator/shape::to-query-params "CampaignId"
+    (aws-sdk/generator/shape::to-query-params "Campaign-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1229,7 +1229,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-email-channel-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1265,7 +1265,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-event-stream-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1300,7 +1300,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-gcm-channel-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1335,12 +1335,12 @@
                          (aws-sdk/generator/shape::shape
                           delete-segment-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'application-id)))
-    (aws-sdk/generator/shape::to-query-params "SegmentId"
+    (aws-sdk/generator/shape::to-query-params "Segment-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1373,7 +1373,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-sms-channel-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2283,7 +2283,7 @@
                          (aws-sdk/generator/shape::shape
                           get-apns-channel-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2319,7 +2319,7 @@
                          (aws-sdk/generator/shape::shape
                           get-apns-sandbox-channel-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2351,7 +2351,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape get-app-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2384,7 +2384,7 @@
                          (aws-sdk/generator/shape::shape
                           get-application-settings-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2418,7 +2418,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape get-apps-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "PageSize"
+    (aws-sdk/generator/shape::to-query-params "Page-size"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2461,17 +2461,17 @@
                          (aws-sdk/generator/shape::shape
                           get-campaign-activities-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'application-id)))
-    (aws-sdk/generator/shape::to-query-params "CampaignId"
+    (aws-sdk/generator/shape::to-query-params "Campaign-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'campaign-id)))
-    (aws-sdk/generator/shape::to-query-params "PageSize"
+    (aws-sdk/generator/shape::to-query-params "Page-size"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2510,12 +2510,12 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape get-campaign-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'application-id)))
-    (aws-sdk/generator/shape::to-query-params "CampaignId"
+    (aws-sdk/generator/shape::to-query-params "Campaign-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2553,12 +2553,12 @@
                          (aws-sdk/generator/shape::shape
                           get-campaign-version-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'application-id)))
-    (aws-sdk/generator/shape::to-query-params "CampaignId"
+    (aws-sdk/generator/shape::to-query-params "Campaign-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2604,17 +2604,17 @@
                          (aws-sdk/generator/shape::shape
                           get-campaign-versions-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'application-id)))
-    (aws-sdk/generator/shape::to-query-params "CampaignId"
+    (aws-sdk/generator/shape::to-query-params "Campaign-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'campaign-id)))
-    (aws-sdk/generator/shape::to-query-params "PageSize"
+    (aws-sdk/generator/shape::to-query-params "Page-size"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2656,12 +2656,12 @@
                          (aws-sdk/generator/shape::shape
                           get-campaigns-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'application-id)))
-    (aws-sdk/generator/shape::to-query-params "PageSize"
+    (aws-sdk/generator/shape::to-query-params "Page-size"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2699,7 +2699,7 @@
                          (aws-sdk/generator/shape::shape
                           get-email-channel-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2733,12 +2733,12 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape get-endpoint-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'application-id)))
-    (aws-sdk/generator/shape::to-query-params "EndpointId"
+    (aws-sdk/generator/shape::to-query-params "Endpoint-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2770,7 +2770,7 @@
                          (aws-sdk/generator/shape::shape
                           get-event-stream-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2803,7 +2803,7 @@
                          (aws-sdk/generator/shape::shape
                           get-gcm-channel-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2837,12 +2837,12 @@
                          (aws-sdk/generator/shape::shape
                           get-import-job-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'application-id)))
-    (aws-sdk/generator/shape::to-query-params "JobId"
+    (aws-sdk/generator/shape::to-query-params "Job-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2877,12 +2877,12 @@
                          (aws-sdk/generator/shape::shape
                           get-import-jobs-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'application-id)))
-    (aws-sdk/generator/shape::to-query-params "PageSize"
+    (aws-sdk/generator/shape::to-query-params "Page-size"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2927,17 +2927,17 @@
                          (aws-sdk/generator/shape::shape
                           get-segment-import-jobs-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'application-id)))
-    (aws-sdk/generator/shape::to-query-params "PageSize"
+    (aws-sdk/generator/shape::to-query-params "Page-size"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'page-size)))
-    (aws-sdk/generator/shape::to-query-params "SegmentId"
+    (aws-sdk/generator/shape::to-query-params "Segment-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2977,12 +2977,12 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape get-segment-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'application-id)))
-    (aws-sdk/generator/shape::to-query-params "SegmentId"
+    (aws-sdk/generator/shape::to-query-params "Segment-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3017,12 +3017,12 @@
                          (aws-sdk/generator/shape::shape
                           get-segment-version-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'application-id)))
-    (aws-sdk/generator/shape::to-query-params "SegmentId"
+    (aws-sdk/generator/shape::to-query-params "Segment-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3068,17 +3068,17 @@
                          (aws-sdk/generator/shape::shape
                           get-segment-versions-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'application-id)))
-    (aws-sdk/generator/shape::to-query-params "PageSize"
+    (aws-sdk/generator/shape::to-query-params "Page-size"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'page-size)))
-    (aws-sdk/generator/shape::to-query-params "SegmentId"
+    (aws-sdk/generator/shape::to-query-params "Segment-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3118,12 +3118,12 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape get-segments-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'application-id)))
-    (aws-sdk/generator/shape::to-query-params "PageSize"
+    (aws-sdk/generator/shape::to-query-params "Page-size"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3160,7 +3160,7 @@
                          (aws-sdk/generator/shape::shape
                           get-sms-channel-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3848,7 +3848,7 @@
                          (aws-sdk/generator/shape::shape
                           put-event-stream-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4368,7 +4368,7 @@
                          (aws-sdk/generator/shape::shape
                           send-messages-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4510,7 +4510,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'apnschannel-request)))
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4555,7 +4555,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'apnssandbox-channel-request)))
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4595,7 +4595,7 @@
                          (aws-sdk/generator/shape::shape
                           update-application-settings-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4640,12 +4640,12 @@
                          (aws-sdk/generator/shape::shape
                           update-campaign-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'application-id)))
-    (aws-sdk/generator/shape::to-query-params "CampaignId"
+    (aws-sdk/generator/shape::to-query-params "Campaign-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4687,7 +4687,7 @@
                          (aws-sdk/generator/shape::shape
                           update-email-channel-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4731,12 +4731,12 @@
                          (aws-sdk/generator/shape::shape
                           update-endpoint-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'application-id)))
-    (aws-sdk/generator/shape::to-query-params "EndpointId"
+    (aws-sdk/generator/shape::to-query-params "Endpoint-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4778,7 +4778,7 @@
                          (aws-sdk/generator/shape::shape
                           update-endpoints-batch-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4820,7 +4820,7 @@
                          (aws-sdk/generator/shape::shape
                           update-gcm-channel-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4863,12 +4863,12 @@
                          (aws-sdk/generator/shape::shape
                           update-segment-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'application-id)))
-    (aws-sdk/generator/shape::to-query-params "SegmentId"
+    (aws-sdk/generator/shape::to-query-params "Segment-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4908,7 +4908,7 @@
                          (aws-sdk/generator/shape::shape
                           update-sms-channel-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ApplicationId"
+    (aws-sdk/generator/shape::to-query-params "Application-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -5156,8 +5156,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateApp")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateAppResponse" common-lisp:nil)))
  (common-lisp:export 'create-app))
 (common-lisp:progn
@@ -5175,8 +5176,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateCampaign")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateCampaignResponse" common-lisp:nil)))
  (common-lisp:export 'create-campaign))
 (common-lisp:progn
@@ -5194,8 +5196,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateImportJob")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateImportJobResponse" common-lisp:nil)))
  (common-lisp:export 'create-import-job))
 (common-lisp:progn
@@ -5213,8 +5216,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateSegment")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateSegmentResponse" common-lisp:nil)))
  (common-lisp:export 'create-segment))
 (common-lisp:progn
@@ -5231,8 +5235,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteApnsChannel")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteApnsChannelResponse" common-lisp:nil)))
  (common-lisp:export 'delete-apns-channel))
 (common-lisp:progn
@@ -5250,8 +5255,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteApnsSandboxChannel")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteApnsSandboxChannelResponse" common-lisp:nil)))
  (common-lisp:export 'delete-apns-sandbox-channel))
 (common-lisp:progn
@@ -5268,8 +5274,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteApp")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteAppResponse" common-lisp:nil)))
  (common-lisp:export 'delete-app))
 (common-lisp:progn
@@ -5286,8 +5293,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteCampaign")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteCampaignResponse" common-lisp:nil)))
  (common-lisp:export 'delete-campaign))
 (common-lisp:progn
@@ -5304,8 +5312,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteEmailChannel")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteEmailChannelResponse" common-lisp:nil)))
  (common-lisp:export 'delete-email-channel))
 (common-lisp:progn
@@ -5322,8 +5331,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteEventStream")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteEventStreamResponse" common-lisp:nil)))
  (common-lisp:export 'delete-event-stream))
 (common-lisp:progn
@@ -5340,8 +5350,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteGcmChannel")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteGcmChannelResponse" common-lisp:nil)))
  (common-lisp:export 'delete-gcm-channel))
 (common-lisp:progn
@@ -5358,8 +5369,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteSegment")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteSegmentResponse" common-lisp:nil)))
  (common-lisp:export 'delete-segment))
 (common-lisp:progn
@@ -5376,8 +5388,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteSmsChannel")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteSmsChannelResponse" common-lisp:nil)))
  (common-lisp:export 'delete-sms-channel))
 (common-lisp:progn
@@ -5394,8 +5407,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetApnsChannel")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetApnsChannelResponse" common-lisp:nil)))
  (common-lisp:export 'get-apns-channel))
 (common-lisp:progn
@@ -5412,8 +5426,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetApnsSandboxChannel")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetApnsSandboxChannelResponse" common-lisp:nil)))
  (common-lisp:export 'get-apns-sandbox-channel))
 (common-lisp:progn
@@ -5430,8 +5445,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetApp")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetAppResponse" common-lisp:nil)))
  (common-lisp:export 'get-app))
 (common-lisp:progn
@@ -5448,8 +5464,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetApplicationSettings")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetApplicationSettingsResponse" common-lisp:nil)))
  (common-lisp:export 'get-application-settings))
 (common-lisp:progn
@@ -5466,8 +5483,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetApps")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetAppsResponse" common-lisp:nil)))
  (common-lisp:export 'get-apps))
 (common-lisp:progn
@@ -5484,8 +5502,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetCampaign")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetCampaignResponse" common-lisp:nil)))
  (common-lisp:export 'get-campaign))
 (common-lisp:progn
@@ -5504,8 +5523,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetCampaignActivities")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetCampaignActivitiesResponse" common-lisp:nil)))
  (common-lisp:export 'get-campaign-activities))
 (common-lisp:progn
@@ -5523,8 +5543,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetCampaignVersion")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetCampaignVersionResponse" common-lisp:nil)))
  (common-lisp:export 'get-campaign-version))
 (common-lisp:progn
@@ -5543,8 +5564,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetCampaignVersions")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetCampaignVersionsResponse" common-lisp:nil)))
  (common-lisp:export 'get-campaign-versions))
 (common-lisp:progn
@@ -5561,8 +5583,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetCampaigns")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetCampaignsResponse" common-lisp:nil)))
  (common-lisp:export 'get-campaigns))
 (common-lisp:progn
@@ -5579,8 +5602,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetEmailChannel")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetEmailChannelResponse" common-lisp:nil)))
  (common-lisp:export 'get-email-channel))
 (common-lisp:progn
@@ -5597,8 +5621,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetEndpoint")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetEndpointResponse" common-lisp:nil)))
  (common-lisp:export 'get-endpoint))
 (common-lisp:progn
@@ -5615,8 +5640,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetEventStream")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetEventStreamResponse" common-lisp:nil)))
  (common-lisp:export 'get-event-stream))
 (common-lisp:progn
@@ -5633,8 +5659,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetGcmChannel")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetGcmChannelResponse" common-lisp:nil)))
  (common-lisp:export 'get-gcm-channel))
 (common-lisp:progn
@@ -5651,8 +5678,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetImportJob")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetImportJobResponse" common-lisp:nil)))
  (common-lisp:export 'get-import-job))
 (common-lisp:progn
@@ -5669,8 +5697,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetImportJobs")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetImportJobsResponse" common-lisp:nil)))
  (common-lisp:export 'get-import-jobs))
 (common-lisp:progn
@@ -5687,8 +5716,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetSegment")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetSegmentResponse" common-lisp:nil)))
  (common-lisp:export 'get-segment))
 (common-lisp:progn
@@ -5707,8 +5737,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetSegmentImportJobs")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetSegmentImportJobsResponse" common-lisp:nil)))
  (common-lisp:export 'get-segment-import-jobs))
 (common-lisp:progn
@@ -5726,8 +5757,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetSegmentVersion")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetSegmentVersionResponse" common-lisp:nil)))
  (common-lisp:export 'get-segment-version))
 (common-lisp:progn
@@ -5746,8 +5778,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetSegmentVersions")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetSegmentVersionsResponse" common-lisp:nil)))
  (common-lisp:export 'get-segment-versions))
 (common-lisp:progn
@@ -5764,8 +5797,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetSegments")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetSegmentsResponse" common-lisp:nil)))
  (common-lisp:export 'get-segments))
 (common-lisp:progn
@@ -5782,8 +5816,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetSmsChannel")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetSmsChannelResponse" common-lisp:nil)))
  (common-lisp:export 'get-sms-channel))
 (common-lisp:progn
@@ -5801,8 +5836,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"PutEventStream")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "PutEventStreamResponse" common-lisp:nil)))
  (common-lisp:export 'put-event-stream))
 (common-lisp:progn
@@ -5819,8 +5855,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"SendMessages")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "SendMessagesResponse" common-lisp:nil)))
  (common-lisp:export 'send-messages))
 (common-lisp:progn
@@ -5838,8 +5875,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateApnsChannel")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateApnsChannelResponse" common-lisp:nil)))
  (common-lisp:export 'update-apns-channel))
 (common-lisp:progn
@@ -5859,8 +5897,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateApnsSandboxChannel")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateApnsSandboxChannelResponse" common-lisp:nil)))
  (common-lisp:export 'update-apns-sandbox-channel))
 (common-lisp:progn
@@ -5880,8 +5919,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateApplicationSettings")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateApplicationSettingsResponse" common-lisp:nil)))
  (common-lisp:export 'update-application-settings))
 (common-lisp:progn
@@ -5900,8 +5940,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateCampaign")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateCampaignResponse" common-lisp:nil)))
  (common-lisp:export 'update-campaign))
 (common-lisp:progn
@@ -5919,8 +5960,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateEmailChannel")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateEmailChannelResponse" common-lisp:nil)))
  (common-lisp:export 'update-email-channel))
 (common-lisp:progn
@@ -5939,8 +5981,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateEndpoint")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateEndpointResponse" common-lisp:nil)))
  (common-lisp:export 'update-endpoint))
 (common-lisp:progn
@@ -5958,8 +6001,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateEndpointsBatch")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateEndpointsBatchResponse" common-lisp:nil)))
  (common-lisp:export 'update-endpoints-batch))
 (common-lisp:progn
@@ -5977,8 +6021,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateGcmChannel")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateGcmChannelResponse" common-lisp:nil)))
  (common-lisp:export 'update-gcm-channel))
 (common-lisp:progn
@@ -5997,8 +6042,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateSegment")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateSegmentResponse" common-lisp:nil)))
  (common-lisp:export 'update-segment))
 (common-lisp:progn
@@ -6016,7 +6062,8 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateSmsChannel")
                                   ("Version" ,@"2016-12-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateSmsChannelResponse" common-lisp:nil)))
  (common-lisp:export 'update-sms-channel))

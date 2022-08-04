@@ -23,17 +23,17 @@
                          (aws-sdk/generator/shape::shape
                           abort-multipart-upload-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "vaultName"
+    (aws-sdk/generator/shape::to-query-params "VaultName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'vault-name)))
-    (aws-sdk/generator/shape::to-query-params "uploadId"
+    (aws-sdk/generator/shape::to-query-params "UploadId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -51,12 +51,12 @@
                          (aws-sdk/generator/shape::shape
                           abort-vault-lock-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "vaultName"
+    (aws-sdk/generator/shape::to-query-params "VaultName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -76,12 +76,12 @@
                          (aws-sdk/generator/shape::shape
                           add-tags-to-vault-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "vaultName"
+    (aws-sdk/generator/shape::to-query-params "VaultName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -106,17 +106,17 @@
                          (aws-sdk/generator/shape::shape
                           archive-creation-output))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "location"
+    (aws-sdk/generator/shape::to-query-params "Location"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'location)))
-    (aws-sdk/generator/shape::to-query-params "checksum"
+    (aws-sdk/generator/shape::to-query-params "X-amz-sha256-tree-hash"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'checksum)))
-    (aws-sdk/generator/shape::to-query-params "archiveId"
+    (aws-sdk/generator/shape::to-query-params "X-amz-archive-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -142,27 +142,27 @@
                          (aws-sdk/generator/shape::shape
                           complete-multipart-upload-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "vaultName"
+    (aws-sdk/generator/shape::to-query-params "VaultName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'vault-name)))
-    (aws-sdk/generator/shape::to-query-params "uploadId"
+    (aws-sdk/generator/shape::to-query-params "UploadId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'upload-id)))
-    (aws-sdk/generator/shape::to-query-params "archiveSize"
+    (aws-sdk/generator/shape::to-query-params "X-amz-archive-size"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'archive-size)))
-    (aws-sdk/generator/shape::to-query-params "checksum"
+    (aws-sdk/generator/shape::to-query-params "X-amz-sha256-tree-hash"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -183,17 +183,17 @@
                          (aws-sdk/generator/shape::shape
                           complete-vault-lock-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "vaultName"
+    (aws-sdk/generator/shape::to-query-params "VaultName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'vault-name)))
-    (aws-sdk/generator/shape::to-query-params "lockId"
+    (aws-sdk/generator/shape::to-query-params "LockId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -209,12 +209,12 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape create-vault-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "vaultName"
+    (aws-sdk/generator/shape::to-query-params "VaultName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -228,7 +228,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape create-vault-output))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "location"
+    (aws-sdk/generator/shape::to-query-params "Location"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -292,17 +292,17 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape delete-archive-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "vaultName"
+    (aws-sdk/generator/shape::to-query-params "VaultName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'vault-name)))
-    (aws-sdk/generator/shape::to-query-params "archiveId"
+    (aws-sdk/generator/shape::to-query-params "ArchiveId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -322,12 +322,12 @@
                          (aws-sdk/generator/shape::shape
                           delete-vault-access-policy-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "vaultName"
+    (aws-sdk/generator/shape::to-query-params "VaultName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -343,12 +343,12 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape delete-vault-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "vaultName"
+    (aws-sdk/generator/shape::to-query-params "VaultName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -368,12 +368,12 @@
                          (aws-sdk/generator/shape::shape
                           delete-vault-notifications-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "vaultName"
+    (aws-sdk/generator/shape::to-query-params "VaultName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -391,17 +391,17 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape describe-job-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "vaultName"
+    (aws-sdk/generator/shape::to-query-params "VaultName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'vault-name)))
-    (aws-sdk/generator/shape::to-query-params "jobId"
+    (aws-sdk/generator/shape::to-query-params "JobId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -417,12 +417,12 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape describe-vault-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "vaultName"
+    (aws-sdk/generator/shape::to-query-params "VaultName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -491,7 +491,7 @@
                          (aws-sdk/generator/shape::shape
                           get-data-retrieval-policy-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -529,22 +529,22 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape get-job-output-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "vaultName"
+    (aws-sdk/generator/shape::to-query-params "VaultName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'vault-name)))
-    (aws-sdk/generator/shape::to-query-params "jobId"
+    (aws-sdk/generator/shape::to-query-params "JobId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'job-id)))
-    (aws-sdk/generator/shape::to-query-params "range"
+    (aws-sdk/generator/shape::to-query-params "Range"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -576,7 +576,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'body)))
-    (aws-sdk/generator/shape::to-query-params "checksum"
+    (aws-sdk/generator/shape::to-query-params "X-amz-sha256-tree-hash"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -586,22 +586,22 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'status)))
-    (aws-sdk/generator/shape::to-query-params "contentRange"
+    (aws-sdk/generator/shape::to-query-params "Content-Range"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'content-range)))
-    (aws-sdk/generator/shape::to-query-params "acceptRanges"
+    (aws-sdk/generator/shape::to-query-params "Accept-Ranges"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'accept-ranges)))
-    (aws-sdk/generator/shape::to-query-params "contentType"
+    (aws-sdk/generator/shape::to-query-params "Content-Type"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'content-type)))
-    (aws-sdk/generator/shape::to-query-params "archiveDescription"
+    (aws-sdk/generator/shape::to-query-params "X-amz-archive-description"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -621,12 +621,12 @@
                          (aws-sdk/generator/shape::shape
                           get-vault-access-policy-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "vaultName"
+    (aws-sdk/generator/shape::to-query-params "VaultName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -660,12 +660,12 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape get-vault-lock-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "vaultName"
+    (aws-sdk/generator/shape::to-query-params "VaultName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -722,12 +722,12 @@
                          (aws-sdk/generator/shape::shape
                           get-vault-notifications-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "vaultName"
+    (aws-sdk/generator/shape::to-query-params "VaultName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -897,12 +897,12 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape initiate-job-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "vaultName"
+    (aws-sdk/generator/shape::to-query-params "VaultName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -923,12 +923,12 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape initiate-job-output))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "location"
+    (aws-sdk/generator/shape::to-query-params "Location"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'location)))
-    (aws-sdk/generator/shape::to-query-params "jobId"
+    (aws-sdk/generator/shape::to-query-params "X-amz-job-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -952,22 +952,22 @@
                          (aws-sdk/generator/shape::shape
                           initiate-multipart-upload-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "vaultName"
+    (aws-sdk/generator/shape::to-query-params "VaultName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'vault-name)))
-    (aws-sdk/generator/shape::to-query-params "archiveDescription"
+    (aws-sdk/generator/shape::to-query-params "X-amz-archive-description"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'archive-description)))
-    (aws-sdk/generator/shape::to-query-params "partSize"
+    (aws-sdk/generator/shape::to-query-params "X-amz-part-size"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -987,12 +987,12 @@
                          (aws-sdk/generator/shape::shape
                           initiate-multipart-upload-output))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "location"
+    (aws-sdk/generator/shape::to-query-params "Location"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'location)))
-    (aws-sdk/generator/shape::to-query-params "uploadId"
+    (aws-sdk/generator/shape::to-query-params "X-amz-multipart-upload-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1013,12 +1013,12 @@
                          (aws-sdk/generator/shape::shape
                           initiate-vault-lock-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "vaultName"
+    (aws-sdk/generator/shape::to-query-params "VaultName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1040,7 +1040,7 @@
                          (aws-sdk/generator/shape::shape
                           initiate-vault-lock-output))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "lockId"
+    (aws-sdk/generator/shape::to-query-params "X-amz-lock-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1311,32 +1311,32 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape list-jobs-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "vaultName"
+    (aws-sdk/generator/shape::to-query-params "VaultName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'vault-name)))
-    (aws-sdk/generator/shape::to-query-params "limit"
+    (aws-sdk/generator/shape::to-query-params "Limit"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'limit)))
-    (aws-sdk/generator/shape::to-query-params "marker"
+    (aws-sdk/generator/shape::to-query-params "Marker"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'marker)))
-    (aws-sdk/generator/shape::to-query-params "statuscode"
+    (aws-sdk/generator/shape::to-query-params "Statuscode"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'statuscode)))
-    (aws-sdk/generator/shape::to-query-params "completed"
+    (aws-sdk/generator/shape::to-query-params "Completed"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1380,22 +1380,22 @@
                          (aws-sdk/generator/shape::shape
                           list-multipart-uploads-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "vaultName"
+    (aws-sdk/generator/shape::to-query-params "VaultName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'vault-name)))
-    (aws-sdk/generator/shape::to-query-params "marker"
+    (aws-sdk/generator/shape::to-query-params "Marker"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'marker)))
-    (aws-sdk/generator/shape::to-query-params "limit"
+    (aws-sdk/generator/shape::to-query-params "Limit"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1442,27 +1442,27 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape list-parts-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "vaultName"
+    (aws-sdk/generator/shape::to-query-params "VaultName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'vault-name)))
-    (aws-sdk/generator/shape::to-query-params "uploadId"
+    (aws-sdk/generator/shape::to-query-params "UploadId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'upload-id)))
-    (aws-sdk/generator/shape::to-query-params "marker"
+    (aws-sdk/generator/shape::to-query-params "Marker"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'marker)))
-    (aws-sdk/generator/shape::to-query-params "limit"
+    (aws-sdk/generator/shape::to-query-params "Limit"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1535,7 +1535,7 @@
                          (aws-sdk/generator/shape::shape
                           list-provisioned-capacity-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1572,12 +1572,12 @@
                          (aws-sdk/generator/shape::shape
                           list-tags-for-vault-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "vaultName"
+    (aws-sdk/generator/shape::to-query-params "VaultName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1611,17 +1611,17 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape list-vaults-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "marker"
+    (aws-sdk/generator/shape::to-query-params "Marker"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'marker)))
-    (aws-sdk/generator/shape::to-query-params "limit"
+    (aws-sdk/generator/shape::to-query-params "Limit"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1802,7 +1802,7 @@
                          (aws-sdk/generator/shape::shape
                           purchase-provisioned-capacity-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1820,7 +1820,7 @@
                          (aws-sdk/generator/shape::shape
                           purchase-provisioned-capacity-output))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "capacityId"
+    (aws-sdk/generator/shape::to-query-params "X-amz-capacity-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1842,12 +1842,12 @@
                          (aws-sdk/generator/shape::shape
                           remove-tags-from-vault-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "vaultName"
+    (aws-sdk/generator/shape::to-query-params "VaultName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1967,7 +1967,7 @@
                          (aws-sdk/generator/shape::shape
                           set-data-retrieval-policy-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1994,12 +1994,12 @@
                          (aws-sdk/generator/shape::shape
                           set-vault-access-policy-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "vaultName"
+    (aws-sdk/generator/shape::to-query-params "VaultName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2026,12 +2026,12 @@
                          (aws-sdk/generator/shape::shape
                           set-vault-notifications-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "vaultName"
+    (aws-sdk/generator/shape::to-query-params "VaultName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2077,22 +2077,22 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape upload-archive-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "vaultName"
+    (aws-sdk/generator/shape::to-query-params "VaultName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'vault-name)))
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "archiveDescription"
+    (aws-sdk/generator/shape::to-query-params "X-amz-archive-description"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'archive-description)))
-    (aws-sdk/generator/shape::to-query-params "checksum"
+    (aws-sdk/generator/shape::to-query-params "X-amz-sha256-tree-hash"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2165,27 +2165,27 @@
                          (aws-sdk/generator/shape::shape
                           upload-multipart-part-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "accountId"
+    (aws-sdk/generator/shape::to-query-params "AccountId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'account-id)))
-    (aws-sdk/generator/shape::to-query-params "vaultName"
+    (aws-sdk/generator/shape::to-query-params "VaultName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'vault-name)))
-    (aws-sdk/generator/shape::to-query-params "uploadId"
+    (aws-sdk/generator/shape::to-query-params "UploadId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'upload-id)))
-    (aws-sdk/generator/shape::to-query-params "checksum"
+    (aws-sdk/generator/shape::to-query-params "X-amz-sha256-tree-hash"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'checksum)))
-    (aws-sdk/generator/shape::to-query-params "range"
+    (aws-sdk/generator/shape::to-query-params "Content-Range"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2208,7 +2208,7 @@
                          (aws-sdk/generator/shape::shape
                           upload-multipart-part-output))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "checksum"
+    (aws-sdk/generator/shape::to-query-params "X-amz-sha256-tree-hash"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2300,8 +2300,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"AbortMultipartUpload")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'abort-multipart-upload))
 (common-lisp:progn
@@ -2318,8 +2319,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"AbortVaultLock")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'abort-vault-lock))
 (common-lisp:progn
@@ -2336,8 +2338,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"AddTagsToVault")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'add-tags-to-vault))
 (common-lisp:progn
@@ -2357,8 +2360,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"CompleteMultipartUpload")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ArchiveCreationOutput" common-lisp:nil)))
  (common-lisp:export 'complete-multipart-upload))
 (common-lisp:progn
@@ -2375,8 +2379,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"CompleteVaultLock")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'complete-vault-lock))
 (common-lisp:progn
@@ -2393,8 +2398,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"CreateVault")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateVaultOutput" common-lisp:nil)))
  (common-lisp:export 'create-vault))
 (common-lisp:progn
@@ -2412,8 +2418,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"DeleteArchive")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-archive))
 (common-lisp:progn
@@ -2430,8 +2437,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"DeleteVault")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-vault))
 (common-lisp:progn
@@ -2448,8 +2456,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"DeleteVaultAccessPolicy")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-vault-access-policy))
 (common-lisp:progn
@@ -2466,8 +2475,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"DeleteVaultNotifications")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-vault-notifications))
 (common-lisp:progn
@@ -2484,8 +2494,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"DescribeJob")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GlacierJobDescription" common-lisp:nil)))
  (common-lisp:export 'describe-job))
 (common-lisp:progn
@@ -2502,8 +2513,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"DescribeVault")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeVaultOutput" common-lisp:nil)))
  (common-lisp:export 'describe-vault))
 (common-lisp:progn
@@ -2520,8 +2532,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"GetDataRetrievalPolicy")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetDataRetrievalPolicyOutput" common-lisp:nil)))
  (common-lisp:export 'get-data-retrieval-policy))
 (common-lisp:progn
@@ -2539,8 +2552,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"GetJobOutput")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetJobOutputOutput" common-lisp:nil)))
  (common-lisp:export 'get-job-output))
 (common-lisp:progn
@@ -2557,8 +2571,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"GetVaultAccessPolicy")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetVaultAccessPolicyOutput" common-lisp:nil)))
  (common-lisp:export 'get-vault-access-policy))
 (common-lisp:progn
@@ -2575,8 +2590,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"GetVaultLock")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetVaultLockOutput" common-lisp:nil)))
  (common-lisp:export 'get-vault-lock))
 (common-lisp:progn
@@ -2593,8 +2609,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"GetVaultNotifications")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetVaultNotificationsOutput" common-lisp:nil)))
  (common-lisp:export 'get-vault-notifications))
 (common-lisp:progn
@@ -2612,8 +2629,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"InitiateJob")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "InitiateJobOutput" common-lisp:nil)))
  (common-lisp:export 'initiate-job))
 (common-lisp:progn
@@ -2633,8 +2651,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"InitiateMultipartUpload")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "InitiateMultipartUploadOutput" common-lisp:nil)))
  (common-lisp:export 'initiate-multipart-upload))
 (common-lisp:progn
@@ -2651,8 +2670,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"InitiateVaultLock")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "InitiateVaultLockOutput" common-lisp:nil)))
  (common-lisp:export 'initiate-vault-lock))
 (common-lisp:progn
@@ -2672,8 +2692,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"ListJobs")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListJobsOutput" common-lisp:nil)))
  (common-lisp:export 'list-jobs))
 (common-lisp:progn
@@ -2691,8 +2712,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"ListMultipartUploads")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListMultipartUploadsOutput" common-lisp:nil)))
  (common-lisp:export 'list-multipart-uploads))
 (common-lisp:progn
@@ -2711,8 +2733,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"ListParts")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListPartsOutput" common-lisp:nil)))
  (common-lisp:export 'list-parts))
 (common-lisp:progn
@@ -2729,8 +2752,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"ListProvisionedCapacity")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListProvisionedCapacityOutput" common-lisp:nil)))
  (common-lisp:export 'list-provisioned-capacity))
 (common-lisp:progn
@@ -2747,8 +2771,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"ListTagsForVault")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListTagsForVaultOutput" common-lisp:nil)))
  (common-lisp:export 'list-tags-for-vault))
 (common-lisp:progn
@@ -2765,8 +2790,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"ListVaults")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListVaultsOutput" common-lisp:nil)))
  (common-lisp:export 'list-vaults))
 (common-lisp:progn
@@ -2784,8 +2810,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"PurchaseProvisionedCapacity")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "PurchaseProvisionedCapacityOutput" common-lisp:nil)))
  (common-lisp:export 'purchase-provisioned-capacity))
 (common-lisp:progn
@@ -2802,8 +2829,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"RemoveTagsFromVault")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'remove-tags-from-vault))
 (common-lisp:progn
@@ -2820,8 +2848,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"SetDataRetrievalPolicy")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'set-data-retrieval-policy))
 (common-lisp:progn
@@ -2838,8 +2867,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"SetVaultAccessPolicy")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'set-vault-access-policy))
 (common-lisp:progn
@@ -2858,8 +2888,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"SetVaultNotifications")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'set-vault-notifications))
 (common-lisp:progn
@@ -2879,8 +2910,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"UploadArchive")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ArchiveCreationOutput" common-lisp:nil)))
  (common-lisp:export 'upload-archive))
 (common-lisp:progn
@@ -2900,7 +2932,8 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"UploadMultipartPart")
                                   ("Version" ,@"2012-06-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UploadMultipartPartOutput" common-lisp:nil)))
  (common-lisp:export 'upload-multipart-part))

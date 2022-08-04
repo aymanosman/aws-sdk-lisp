@@ -1476,8 +1476,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"AddPermission")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'add-permission))
 (common-lisp:progn
@@ -1495,8 +1496,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"CheckIfPhoneNumberIsOptedOut")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CheckIfPhoneNumberIsOptedOutResponse"
       "CheckIfPhoneNumberIsOptedOutResult")))
  (common-lisp:export 'check-if-phone-number-is-opted-out))
@@ -1516,8 +1518,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"ConfirmSubscription")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ConfirmSubscriptionResponse" "ConfirmSubscriptionResult")))
  (common-lisp:export 'confirm-subscription))
 (common-lisp:progn
@@ -1535,8 +1538,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"CreatePlatformApplication")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreatePlatformApplicationResponse" "CreatePlatformApplicationResult")))
  (common-lisp:export 'create-platform-application))
 (common-lisp:progn
@@ -1556,8 +1560,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"CreatePlatformEndpoint")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateEndpointResponse" "CreatePlatformEndpointResult")))
  (common-lisp:export 'create-platform-endpoint))
 (common-lisp:progn
@@ -1574,8 +1579,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"CreateTopic")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateTopicResponse" "CreateTopicResult")))
  (common-lisp:export 'create-topic))
 (common-lisp:progn
@@ -1592,8 +1598,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"DeleteEndpoint")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-endpoint))
 (common-lisp:progn
@@ -1611,8 +1618,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"DeletePlatformApplication")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-platform-application))
 (common-lisp:progn
@@ -1629,8 +1637,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"DeleteTopic")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-topic))
 (common-lisp:progn
@@ -1647,8 +1656,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"GetEndpointAttributes")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetEndpointAttributesResponse" "GetEndpointAttributesResult")))
  (common-lisp:export 'get-endpoint-attributes))
 (common-lisp:progn
@@ -1667,8 +1677,9 @@ common-lisp:nil
                                 `(("Action"
                                    ,@"GetPlatformApplicationAttributes")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetPlatformApplicationAttributesResponse"
       "GetPlatformApplicationAttributesResult")))
  (common-lisp:export 'get-platform-application-attributes))
@@ -1686,8 +1697,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"GetSMSAttributes")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetSMSAttributesResponse" "GetSMSAttributesResult")))
  (common-lisp:export 'get-smsattributes))
 (common-lisp:progn
@@ -1705,8 +1717,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"GetSubscriptionAttributes")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetSubscriptionAttributesResponse" "GetSubscriptionAttributesResult")))
  (common-lisp:export 'get-subscription-attributes))
 (common-lisp:progn
@@ -1723,8 +1736,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"GetTopicAttributes")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetTopicAttributesResponse" "GetTopicAttributesResult")))
  (common-lisp:export 'get-topic-attributes))
 (common-lisp:progn
@@ -1744,8 +1758,9 @@ common-lisp:nil
                                 `(("Action"
                                    ,@"ListEndpointsByPlatformApplication")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListEndpointsByPlatformApplicationResponse"
       "ListEndpointsByPlatformApplicationResult")))
  (common-lisp:export 'list-endpoints-by-platform-application))
@@ -1764,8 +1779,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"ListPhoneNumbersOptedOut")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListPhoneNumbersOptedOutResponse" "ListPhoneNumbersOptedOutResult")))
  (common-lisp:export 'list-phone-numbers-opted-out))
 (common-lisp:progn
@@ -1782,8 +1798,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"ListPlatformApplications")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListPlatformApplicationsResponse" "ListPlatformApplicationsResult")))
  (common-lisp:export 'list-platform-applications))
 (common-lisp:progn
@@ -1800,8 +1817,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"ListSubscriptions")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListSubscriptionsResponse" "ListSubscriptionsResult")))
  (common-lisp:export 'list-subscriptions))
 (common-lisp:progn
@@ -1819,8 +1837,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"ListSubscriptionsByTopic")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListSubscriptionsByTopicResponse" "ListSubscriptionsByTopicResult")))
  (common-lisp:export 'list-subscriptions-by-topic))
 (common-lisp:progn
@@ -1837,8 +1856,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"ListTopics")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListTopicsResponse" "ListTopicsResult")))
  (common-lisp:export 'list-topics))
 (common-lisp:progn
@@ -1855,8 +1875,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"OptInPhoneNumber")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "OptInPhoneNumberResponse" "OptInPhoneNumberResult")))
  (common-lisp:export 'opt-in-phone-number))
 (common-lisp:progn
@@ -1876,8 +1897,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"Publish")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "PublishResponse" "PublishResult")))
  (common-lisp:export 'publish))
 (common-lisp:progn
@@ -1894,8 +1916,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"RemovePermission")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'remove-permission))
 (common-lisp:progn
@@ -1912,8 +1935,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"SetEndpointAttributes")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'set-endpoint-attributes))
 (common-lisp:progn
@@ -1933,8 +1957,9 @@ common-lisp:nil
                                 `(("Action"
                                    ,@"SetPlatformApplicationAttributes")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'set-platform-application-attributes))
 (common-lisp:progn
@@ -1951,8 +1976,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"SetSMSAttributes")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "SetSMSAttributesResponse" "SetSMSAttributesResult")))
  (common-lisp:export 'set-smsattributes))
 (common-lisp:progn
@@ -1972,8 +1998,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"SetSubscriptionAttributes")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'set-subscription-attributes))
 (common-lisp:progn
@@ -1991,8 +2018,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"SetTopicAttributes")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'set-topic-attributes))
 (common-lisp:progn
@@ -2009,8 +2037,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"Subscribe")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "SubscribeResponse" "SubscribeResult")))
  (common-lisp:export 'subscribe))
 (common-lisp:progn
@@ -2027,7 +2056,8 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"Unsubscribe")
                                   ("Version" ,@"2010-03-31"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'unsubscribe))

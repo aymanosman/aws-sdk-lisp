@@ -21,12 +21,12 @@
                          (aws-sdk/generator/shape::shape
                           accept-certificate-transfer-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "certificateId"
+    (aws-sdk/generator/shape::to-query-params "CertificateId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'certificate-id)))
-    (aws-sdk/generator/shape::to-query-params "setAsActive"
+    (aws-sdk/generator/shape::to-query-params "SetAsActive"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -150,12 +150,12 @@
                          (aws-sdk/generator/shape::shape
                           attach-principal-policy-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "policyName"
+    (aws-sdk/generator/shape::to-query-params "PolicyName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'policy-name)))
-    (aws-sdk/generator/shape::to-query-params "principal"
+    (aws-sdk/generator/shape::to-query-params "X-amzn-iot-principal"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -175,12 +175,12 @@
                          (aws-sdk/generator/shape::shape
                           attach-thing-principal-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "thingName"
+    (aws-sdk/generator/shape::to-query-params "ThingName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'thing-name)))
-    (aws-sdk/generator/shape::to-query-params "principal"
+    (aws-sdk/generator/shape::to-query-params "X-amzn-principal"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -345,7 +345,7 @@
                          (aws-sdk/generator/shape::shape
                           cancel-certificate-transfer-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "certificateId"
+    (aws-sdk/generator/shape::to-query-params "CertificateId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -639,7 +639,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'certificate-signing-request)))
-    (aws-sdk/generator/shape::to-query-params "setAsActive"
+    (aws-sdk/generator/shape::to-query-params "SetAsActive"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -689,7 +689,7 @@
                          (aws-sdk/generator/shape::shape
                           create-keys-and-certificate-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "setAsActive"
+    (aws-sdk/generator/shape::to-query-params "SetAsActive"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -745,7 +745,7 @@
                          (aws-sdk/generator/shape::shape
                           create-policy-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "policyName"
+    (aws-sdk/generator/shape::to-query-params "PolicyName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -809,7 +809,7 @@
                          (aws-sdk/generator/shape::shape
                           create-policy-version-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "policyName"
+    (aws-sdk/generator/shape::to-query-params "PolicyName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -819,7 +819,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'policy-document)))
-    (aws-sdk/generator/shape::to-query-params "setAsDefault"
+    (aws-sdk/generator/shape::to-query-params "SetAsDefault"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -876,7 +876,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape create-thing-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "thingName"
+    (aws-sdk/generator/shape::to-query-params "ThingName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -928,7 +928,7 @@
                          (aws-sdk/generator/shape::shape
                           create-thing-type-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "thingTypeName"
+    (aws-sdk/generator/shape::to-query-params "ThingTypeName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -976,7 +976,7 @@
                          (aws-sdk/generator/shape::shape
                           create-topic-rule-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ruleName"
+    (aws-sdk/generator/shape::to-query-params "RuleName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1002,7 +1002,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-cacertificate-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "certificateId"
+    (aws-sdk/generator/shape::to-query-params "CaCertificateId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1030,7 +1030,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-certificate-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "certificateId"
+    (aws-sdk/generator/shape::to-query-params "CertificateId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1063,7 +1063,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-policy-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "policyName"
+    (aws-sdk/generator/shape::to-query-params "PolicyName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1083,12 +1083,12 @@
                          (aws-sdk/generator/shape::shape
                           delete-policy-version-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "policyName"
+    (aws-sdk/generator/shape::to-query-params "PolicyName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'policy-name)))
-    (aws-sdk/generator/shape::to-query-params "policyVersionId"
+    (aws-sdk/generator/shape::to-query-params "PolicyVersionId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1126,12 +1126,12 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape delete-thing-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "thingName"
+    (aws-sdk/generator/shape::to-query-params "ThingName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'thing-name)))
-    (aws-sdk/generator/shape::to-query-params "expectedVersion"
+    (aws-sdk/generator/shape::to-query-params "ExpectedVersion"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1157,7 +1157,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-thing-type-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "thingTypeName"
+    (aws-sdk/generator/shape::to-query-params "ThingTypeName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1184,7 +1184,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-topic-rule-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ruleName"
+    (aws-sdk/generator/shape::to-query-params "RuleName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1205,7 +1205,7 @@
                          (aws-sdk/generator/shape::shape
                           deprecate-thing-type-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "thingTypeName"
+    (aws-sdk/generator/shape::to-query-params "ThingTypeName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1240,7 +1240,7 @@
                          (aws-sdk/generator/shape::shape
                           describe-cacertificate-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "certificateId"
+    (aws-sdk/generator/shape::to-query-params "CaCertificateId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1276,7 +1276,7 @@
                          (aws-sdk/generator/shape::shape
                           describe-certificate-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "certificateId"
+    (aws-sdk/generator/shape::to-query-params "CertificateId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1337,7 +1337,7 @@
                          (aws-sdk/generator/shape::shape
                           describe-thing-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "thingName"
+    (aws-sdk/generator/shape::to-query-params "ThingName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1397,7 +1397,7 @@
                          (aws-sdk/generator/shape::shape
                           describe-thing-type-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "thingTypeName"
+    (aws-sdk/generator/shape::to-query-params "ThingTypeName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1450,12 +1450,12 @@
                          (aws-sdk/generator/shape::shape
                           detach-principal-policy-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "policyName"
+    (aws-sdk/generator/shape::to-query-params "PolicyName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'policy-name)))
-    (aws-sdk/generator/shape::to-query-params "principal"
+    (aws-sdk/generator/shape::to-query-params "X-amzn-iot-principal"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1475,12 +1475,12 @@
                          (aws-sdk/generator/shape::shape
                           detach-thing-principal-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "thingName"
+    (aws-sdk/generator/shape::to-query-params "ThingName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'thing-name)))
-    (aws-sdk/generator/shape::to-query-params "principal"
+    (aws-sdk/generator/shape::to-query-params "X-amzn-principal"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1508,7 +1508,7 @@
                          (aws-sdk/generator/shape::shape
                           disable-topic-rule-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ruleName"
+    (aws-sdk/generator/shape::to-query-params "RuleName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1669,7 +1669,7 @@
                          (aws-sdk/generator/shape::shape
                           enable-topic-rule-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ruleName"
+    (aws-sdk/generator/shape::to-query-params "RuleName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1749,7 +1749,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape get-policy-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "policyName"
+    (aws-sdk/generator/shape::to-query-params "PolicyName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1803,12 +1803,12 @@
                          (aws-sdk/generator/shape::shape
                           get-policy-version-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "policyName"
+    (aws-sdk/generator/shape::to-query-params "PolicyName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'policy-name)))
-    (aws-sdk/generator/shape::to-query-params "policyVersionId"
+    (aws-sdk/generator/shape::to-query-params "PolicyVersionId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1898,7 +1898,7 @@
                          (aws-sdk/generator/shape::shape
                           get-topic-rule-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ruleName"
+    (aws-sdk/generator/shape::to-query-params "RuleName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2068,17 +2068,17 @@
                          (aws-sdk/generator/shape::shape
                           list-cacertificates-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "pageSize"
+    (aws-sdk/generator/shape::to-query-params "PageSize"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'page-size)))
-    (aws-sdk/generator/shape::to-query-params "marker"
+    (aws-sdk/generator/shape::to-query-params "Marker"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'marker)))
-    (aws-sdk/generator/shape::to-query-params "ascendingOrder"
+    (aws-sdk/generator/shape::to-query-params "IsAscendingOrder"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2126,22 +2126,22 @@
                          (aws-sdk/generator/shape::shape
                           list-certificates-by-carequest))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "caCertificateId"
+    (aws-sdk/generator/shape::to-query-params "CaCertificateId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'ca-certificate-id)))
-    (aws-sdk/generator/shape::to-query-params "pageSize"
+    (aws-sdk/generator/shape::to-query-params "PageSize"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'page-size)))
-    (aws-sdk/generator/shape::to-query-params "marker"
+    (aws-sdk/generator/shape::to-query-params "Marker"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'marker)))
-    (aws-sdk/generator/shape::to-query-params "ascendingOrder"
+    (aws-sdk/generator/shape::to-query-params "IsAscendingOrder"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2186,17 +2186,17 @@
                          (aws-sdk/generator/shape::shape
                           list-certificates-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "pageSize"
+    (aws-sdk/generator/shape::to-query-params "PageSize"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'page-size)))
-    (aws-sdk/generator/shape::to-query-params "marker"
+    (aws-sdk/generator/shape::to-query-params "Marker"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'marker)))
-    (aws-sdk/generator/shape::to-query-params "ascendingOrder"
+    (aws-sdk/generator/shape::to-query-params "IsAscendingOrder"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2241,17 +2241,17 @@
                          (aws-sdk/generator/shape::shape
                           list-outgoing-certificates-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "pageSize"
+    (aws-sdk/generator/shape::to-query-params "PageSize"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'page-size)))
-    (aws-sdk/generator/shape::to-query-params "marker"
+    (aws-sdk/generator/shape::to-query-params "Marker"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'marker)))
-    (aws-sdk/generator/shape::to-query-params "ascendingOrder"
+    (aws-sdk/generator/shape::to-query-params "IsAscendingOrder"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2295,17 +2295,17 @@
                          (aws-sdk/generator/shape::shape
                           list-policies-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "marker"
+    (aws-sdk/generator/shape::to-query-params "Marker"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'marker)))
-    (aws-sdk/generator/shape::to-query-params "pageSize"
+    (aws-sdk/generator/shape::to-query-params "PageSize"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'page-size)))
-    (aws-sdk/generator/shape::to-query-params "ascendingOrder"
+    (aws-sdk/generator/shape::to-query-params "IsAscendingOrder"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2350,22 +2350,22 @@
                          (aws-sdk/generator/shape::shape
                           list-policy-principals-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "policyName"
+    (aws-sdk/generator/shape::to-query-params "X-amzn-iot-policy"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'policy-name)))
-    (aws-sdk/generator/shape::to-query-params "marker"
+    (aws-sdk/generator/shape::to-query-params "Marker"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'marker)))
-    (aws-sdk/generator/shape::to-query-params "pageSize"
+    (aws-sdk/generator/shape::to-query-params "PageSize"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'page-size)))
-    (aws-sdk/generator/shape::to-query-params "ascendingOrder"
+    (aws-sdk/generator/shape::to-query-params "IsAscendingOrder"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2408,7 +2408,7 @@
                          (aws-sdk/generator/shape::shape
                           list-policy-versions-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "policyName"
+    (aws-sdk/generator/shape::to-query-params "PolicyName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2449,22 +2449,22 @@
                          (aws-sdk/generator/shape::shape
                           list-principal-policies-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "principal"
+    (aws-sdk/generator/shape::to-query-params "X-amzn-iot-principal"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'principal)))
-    (aws-sdk/generator/shape::to-query-params "marker"
+    (aws-sdk/generator/shape::to-query-params "Marker"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'marker)))
-    (aws-sdk/generator/shape::to-query-params "pageSize"
+    (aws-sdk/generator/shape::to-query-params "PageSize"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'page-size)))
-    (aws-sdk/generator/shape::to-query-params "ascendingOrder"
+    (aws-sdk/generator/shape::to-query-params "IsAscendingOrder"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2510,17 +2510,17 @@
                          (aws-sdk/generator/shape::shape
                           list-principal-things-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "nextToken"
+    (aws-sdk/generator/shape::to-query-params "NextToken"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'next-token)))
-    (aws-sdk/generator/shape::to-query-params "maxResults"
+    (aws-sdk/generator/shape::to-query-params "MaxResults"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'max-results)))
-    (aws-sdk/generator/shape::to-query-params "principal"
+    (aws-sdk/generator/shape::to-query-params "X-amzn-principal"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2563,7 +2563,7 @@
                          (aws-sdk/generator/shape::shape
                           list-thing-principals-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "thingName"
+    (aws-sdk/generator/shape::to-query-params "ThingName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2601,17 +2601,17 @@
                          (aws-sdk/generator/shape::shape
                           list-thing-types-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "nextToken"
+    (aws-sdk/generator/shape::to-query-params "NextToken"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'next-token)))
-    (aws-sdk/generator/shape::to-query-params "maxResults"
+    (aws-sdk/generator/shape::to-query-params "MaxResults"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'max-results)))
-    (aws-sdk/generator/shape::to-query-params "thingTypeName"
+    (aws-sdk/generator/shape::to-query-params "ThingTypeName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2657,27 +2657,27 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape list-things-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "nextToken"
+    (aws-sdk/generator/shape::to-query-params "NextToken"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'next-token)))
-    (aws-sdk/generator/shape::to-query-params "maxResults"
+    (aws-sdk/generator/shape::to-query-params "MaxResults"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'max-results)))
-    (aws-sdk/generator/shape::to-query-params "attributeName"
+    (aws-sdk/generator/shape::to-query-params "AttributeName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'attribute-name)))
-    (aws-sdk/generator/shape::to-query-params "attributeValue"
+    (aws-sdk/generator/shape::to-query-params "AttributeValue"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'attribute-value)))
-    (aws-sdk/generator/shape::to-query-params "thingTypeName"
+    (aws-sdk/generator/shape::to-query-params "ThingTypeName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2719,22 +2719,22 @@
                          (aws-sdk/generator/shape::shape
                           list-topic-rules-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "topic"
+    (aws-sdk/generator/shape::to-query-params "Topic"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'topic)))
-    (aws-sdk/generator/shape::to-query-params "maxResults"
+    (aws-sdk/generator/shape::to-query-params "MaxResults"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'max-results)))
-    (aws-sdk/generator/shape::to-query-params "nextToken"
+    (aws-sdk/generator/shape::to-query-params "NextToken"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'next-token)))
-    (aws-sdk/generator/shape::to-query-params "ruleDisabled"
+    (aws-sdk/generator/shape::to-query-params "RuleDisabled"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2998,12 +2998,12 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'verification-certificate)))
-    (aws-sdk/generator/shape::to-query-params "setAsActive"
+    (aws-sdk/generator/shape::to-query-params "SetAsActive"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'set-as-active)))
-    (aws-sdk/generator/shape::to-query-params "allowAutoRegistration"
+    (aws-sdk/generator/shape::to-query-params "AllowAutoRegistration"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3062,7 +3062,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'ca-certificate-pem)))
-    (aws-sdk/generator/shape::to-query-params "setAsActive"
+    (aws-sdk/generator/shape::to-query-params "SetAsActive"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3132,7 +3132,7 @@
                          (aws-sdk/generator/shape::shape
                           reject-certificate-transfer-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "certificateId"
+    (aws-sdk/generator/shape::to-query-params "CertificateId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3157,7 +3157,7 @@
                          (aws-sdk/generator/shape::shape
                           replace-topic-rule-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ruleName"
+    (aws-sdk/generator/shape::to-query-params "RuleName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3342,12 +3342,12 @@
                          (aws-sdk/generator/shape::shape
                           set-default-policy-version-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "policyName"
+    (aws-sdk/generator/shape::to-query-params "PolicyName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'policy-name)))
-    (aws-sdk/generator/shape::to-query-params "policyVersionId"
+    (aws-sdk/generator/shape::to-query-params "PolicyVersionId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3780,12 +3780,12 @@
                          (aws-sdk/generator/shape::shape
                           transfer-certificate-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "certificateId"
+    (aws-sdk/generator/shape::to-query-params "CertificateId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'certificate-id)))
-    (aws-sdk/generator/shape::to-query-params "targetAwsAccount"
+    (aws-sdk/generator/shape::to-query-params "TargetAwsAccount"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3905,17 +3905,17 @@
                          (aws-sdk/generator/shape::shape
                           update-cacertificate-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "certificateId"
+    (aws-sdk/generator/shape::to-query-params "CaCertificateId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'certificate-id)))
-    (aws-sdk/generator/shape::to-query-params "newStatus"
+    (aws-sdk/generator/shape::to-query-params "NewStatus"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'new-status)))
-    (aws-sdk/generator/shape::to-query-params "newAutoRegistrationStatus"
+    (aws-sdk/generator/shape::to-query-params "NewAutoRegistrationStatus"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3934,12 +3934,12 @@
                          (aws-sdk/generator/shape::shape
                           update-certificate-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "certificateId"
+    (aws-sdk/generator/shape::to-query-params "CertificateId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'certificate-id)))
-    (aws-sdk/generator/shape::to-query-params "newStatus"
+    (aws-sdk/generator/shape::to-query-params "NewStatus"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3961,7 +3961,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape update-thing-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "thingName"
+    (aws-sdk/generator/shape::to-query-params "ThingName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4050,8 +4050,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"AcceptCertificateTransfer")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'accept-certificate-transfer))
 (common-lisp:progn
@@ -4068,8 +4069,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"AttachPrincipalPolicy")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'attach-principal-policy))
 (common-lisp:progn
@@ -4086,8 +4088,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"AttachThingPrincipal")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "AttachThingPrincipalResponse" common-lisp:nil)))
  (common-lisp:export 'attach-thing-principal))
 (common-lisp:progn
@@ -4105,8 +4108,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CancelCertificateTransfer")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'cancel-certificate-transfer))
 (common-lisp:progn
@@ -4126,8 +4130,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateCertificateFromCsr")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateCertificateFromCsrResponse" common-lisp:nil)))
  (common-lisp:export 'create-certificate-from-csr))
 (common-lisp:progn
@@ -4145,8 +4150,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateKeysAndCertificate")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateKeysAndCertificateResponse" common-lisp:nil)))
  (common-lisp:export 'create-keys-and-certificate))
 (common-lisp:progn
@@ -4163,8 +4169,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreatePolicy")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreatePolicyResponse" common-lisp:nil)))
  (common-lisp:export 'create-policy))
 (common-lisp:progn
@@ -4183,8 +4190,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreatePolicyVersion")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreatePolicyVersionResponse" common-lisp:nil)))
  (common-lisp:export 'create-policy-version))
 (common-lisp:progn
@@ -4203,8 +4211,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateThing")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateThingResponse" common-lisp:nil)))
  (common-lisp:export 'create-thing))
 (common-lisp:progn
@@ -4222,8 +4231,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateThingType")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateThingTypeResponse" common-lisp:nil)))
  (common-lisp:export 'create-thing-type))
 (common-lisp:progn
@@ -4240,8 +4250,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateTopicRule")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'create-topic-rule))
 (common-lisp:progn
@@ -4258,8 +4269,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteCACertificate")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteCACertificateResponse" common-lisp:nil)))
  (common-lisp:export 'delete-cacertificate))
 (common-lisp:progn
@@ -4276,8 +4288,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteCertificate")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-certificate))
 (common-lisp:progn
@@ -4294,8 +4307,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeletePolicy")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-policy))
 (common-lisp:progn
@@ -4312,8 +4326,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeletePolicyVersion")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-policy-version))
 (common-lisp:progn
@@ -4339,8 +4354,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteThing")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteThingResponse" common-lisp:nil)))
  (common-lisp:export 'delete-thing))
 (common-lisp:progn
@@ -4357,8 +4373,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteThingType")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteThingTypeResponse" common-lisp:nil)))
  (common-lisp:export 'delete-thing-type))
 (common-lisp:progn
@@ -4375,8 +4392,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteTopicRule")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-topic-rule))
 (common-lisp:progn
@@ -4393,8 +4411,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeprecateThingType")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeprecateThingTypeResponse" common-lisp:nil)))
  (common-lisp:export 'deprecate-thing-type))
 (common-lisp:progn
@@ -4411,8 +4430,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeCACertificate")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeCACertificateResponse" common-lisp:nil)))
  (common-lisp:export 'describe-cacertificate))
 (common-lisp:progn
@@ -4429,8 +4449,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeCertificate")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeCertificateResponse" common-lisp:nil)))
  (common-lisp:export 'describe-certificate))
 (common-lisp:progn
@@ -4455,8 +4476,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeThing")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeThingResponse" common-lisp:nil)))
  (common-lisp:export 'describe-thing))
 (common-lisp:progn
@@ -4473,8 +4495,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeThingType")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeThingTypeResponse" common-lisp:nil)))
  (common-lisp:export 'describe-thing-type))
 (common-lisp:progn
@@ -4491,8 +4514,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DetachPrincipalPolicy")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'detach-principal-policy))
 (common-lisp:progn
@@ -4509,8 +4533,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DetachThingPrincipal")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DetachThingPrincipalResponse" common-lisp:nil)))
  (common-lisp:export 'detach-thing-principal))
 (common-lisp:progn
@@ -4527,8 +4552,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DisableTopicRule")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'disable-topic-rule))
 (common-lisp:progn
@@ -4545,8 +4571,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"EnableTopicRule")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'enable-topic-rule))
 (common-lisp:progn
@@ -4571,8 +4598,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetPolicy")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetPolicyResponse" common-lisp:nil)))
  (common-lisp:export 'get-policy))
 (common-lisp:progn
@@ -4589,8 +4617,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetPolicyVersion")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetPolicyVersionResponse" common-lisp:nil)))
  (common-lisp:export 'get-policy-version))
 (common-lisp:progn
@@ -4616,8 +4645,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetTopicRule")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetTopicRuleResponse" common-lisp:nil)))
  (common-lisp:export 'get-topic-rule))
 (common-lisp:progn
@@ -4635,8 +4665,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListCACertificates")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListCACertificatesResponse" common-lisp:nil)))
  (common-lisp:export 'list-cacertificates))
 (common-lisp:progn
@@ -4654,8 +4685,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListCertificates")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListCertificatesResponse" common-lisp:nil)))
  (common-lisp:export 'list-certificates))
 (common-lisp:progn
@@ -4674,8 +4706,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListCertificatesByCA")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListCertificatesByCAResponse" common-lisp:nil)))
  (common-lisp:export 'list-certificates-by-ca))
 (common-lisp:progn
@@ -4694,8 +4727,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListOutgoingCertificates")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListOutgoingCertificatesResponse" common-lisp:nil)))
  (common-lisp:export 'list-outgoing-certificates))
 (common-lisp:progn
@@ -4713,8 +4747,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListPolicies")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListPoliciesResponse" common-lisp:nil)))
  (common-lisp:export 'list-policies))
 (common-lisp:progn
@@ -4733,8 +4768,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListPolicyPrincipals")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListPolicyPrincipalsResponse" common-lisp:nil)))
  (common-lisp:export 'list-policy-principals))
 (common-lisp:progn
@@ -4751,8 +4787,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListPolicyVersions")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListPolicyVersionsResponse" common-lisp:nil)))
  (common-lisp:export 'list-policy-versions))
 (common-lisp:progn
@@ -4771,8 +4808,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListPrincipalPolicies")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListPrincipalPoliciesResponse" common-lisp:nil)))
  (common-lisp:export 'list-principal-policies))
 (common-lisp:progn
@@ -4790,8 +4828,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListPrincipalThings")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListPrincipalThingsResponse" common-lisp:nil)))
  (common-lisp:export 'list-principal-things))
 (common-lisp:progn
@@ -4808,8 +4847,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListThingPrincipals")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListThingPrincipalsResponse" common-lisp:nil)))
  (common-lisp:export 'list-thing-principals))
 (common-lisp:progn
@@ -4827,8 +4867,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListThingTypes")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListThingTypesResponse" common-lisp:nil)))
  (common-lisp:export 'list-thing-types))
 (common-lisp:progn
@@ -4848,8 +4889,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListThings")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListThingsResponse" common-lisp:nil)))
  (common-lisp:export 'list-things))
 (common-lisp:progn
@@ -4868,8 +4910,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListTopicRules")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListTopicRulesResponse" common-lisp:nil)))
  (common-lisp:export 'list-topic-rules))
 (common-lisp:progn
@@ -4889,8 +4932,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"RegisterCACertificate")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "RegisterCACertificateResponse" common-lisp:nil)))
  (common-lisp:export 'register-cacertificate))
 (common-lisp:progn
@@ -4910,8 +4954,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"RegisterCertificate")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "RegisterCertificateResponse" common-lisp:nil)))
  (common-lisp:export 'register-certificate))
 (common-lisp:progn
@@ -4929,8 +4974,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"RejectCertificateTransfer")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'reject-certificate-transfer))
 (common-lisp:progn
@@ -4947,8 +4993,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ReplaceTopicRule")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'replace-topic-rule))
 (common-lisp:progn
@@ -4966,8 +5013,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"SetDefaultPolicyVersion")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'set-default-policy-version))
 (common-lisp:progn
@@ -4984,8 +5032,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"SetLoggingOptions")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'set-logging-options))
 (common-lisp:progn
@@ -5004,8 +5053,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"TransferCertificate")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "TransferCertificateResponse" common-lisp:nil)))
  (common-lisp:export 'transfer-certificate))
 (common-lisp:progn
@@ -5025,8 +5075,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateCACertificate")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'update-cacertificate))
 (common-lisp:progn
@@ -5043,8 +5094,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateCertificate")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'update-certificate))
 (common-lisp:progn
@@ -5064,7 +5116,8 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateThing")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateThingResponse" common-lisp:nil)))
  (common-lisp:export 'update-thing))

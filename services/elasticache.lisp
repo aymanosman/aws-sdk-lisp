@@ -4693,8 +4693,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"AddTagsToResource")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "TagListMessage" "AddTagsToResourceResult")))
  (common-lisp:export 'add-tags-to-resource))
 (common-lisp:progn
@@ -4716,8 +4717,9 @@
                                 `(("Action"
                                    ,@"AuthorizeCacheSecurityGroupIngress")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "AuthorizeCacheSecurityGroupIngressResult"
       "AuthorizeCacheSecurityGroupIngressResult")))
  (common-lisp:export 'authorize-cache-security-group-ingress))
@@ -4738,8 +4740,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CopySnapshot")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CopySnapshotResult" "CopySnapshotResult")))
  (common-lisp:export 'copy-snapshot))
 (common-lisp:progn
@@ -4771,8 +4774,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateCacheCluster")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateCacheClusterResult" "CreateCacheClusterResult")))
  (common-lisp:export 'create-cache-cluster))
 (common-lisp:progn
@@ -4793,8 +4797,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateCacheParameterGroup")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateCacheParameterGroupResult" "CreateCacheParameterGroupResult")))
  (common-lisp:export 'create-cache-parameter-group))
 (common-lisp:progn
@@ -4813,8 +4818,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateCacheSecurityGroup")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateCacheSecurityGroupResult" "CreateCacheSecurityGroupResult")))
  (common-lisp:export 'create-cache-security-group))
 (common-lisp:progn
@@ -4835,8 +4841,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateCacheSubnetGroup")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateCacheSubnetGroupResult" "CreateCacheSubnetGroupResult")))
  (common-lisp:export 'create-cache-subnet-group))
 (common-lisp:progn
@@ -4872,8 +4879,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateReplicationGroup")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateReplicationGroupResult" "CreateReplicationGroupResult")))
  (common-lisp:export 'create-replication-group))
 (common-lisp:progn
@@ -4893,8 +4901,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateSnapshot")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateSnapshotResult" "CreateSnapshotResult")))
  (common-lisp:export 'create-snapshot))
 (common-lisp:progn
@@ -4913,8 +4922,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteCacheCluster")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteCacheClusterResult" "DeleteCacheClusterResult")))
  (common-lisp:export 'delete-cache-cluster))
 (common-lisp:progn
@@ -4932,8 +4942,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteCacheParameterGroup")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-cache-parameter-group))
 (common-lisp:progn
@@ -4951,8 +4962,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteCacheSecurityGroup")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-cache-security-group))
 (common-lisp:progn
@@ -4970,8 +4982,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteCacheSubnetGroup")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-cache-subnet-group))
 (common-lisp:progn
@@ -4991,8 +5004,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteReplicationGroup")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteReplicationGroupResult" "DeleteReplicationGroupResult")))
  (common-lisp:export 'delete-replication-group))
 (common-lisp:progn
@@ -5009,8 +5023,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteSnapshot")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteSnapshotResult" "DeleteSnapshotResult")))
  (common-lisp:export 'delete-snapshot))
 (common-lisp:progn
@@ -5031,8 +5046,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeCacheClusters")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CacheClusterMessage" "DescribeCacheClustersResult")))
  (common-lisp:export 'describe-cache-clusters))
 (common-lisp:progn
@@ -5054,8 +5070,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeCacheEngineVersions")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CacheEngineVersionMessage" "DescribeCacheEngineVersionsResult")))
  (common-lisp:export 'describe-cache-engine-versions))
 (common-lisp:progn
@@ -5075,8 +5092,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeCacheParameterGroups")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CacheParameterGroupsMessage" "DescribeCacheParameterGroupsResult")))
  (common-lisp:export 'describe-cache-parameter-groups))
 (common-lisp:progn
@@ -5097,8 +5115,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeCacheParameters")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CacheParameterGroupDetails" "DescribeCacheParametersResult")))
  (common-lisp:export 'describe-cache-parameters))
 (common-lisp:progn
@@ -5118,8 +5137,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeCacheSecurityGroups")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CacheSecurityGroupMessage" "DescribeCacheSecurityGroupsResult")))
  (common-lisp:export 'describe-cache-security-groups))
 (common-lisp:progn
@@ -5139,8 +5159,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeCacheSubnetGroups")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CacheSubnetGroupMessage" "DescribeCacheSubnetGroupsResult")))
  (common-lisp:export 'describe-cache-subnet-groups))
 (common-lisp:progn
@@ -5161,8 +5182,9 @@
                                 `(("Action"
                                    ,@"DescribeEngineDefaultParameters")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeEngineDefaultParametersResult"
       "DescribeEngineDefaultParametersResult")))
  (common-lisp:export 'describe-engine-default-parameters))
@@ -5183,8 +5205,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeEvents")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "EventsMessage" "DescribeEventsResult")))
  (common-lisp:export 'describe-events))
 (common-lisp:progn
@@ -5203,8 +5226,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeReplicationGroups")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ReplicationGroupMessage" "DescribeReplicationGroupsResult")))
  (common-lisp:export 'describe-replication-groups))
 (common-lisp:progn
@@ -5227,8 +5251,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeReservedCacheNodes")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ReservedCacheNodeMessage" "DescribeReservedCacheNodesResult")))
  (common-lisp:export 'describe-reserved-cache-nodes))
 (common-lisp:progn
@@ -5251,8 +5276,9 @@
                                 `(("Action"
                                    ,@"DescribeReservedCacheNodesOfferings")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ReservedCacheNodesOfferingMessage"
       "DescribeReservedCacheNodesOfferingsResult")))
  (common-lisp:export 'describe-reserved-cache-nodes-offerings))
@@ -5274,8 +5300,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeSnapshots")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeSnapshotsListMessage" "DescribeSnapshotsResult")))
  (common-lisp:export 'describe-snapshots))
 (common-lisp:progn
@@ -5295,8 +5322,9 @@
                                 `(("Action"
                                    ,@"ListAllowedNodeTypeModifications")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "AllowedNodeTypeModificationsMessage"
       "ListAllowedNodeTypeModificationsResult")))
  (common-lisp:export 'list-allowed-node-type-modifications))
@@ -5314,8 +5342,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListTagsForResource")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "TagListMessage" "ListTagsForResourceResult")))
  (common-lisp:export 'list-tags-for-resource))
 (common-lisp:progn
@@ -5346,8 +5375,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ModifyCacheCluster")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ModifyCacheClusterResult" "ModifyCacheClusterResult")))
  (common-lisp:export 'modify-cache-cluster))
 (common-lisp:progn
@@ -5367,8 +5397,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ModifyCacheParameterGroup")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CacheParameterGroupNameMessage" "ModifyCacheParameterGroupResult")))
  (common-lisp:export 'modify-cache-parameter-group))
 (common-lisp:progn
@@ -5389,8 +5420,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ModifyCacheSubnetGroup")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ModifyCacheSubnetGroupResult" "ModifyCacheSubnetGroupResult")))
  (common-lisp:export 'modify-cache-subnet-group))
 (common-lisp:progn
@@ -5422,8 +5454,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ModifyReplicationGroup")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ModifyReplicationGroupResult" "ModifyReplicationGroupResult")))
  (common-lisp:export 'modify-replication-group))
 (common-lisp:progn
@@ -5445,8 +5478,9 @@
                                 `(("Action"
                                    ,@"PurchaseReservedCacheNodesOffering")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "PurchaseReservedCacheNodesOfferingResult"
       "PurchaseReservedCacheNodesOfferingResult")))
  (common-lisp:export 'purchase-reserved-cache-nodes-offering))
@@ -5466,8 +5500,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"RebootCacheCluster")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "RebootCacheClusterResult" "RebootCacheClusterResult")))
  (common-lisp:export 'reboot-cache-cluster))
 (common-lisp:progn
@@ -5485,8 +5520,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"RemoveTagsFromResource")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "TagListMessage" "RemoveTagsFromResourceResult")))
  (common-lisp:export 'remove-tags-from-resource))
 (common-lisp:progn
@@ -5507,8 +5543,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ResetCacheParameterGroup")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CacheParameterGroupNameMessage" "ResetCacheParameterGroupResult")))
  (common-lisp:export 'reset-cache-parameter-group))
 (common-lisp:progn
@@ -5530,8 +5567,9 @@
                                 `(("Action"
                                    ,@"RevokeCacheSecurityGroupIngress")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "RevokeCacheSecurityGroupIngressResult"
       "RevokeCacheSecurityGroupIngressResult")))
  (common-lisp:export 'revoke-cache-security-group-ingress))
@@ -5550,7 +5588,8 @@
                                (common-lisp:append
                                 `(("Action" ,@"TestFailover")
                                   ("Version" ,@"2015-02-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "TestFailoverResult" "TestFailoverResult")))
  (common-lisp:export 'test-failover))

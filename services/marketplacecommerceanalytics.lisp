@@ -219,8 +219,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GenerateDataSet")
                                   ("Version" ,@"2015-07-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GenerateDataSetResult" common-lisp:nil)))
  (common-lisp:export 'generate-data-set))
 (common-lisp:progn
@@ -244,7 +245,8 @@
                                (common-lisp:append
                                 `(("Action" ,@"StartSupportDataExport")
                                   ("Version" ,@"2015-07-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "StartSupportDataExportResult" common-lisp:nil)))
  (common-lisp:export 'start-support-data-export))

@@ -109,12 +109,12 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'events)))
-    (aws-sdk/generator/shape::to-query-params "clientContext"
+    (aws-sdk/generator/shape::to-query-params "X-amz-Client-Context"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'client-context)))
-    (aws-sdk/generator/shape::to-query-params "clientContextEncoding"
+    (aws-sdk/generator/shape::to-query-params "X-amz-Client-Context-Encoding"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -171,7 +171,8 @@
                                (common-lisp:append
                                 `(("Action" ,@"PutEvents")
                                   ("Version" ,@"2014-06-05"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'put-events))

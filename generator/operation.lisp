@@ -2,7 +2,8 @@
   (:use #:cl
         #:aws-sdk/utils)
   (:import-from #:aws-sdk/generator/shape
-                #:shape-to-params)
+                #:shape-to-params
+                #:*protocol*)
   (:import-from #:aws-sdk/api
                 #:aws-request)
   (:import-from #:assoc-utils
@@ -44,7 +45,11 @@
                   (aws-request :service ,service
                                :method ,(intern (gethash "method" (gethash "http" options)) :keyword)
                                :params (append `(("Action" . ,,name) ("Version" . ,,version))
-                                               (shape-to-params input)))
+                                               (let ,(cond
+                                                       ((equal "ec2" service)
+                                                        '((*protocol* :ec2)))
+                                                       (t '()))
+                                                 (shape-to-params input))))
                   ,(and output
                         (gethash "shape" output))
                   ,(and output

@@ -1766,8 +1766,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CheckDomainAvailability")
                                   ("Version" ,@"2014-05-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CheckDomainAvailabilityResponse" common-lisp:nil)))
  (common-lisp:export 'check-domain-availability))
 (common-lisp:progn
@@ -1784,8 +1785,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteTagsForDomain")
                                   ("Version" ,@"2014-05-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteTagsForDomainResponse" common-lisp:nil)))
  (common-lisp:export 'delete-tags-for-domain))
 (common-lisp:progn
@@ -1803,8 +1805,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DisableDomainAutoRenew")
                                   ("Version" ,@"2014-05-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DisableDomainAutoRenewResponse" common-lisp:nil)))
  (common-lisp:export 'disable-domain-auto-renew))
 (common-lisp:progn
@@ -1822,8 +1825,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DisableDomainTransferLock")
                                   ("Version" ,@"2014-05-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DisableDomainTransferLockResponse" common-lisp:nil)))
  (common-lisp:export 'disable-domain-transfer-lock))
 (common-lisp:progn
@@ -1840,8 +1844,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"EnableDomainAutoRenew")
                                   ("Version" ,@"2014-05-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "EnableDomainAutoRenewResponse" common-lisp:nil)))
  (common-lisp:export 'enable-domain-auto-renew))
 (common-lisp:progn
@@ -1859,8 +1864,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"EnableDomainTransferLock")
                                   ("Version" ,@"2014-05-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "EnableDomainTransferLockResponse" common-lisp:nil)))
  (common-lisp:export 'enable-domain-transfer-lock))
 (common-lisp:progn
@@ -1878,8 +1884,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetContactReachabilityStatus")
                                   ("Version" ,@"2014-05-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetContactReachabilityStatusResponse" common-lisp:nil)))
  (common-lisp:export 'get-contact-reachability-status))
 (common-lisp:progn
@@ -1896,8 +1903,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetDomainDetail")
                                   ("Version" ,@"2014-05-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetDomainDetailResponse" common-lisp:nil)))
  (common-lisp:export 'get-domain-detail))
 (common-lisp:progn
@@ -1916,8 +1924,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetDomainSuggestions")
                                   ("Version" ,@"2014-05-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetDomainSuggestionsResponse" common-lisp:nil)))
  (common-lisp:export 'get-domain-suggestions))
 (common-lisp:progn
@@ -1934,8 +1943,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetOperationDetail")
                                   ("Version" ,@"2014-05-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetOperationDetailResponse" common-lisp:nil)))
  (common-lisp:export 'get-operation-detail))
 (common-lisp:progn
@@ -1952,8 +1962,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListDomains")
                                   ("Version" ,@"2014-05-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListDomainsResponse" common-lisp:nil)))
  (common-lisp:export 'list-domains))
 (common-lisp:progn
@@ -1970,8 +1981,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListOperations")
                                   ("Version" ,@"2014-05-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListOperationsResponse" common-lisp:nil)))
  (common-lisp:export 'list-operations))
 (common-lisp:progn
@@ -1988,8 +2000,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListTagsForDomain")
                                   ("Version" ,@"2014-05-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListTagsForDomainResponse" common-lisp:nil)))
  (common-lisp:export 'list-tags-for-domain))
 (common-lisp:progn
@@ -2015,8 +2028,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"RegisterDomain")
                                   ("Version" ,@"2014-05-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "RegisterDomainResponse" common-lisp:nil)))
  (common-lisp:export 'register-domain))
 (common-lisp:progn
@@ -2035,8 +2049,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"RenewDomain")
                                   ("Version" ,@"2014-05-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "RenewDomainResponse" common-lisp:nil)))
  (common-lisp:export 'renew-domain))
 (common-lisp:progn
@@ -2054,8 +2069,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ResendContactReachabilityEmail")
                                   ("Version" ,@"2014-05-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ResendContactReachabilityEmailResponse" common-lisp:nil)))
  (common-lisp:export 'resend-contact-reachability-email))
 (common-lisp:progn
@@ -2073,8 +2089,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"RetrieveDomainAuthCode")
                                   ("Version" ,@"2014-05-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "RetrieveDomainAuthCodeResponse" common-lisp:nil)))
  (common-lisp:export 'retrieve-domain-auth-code))
 (common-lisp:progn
@@ -2100,8 +2117,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"TransferDomain")
                                   ("Version" ,@"2014-05-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "TransferDomainResponse" common-lisp:nil)))
  (common-lisp:export 'transfer-domain))
 (common-lisp:progn
@@ -2121,8 +2139,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateDomainContact")
                                   ("Version" ,@"2014-05-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateDomainContactResponse" common-lisp:nil)))
  (common-lisp:export 'update-domain-contact))
 (common-lisp:progn
@@ -2143,8 +2162,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateDomainContactPrivacy")
                                   ("Version" ,@"2014-05-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateDomainContactPrivacyResponse" common-lisp:nil)))
  (common-lisp:export 'update-domain-contact-privacy))
 (common-lisp:progn
@@ -2163,8 +2183,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateDomainNameservers")
                                   ("Version" ,@"2014-05-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateDomainNameserversResponse" common-lisp:nil)))
  (common-lisp:export 'update-domain-nameservers))
 (common-lisp:progn
@@ -2181,8 +2202,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateTagsForDomain")
                                   ("Version" ,@"2014-05-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateTagsForDomainResponse" common-lisp:nil)))
  (common-lisp:export 'update-tags-for-domain))
 (common-lisp:progn
@@ -2199,7 +2221,8 @@
                                (common-lisp:append
                                 `(("Action" ,@"ViewBilling")
                                   ("Version" ,@"2014-05-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ViewBillingResponse" common-lisp:nil)))
  (common-lisp:export 'view-billing))

@@ -7169,8 +7169,9 @@
                                 `(("Action"
                                    ,@"AddClientIDToOpenIDConnectProvider")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'add-client-idto-open-idconnect-provider))
 (common-lisp:progn
@@ -7189,8 +7190,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"AddRoleToInstanceProfile")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'add-role-to-instance-profile))
 (common-lisp:progn
@@ -7207,8 +7209,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"AddUserToGroup")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'add-user-to-group))
 (common-lisp:progn
@@ -7225,8 +7228,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"AttachGroupPolicy")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'attach-group-policy))
 (common-lisp:progn
@@ -7243,8 +7247,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"AttachRolePolicy")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'attach-role-policy))
 (common-lisp:progn
@@ -7261,8 +7266,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"AttachUserPolicy")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'attach-user-policy))
 (common-lisp:progn
@@ -7279,8 +7285,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ChangePassword")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'change-password))
 (common-lisp:progn
@@ -7297,8 +7304,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateAccessKey")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateAccessKeyResponse" "CreateAccessKeyResult")))
  (common-lisp:export 'create-access-key))
 (common-lisp:progn
@@ -7315,8 +7323,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateAccountAlias")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'create-account-alias))
 (common-lisp:progn
@@ -7333,8 +7342,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateGroup")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateGroupResponse" "CreateGroupResult")))
  (common-lisp:export 'create-group))
 (common-lisp:progn
@@ -7351,8 +7361,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateInstanceProfile")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateInstanceProfileResponse" "CreateInstanceProfileResult")))
  (common-lisp:export 'create-instance-profile))
 (common-lisp:progn
@@ -7371,8 +7382,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateLoginProfile")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateLoginProfileResponse" "CreateLoginProfileResult")))
  (common-lisp:export 'create-login-profile))
 (common-lisp:progn
@@ -7391,8 +7403,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateOpenIDConnectProvider")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateOpenIDConnectProviderResponse"
       "CreateOpenIDConnectProviderResult")))
  (common-lisp:export 'create-open-idconnect-provider))
@@ -7412,8 +7425,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreatePolicy")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreatePolicyResponse" "CreatePolicyResult")))
  (common-lisp:export 'create-policy))
 (common-lisp:progn
@@ -7432,8 +7446,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreatePolicyVersion")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreatePolicyVersionResponse" "CreatePolicyVersionResult")))
  (common-lisp:export 'create-policy-version))
 (common-lisp:progn
@@ -7453,8 +7468,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateRole")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateRoleResponse" "CreateRoleResult")))
  (common-lisp:export 'create-role))
 (common-lisp:progn
@@ -7471,8 +7487,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateSAMLProvider")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateSAMLProviderResponse" "CreateSAMLProviderResult")))
  (common-lisp:export 'create-samlprovider))
 (common-lisp:progn
@@ -7492,8 +7509,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateServiceLinkedRole")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateServiceLinkedRoleResponse" "CreateServiceLinkedRoleResult")))
  (common-lisp:export 'create-service-linked-role))
 (common-lisp:progn
@@ -7512,8 +7530,9 @@
                                 `(("Action"
                                    ,@"CreateServiceSpecificCredential")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateServiceSpecificCredentialResponse"
       "CreateServiceSpecificCredentialResult")))
  (common-lisp:export 'create-service-specific-credential))
@@ -7531,8 +7550,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateUser")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateUserResponse" "CreateUserResult")))
  (common-lisp:export 'create-user))
 (common-lisp:progn
@@ -7549,8 +7569,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateVirtualMFADevice")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateVirtualMFADeviceResponse" "CreateVirtualMFADeviceResult")))
  (common-lisp:export 'create-virtual-mfadevice))
 (common-lisp:progn
@@ -7567,8 +7588,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeactivateMFADevice")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'deactivate-mfadevice))
 (common-lisp:progn
@@ -7585,8 +7607,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteAccessKey")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-access-key))
 (common-lisp:progn
@@ -7603,8 +7626,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteAccountAlias")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-account-alias))
 (common-lisp:progn
@@ -7630,8 +7654,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteGroup")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-group))
 (common-lisp:progn
@@ -7648,8 +7673,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteGroupPolicy")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-group-policy))
 (common-lisp:progn
@@ -7666,8 +7692,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteInstanceProfile")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-instance-profile))
 (common-lisp:progn
@@ -7684,8 +7711,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteLoginProfile")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-login-profile))
 (common-lisp:progn
@@ -7703,8 +7731,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteOpenIDConnectProvider")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-open-idconnect-provider))
 (common-lisp:progn
@@ -7721,8 +7750,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeletePolicy")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-policy))
 (common-lisp:progn
@@ -7739,8 +7769,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeletePolicyVersion")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-policy-version))
 (common-lisp:progn
@@ -7757,8 +7788,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteRole")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-role))
 (common-lisp:progn
@@ -7775,8 +7807,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteRolePolicy")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-role-policy))
 (common-lisp:progn
@@ -7793,8 +7826,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteSAMLProvider")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-samlprovider))
 (common-lisp:progn
@@ -7811,8 +7845,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteSSHPublicKey")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-sshpublic-key))
 (common-lisp:progn
@@ -7830,8 +7865,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteServerCertificate")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-server-certificate))
 (common-lisp:progn
@@ -7851,8 +7887,9 @@
                                 `(("Action"
                                    ,@"DeleteServiceSpecificCredential")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-service-specific-credential))
 (common-lisp:progn
@@ -7870,8 +7907,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteSigningCertificate")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-signing-certificate))
 (common-lisp:progn
@@ -7888,8 +7926,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteUser")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-user))
 (common-lisp:progn
@@ -7906,8 +7945,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteUserPolicy")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-user-policy))
 (common-lisp:progn
@@ -7924,8 +7964,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteVirtualMFADevice")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-virtual-mfadevice))
 (common-lisp:progn
@@ -7942,8 +7983,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DetachGroupPolicy")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'detach-group-policy))
 (common-lisp:progn
@@ -7960,8 +8002,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DetachRolePolicy")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'detach-role-policy))
 (common-lisp:progn
@@ -7978,8 +8021,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DetachUserPolicy")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'detach-user-policy))
 (common-lisp:progn
@@ -7999,8 +8043,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"EnableMFADevice")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'enable-mfadevice))
 (common-lisp:progn
@@ -8026,8 +8071,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetAccessKeyLastUsed")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetAccessKeyLastUsedResponse" "GetAccessKeyLastUsedResult")))
  (common-lisp:export 'get-access-key-last-used))
 (common-lisp:progn
@@ -8045,8 +8091,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetAccountAuthorizationDetails")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetAccountAuthorizationDetailsResponse"
       "GetAccountAuthorizationDetailsResult")))
  (common-lisp:export 'get-account-authorization-details))
@@ -8082,8 +8129,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetContextKeysForCustomPolicy")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetContextKeysForPolicyResponse"
       "GetContextKeysForCustomPolicyResult")))
  (common-lisp:export 'get-context-keys-for-custom-policy))
@@ -8104,8 +8152,9 @@
                                 `(("Action"
                                    ,@"GetContextKeysForPrincipalPolicy")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetContextKeysForPolicyResponse"
       "GetContextKeysForPrincipalPolicyResult")))
  (common-lisp:export 'get-context-keys-for-principal-policy))
@@ -8132,8 +8181,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetGroup")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetGroupResponse" "GetGroupResult")))
  (common-lisp:export 'get-group))
 (common-lisp:progn
@@ -8150,8 +8200,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetGroupPolicy")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetGroupPolicyResponse" "GetGroupPolicyResult")))
  (common-lisp:export 'get-group-policy))
 (common-lisp:progn
@@ -8168,8 +8219,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetInstanceProfile")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetInstanceProfileResponse" "GetInstanceProfileResult")))
  (common-lisp:export 'get-instance-profile))
 (common-lisp:progn
@@ -8186,8 +8238,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetLoginProfile")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetLoginProfileResponse" "GetLoginProfileResult")))
  (common-lisp:export 'get-login-profile))
 (common-lisp:progn
@@ -8205,8 +8258,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetOpenIDConnectProvider")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetOpenIDConnectProviderResponse" "GetOpenIDConnectProviderResult")))
  (common-lisp:export 'get-open-idconnect-provider))
 (common-lisp:progn
@@ -8223,8 +8277,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetPolicy")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetPolicyResponse" "GetPolicyResult")))
  (common-lisp:export 'get-policy))
 (common-lisp:progn
@@ -8241,8 +8296,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetPolicyVersion")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetPolicyVersionResponse" "GetPolicyVersionResult")))
  (common-lisp:export 'get-policy-version))
 (common-lisp:progn
@@ -8259,8 +8315,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetRole")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetRoleResponse" "GetRoleResult")))
  (common-lisp:export 'get-role))
 (common-lisp:progn
@@ -8277,8 +8334,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetRolePolicy")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetRolePolicyResponse" "GetRolePolicyResult")))
  (common-lisp:export 'get-role-policy))
 (common-lisp:progn
@@ -8295,8 +8353,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetSAMLProvider")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetSAMLProviderResponse" "GetSAMLProviderResult")))
  (common-lisp:export 'get-samlprovider))
 (common-lisp:progn
@@ -8314,8 +8373,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetSSHPublicKey")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetSSHPublicKeyResponse" "GetSSHPublicKeyResult")))
  (common-lisp:export 'get-sshpublic-key))
 (common-lisp:progn
@@ -8332,8 +8392,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetServerCertificate")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetServerCertificateResponse" "GetServerCertificateResult")))
  (common-lisp:export 'get-server-certificate))
 (common-lisp:progn
@@ -8350,8 +8411,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetUser")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetUserResponse" "GetUserResult")))
  (common-lisp:export 'get-user))
 (common-lisp:progn
@@ -8368,8 +8430,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetUserPolicy")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetUserPolicyResponse" "GetUserPolicyResult")))
  (common-lisp:export 'get-user-policy))
 (common-lisp:progn
@@ -8386,8 +8449,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListAccessKeys")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListAccessKeysResponse" "ListAccessKeysResult")))
  (common-lisp:export 'list-access-keys))
 (common-lisp:progn
@@ -8404,8 +8468,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListAccountAliases")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListAccountAliasesResponse" "ListAccountAliasesResult")))
  (common-lisp:export 'list-account-aliases))
 (common-lisp:progn
@@ -8424,8 +8489,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListAttachedGroupPolicies")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListAttachedGroupPoliciesResponse" "ListAttachedGroupPoliciesResult")))
  (common-lisp:export 'list-attached-group-policies))
 (common-lisp:progn
@@ -8444,8 +8510,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListAttachedRolePolicies")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListAttachedRolePoliciesResponse" "ListAttachedRolePoliciesResult")))
  (common-lisp:export 'list-attached-role-policies))
 (common-lisp:progn
@@ -8464,8 +8531,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListAttachedUserPolicies")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListAttachedUserPoliciesResponse" "ListAttachedUserPoliciesResult")))
  (common-lisp:export 'list-attached-user-policies))
 (common-lisp:progn
@@ -8485,8 +8553,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListEntitiesForPolicy")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListEntitiesForPolicyResponse" "ListEntitiesForPolicyResult")))
  (common-lisp:export 'list-entities-for-policy))
 (common-lisp:progn
@@ -8503,8 +8572,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListGroupPolicies")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListGroupPoliciesResponse" "ListGroupPoliciesResult")))
  (common-lisp:export 'list-group-policies))
 (common-lisp:progn
@@ -8521,8 +8591,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListGroups")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListGroupsResponse" "ListGroupsResult")))
  (common-lisp:export 'list-groups))
 (common-lisp:progn
@@ -8539,8 +8610,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListGroupsForUser")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListGroupsForUserResponse" "ListGroupsForUserResult")))
  (common-lisp:export 'list-groups-for-user))
 (common-lisp:progn
@@ -8557,8 +8629,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListInstanceProfiles")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListInstanceProfilesResponse" "ListInstanceProfilesResult")))
  (common-lisp:export 'list-instance-profiles))
 (common-lisp:progn
@@ -8576,8 +8649,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListInstanceProfilesForRole")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListInstanceProfilesForRoleResponse"
       "ListInstanceProfilesForRoleResult")))
  (common-lisp:export 'list-instance-profiles-for-role))
@@ -8595,8 +8669,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListMFADevices")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListMFADevicesResponse" "ListMFADevicesResult")))
  (common-lisp:export 'list-mfadevices))
 (common-lisp:progn
@@ -8624,8 +8699,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListPolicies")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListPoliciesResponse" "ListPoliciesResult")))
  (common-lisp:export 'list-policies))
 (common-lisp:progn
@@ -8642,8 +8718,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListPolicyVersions")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListPolicyVersionsResponse" "ListPolicyVersionsResult")))
  (common-lisp:export 'list-policy-versions))
 (common-lisp:progn
@@ -8660,8 +8737,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListRolePolicies")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListRolePoliciesResponse" "ListRolePoliciesResult")))
  (common-lisp:export 'list-role-policies))
 (common-lisp:progn
@@ -8678,8 +8756,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListRoles")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListRolesResponse" "ListRolesResult")))
  (common-lisp:export 'list-roles))
 (common-lisp:progn
@@ -8704,8 +8783,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListSSHPublicKeys")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListSSHPublicKeysResponse" "ListSSHPublicKeysResult")))
  (common-lisp:export 'list-sshpublic-keys))
 (common-lisp:progn
@@ -8722,8 +8802,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListServerCertificates")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListServerCertificatesResponse" "ListServerCertificatesResult")))
  (common-lisp:export 'list-server-certificates))
 (common-lisp:progn
@@ -8741,8 +8822,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListServiceSpecificCredentials")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListServiceSpecificCredentialsResponse"
       "ListServiceSpecificCredentialsResult")))
  (common-lisp:export 'list-service-specific-credentials))
@@ -8761,8 +8843,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListSigningCertificates")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListSigningCertificatesResponse" "ListSigningCertificatesResult")))
  (common-lisp:export 'list-signing-certificates))
 (common-lisp:progn
@@ -8779,8 +8862,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListUserPolicies")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListUserPoliciesResponse" "ListUserPoliciesResult")))
  (common-lisp:export 'list-user-policies))
 (common-lisp:progn
@@ -8797,8 +8881,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListUsers")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListUsersResponse" "ListUsersResult")))
  (common-lisp:export 'list-users))
 (common-lisp:progn
@@ -8816,8 +8901,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListVirtualMFADevices")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListVirtualMFADevicesResponse" "ListVirtualMFADevicesResult")))
  (common-lisp:export 'list-virtual-mfadevices))
 (common-lisp:progn
@@ -8835,8 +8921,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"PutGroupPolicy")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'put-group-policy))
 (common-lisp:progn
@@ -8854,8 +8941,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"PutRolePolicy")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'put-role-policy))
 (common-lisp:progn
@@ -8873,8 +8961,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"PutUserPolicy")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'put-user-policy))
 (common-lisp:progn
@@ -8894,8 +8983,9 @@
                                 `(("Action"
                                    ,@"RemoveClientIDFromOpenIDConnectProvider")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'remove-client-idfrom-open-idconnect-provider))
 (common-lisp:progn
@@ -8914,8 +9004,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"RemoveRoleFromInstanceProfile")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'remove-role-from-instance-profile))
 (common-lisp:progn
@@ -8932,8 +9023,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"RemoveUserFromGroup")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'remove-user-from-group))
 (common-lisp:progn
@@ -8952,8 +9044,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ResetServiceSpecificCredential")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ResetServiceSpecificCredentialResponse"
       "ResetServiceSpecificCredentialResult")))
  (common-lisp:export 'reset-service-specific-credential))
@@ -8974,8 +9067,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ResyncMFADevice")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'resync-mfadevice))
 (common-lisp:progn
@@ -8993,8 +9087,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"SetDefaultPolicyVersion")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'set-default-policy-version))
 (common-lisp:progn
@@ -9016,8 +9111,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"SimulateCustomPolicy")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "SimulatePolicyResponse" "SimulateCustomPolicyResult")))
  (common-lisp:export 'simulate-custom-policy))
 (common-lisp:progn
@@ -9041,8 +9137,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"SimulatePrincipalPolicy")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "SimulatePolicyResponse" "SimulatePrincipalPolicyResult")))
  (common-lisp:export 'simulate-principal-policy))
 (common-lisp:progn
@@ -9059,8 +9156,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateAccessKey")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'update-access-key))
 (common-lisp:progn
@@ -9086,8 +9184,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateAccountPasswordPolicy")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'update-account-password-policy))
 (common-lisp:progn
@@ -9105,8 +9204,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateAssumeRolePolicy")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'update-assume-role-policy))
 (common-lisp:progn
@@ -9124,8 +9224,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateGroup")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'update-group))
 (common-lisp:progn
@@ -9144,8 +9245,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateLoginProfile")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'update-login-profile))
 (common-lisp:progn
@@ -9166,8 +9268,9 @@
                                 `(("Action"
                                    ,@"UpdateOpenIDConnectProviderThumbprint")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'update-open-idconnect-provider-thumbprint))
 (common-lisp:progn
@@ -9184,8 +9287,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateRoleDescription")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateRoleDescriptionResponse" "UpdateRoleDescriptionResult")))
  (common-lisp:export 'update-role-description))
 (common-lisp:progn
@@ -9203,8 +9307,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateSAMLProvider")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateSAMLProviderResponse" "UpdateSAMLProviderResult")))
  (common-lisp:export 'update-samlprovider))
 (common-lisp:progn
@@ -9222,8 +9327,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateSSHPublicKey")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'update-sshpublic-key))
 (common-lisp:progn
@@ -9244,8 +9350,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateServerCertificate")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'update-server-certificate))
 (common-lisp:progn
@@ -9266,8 +9373,9 @@
                                 `(("Action"
                                    ,@"UpdateServiceSpecificCredential")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'update-service-specific-credential))
 (common-lisp:progn
@@ -9286,8 +9394,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateSigningCertificate")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'update-signing-certificate))
 (common-lisp:progn
@@ -9305,8 +9414,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateUser")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'update-user))
 (common-lisp:progn
@@ -9323,8 +9433,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UploadSSHPublicKey")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UploadSSHPublicKeyResponse" "UploadSSHPublicKeyResult")))
  (common-lisp:export 'upload-sshpublic-key))
 (common-lisp:progn
@@ -9345,8 +9456,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UploadServerCertificate")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UploadServerCertificateResponse" "UploadServerCertificateResult")))
  (common-lisp:export 'upload-server-certificate))
 (common-lisp:progn
@@ -9364,7 +9476,8 @@
                                (common-lisp:append
                                 `(("Action" ,@"UploadSigningCertificate")
                                   ("Version" ,@"2010-05-08"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UploadSigningCertificateResponse" "UploadSigningCertificateResult")))
  (common-lisp:export 'upload-signing-certificate))

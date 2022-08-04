@@ -23,7 +23,7 @@
                          (aws-sdk/generator/shape::shape
                           abort-document-version-upload-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -56,7 +56,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'user-id)))
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -155,7 +155,7 @@
                          (aws-sdk/generator/shape::shape
                           add-resource-permissions-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -353,7 +353,7 @@
                          (aws-sdk/generator/shape::shape
                           create-comment-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -427,7 +427,7 @@
                          (aws-sdk/generator/shape::shape
                           create-custom-metadata-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -437,7 +437,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'resource-id)))
-    (aws-sdk/generator/shape::to-query-params "VersionId"
+    (aws-sdk/generator/shape::to-query-params "Versionid"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -473,7 +473,7 @@
                          (aws-sdk/generator/shape::shape
                           create-folder-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -529,7 +529,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'labels)))
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -665,7 +665,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'storage-rule)))
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -736,7 +736,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'user-id)))
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -769,7 +769,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-comment-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -810,7 +810,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-custom-metadata-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -859,7 +859,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-document-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -884,7 +884,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-folder-contents-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -907,7 +907,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-folder-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -938,7 +938,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'resource-id)))
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -998,7 +998,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape delete-user-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1030,7 +1030,7 @@
                          (aws-sdk/generator/shape::shape
                           describe-activities-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1109,7 +1109,7 @@
                          (aws-sdk/generator/shape::shape
                           describe-comments-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1180,7 +1180,7 @@
                          (aws-sdk/generator/shape::shape
                           describe-document-versions-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1260,7 +1260,7 @@
                          (aws-sdk/generator/shape::shape
                           describe-folder-contents-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1406,7 +1406,7 @@
                          (aws-sdk/generator/shape::shape
                           describe-resource-permissions-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1468,7 +1468,7 @@
                          (aws-sdk/generator/shape::shape
                           describe-root-folders-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1535,7 +1535,7 @@
                          (aws-sdk/generator/shape::shape
                           describe-users-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2016,7 +2016,7 @@
                          (aws-sdk/generator/shape::shape
                           get-current-user-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2056,7 +2056,7 @@
                          (aws-sdk/generator/shape::shape
                           get-document-path-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2111,7 +2111,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape get-document-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2170,7 +2170,7 @@
                          (aws-sdk/generator/shape::shape
                           get-document-version-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2238,7 +2238,7 @@
                          (aws-sdk/generator/shape::shape
                           get-folder-path-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2292,7 +2292,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape get-folder-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2405,7 +2405,7 @@
                          (aws-sdk/generator/shape::shape
                           initiate-document-version-upload-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2657,7 +2657,7 @@
                          (aws-sdk/generator/shape::shape
                           remove-all-resource-permissions-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2686,7 +2686,7 @@
                          (aws-sdk/generator/shape::shape
                           remove-resource-permission-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2701,7 +2701,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'principal-id)))
-    (aws-sdk/generator/shape::to-query-params "PrincipalType"
+    (aws-sdk/generator/shape::to-query-params "Type"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3120,7 +3120,7 @@
                          (aws-sdk/generator/shape::shape
                           update-document-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3164,7 +3164,7 @@
                          (aws-sdk/generator/shape::shape
                           update-document-version-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3203,7 +3203,7 @@
                          (aws-sdk/generator/shape::shape
                           update-folder-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3250,7 +3250,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape update-user-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3534,8 +3534,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"AbortDocumentVersionUpload")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'abort-document-version-upload))
 (common-lisp:progn
@@ -3552,8 +3553,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ActivateUser")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ActivateUserResponse" common-lisp:nil)))
  (common-lisp:export 'activate-user))
 (common-lisp:progn
@@ -3572,8 +3574,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"AddResourcePermissions")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "AddResourcePermissionsResponse" common-lisp:nil)))
  (common-lisp:export 'add-resource-permissions))
 (common-lisp:progn
@@ -3594,8 +3597,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateComment")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateCommentResponse" common-lisp:nil)))
  (common-lisp:export 'create-comment))
 (common-lisp:progn
@@ -3615,8 +3619,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateCustomMetadata")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateCustomMetadataResponse" common-lisp:nil)))
  (common-lisp:export 'create-custom-metadata))
 (common-lisp:progn
@@ -3635,8 +3640,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateFolder")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateFolderResponse" common-lisp:nil)))
  (common-lisp:export 'create-folder))
 (common-lisp:progn
@@ -3654,8 +3660,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateLabels")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateLabelsResponse" common-lisp:nil)))
  (common-lisp:export 'create-labels))
 (common-lisp:progn
@@ -3676,8 +3683,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateNotificationSubscription")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateNotificationSubscriptionResponse" common-lisp:nil)))
  (common-lisp:export 'create-notification-subscription))
 (common-lisp:progn
@@ -3698,8 +3706,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateUser")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateUserResponse" common-lisp:nil)))
  (common-lisp:export 'create-user))
 (common-lisp:progn
@@ -3716,8 +3725,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeactivateUser")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'deactivate-user))
 (common-lisp:progn
@@ -3737,8 +3747,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteComment")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-comment))
 (common-lisp:progn
@@ -3758,8 +3769,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteCustomMetadata")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteCustomMetadataResponse" common-lisp:nil)))
  (common-lisp:export 'delete-custom-metadata))
 (common-lisp:progn
@@ -3777,8 +3789,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteDocument")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-document))
 (common-lisp:progn
@@ -3795,8 +3808,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteFolder")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-folder))
 (common-lisp:progn
@@ -3813,8 +3827,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteFolderContents")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-folder-contents))
 (common-lisp:progn
@@ -3833,8 +3848,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteLabels")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteLabelsResponse" common-lisp:nil)))
  (common-lisp:export 'delete-labels))
 (common-lisp:progn
@@ -3853,8 +3869,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteNotificationSubscription")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-notification-subscription))
 (common-lisp:progn
@@ -3871,8 +3888,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteUser")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-user))
 (common-lisp:progn
@@ -3892,8 +3910,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeActivities")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeActivitiesResponse" common-lisp:nil)))
  (common-lisp:export 'describe-activities))
 (common-lisp:progn
@@ -3913,8 +3932,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeComments")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeCommentsResponse" common-lisp:nil)))
  (common-lisp:export 'describe-comments))
 (common-lisp:progn
@@ -3935,8 +3955,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeDocumentVersions")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeDocumentVersionsResponse" common-lisp:nil)))
  (common-lisp:export 'describe-document-versions))
 (common-lisp:progn
@@ -3956,8 +3977,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeFolderContents")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeFolderContentsResponse" common-lisp:nil)))
  (common-lisp:export 'describe-folder-contents))
 (common-lisp:progn
@@ -3976,8 +3998,9 @@
                                 `(("Action"
                                    ,@"DescribeNotificationSubscriptions")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeNotificationSubscriptionsResponse" common-lisp:nil)))
  (common-lisp:export 'describe-notification-subscriptions))
 (common-lisp:progn
@@ -3997,8 +4020,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeResourcePermissions")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeResourcePermissionsResponse" common-lisp:nil)))
  (common-lisp:export 'describe-resource-permissions))
 (common-lisp:progn
@@ -4016,8 +4040,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeRootFolders")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeRootFoldersResponse" common-lisp:nil)))
  (common-lisp:export 'describe-root-folders))
 (common-lisp:progn
@@ -4037,8 +4062,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeUsers")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeUsersResponse" common-lisp:nil)))
  (common-lisp:export 'describe-users))
 (common-lisp:progn
@@ -4055,8 +4081,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetCurrentUser")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetCurrentUserResponse" common-lisp:nil)))
  (common-lisp:export 'get-current-user))
 (common-lisp:progn
@@ -4076,8 +4103,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetDocument")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetDocumentResponse" common-lisp:nil)))
  (common-lisp:export 'get-document))
 (common-lisp:progn
@@ -4097,8 +4125,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetDocumentPath")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetDocumentPathResponse" common-lisp:nil)))
  (common-lisp:export 'get-document-path))
 (common-lisp:progn
@@ -4118,8 +4147,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetDocumentVersion")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetDocumentVersionResponse" common-lisp:nil)))
  (common-lisp:export 'get-document-version))
 (common-lisp:progn
@@ -4139,8 +4169,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetFolder")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetFolderResponse" common-lisp:nil)))
  (common-lisp:export 'get-folder))
 (common-lisp:progn
@@ -4159,8 +4190,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetFolderPath")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetFolderPathResponse" common-lisp:nil)))
  (common-lisp:export 'get-folder-path))
 (common-lisp:progn
@@ -4183,8 +4215,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"InitiateDocumentVersionUpload")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "InitiateDocumentVersionUploadResponse" common-lisp:nil)))
  (common-lisp:export 'initiate-document-version-upload))
 (common-lisp:progn
@@ -4203,8 +4236,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"RemoveAllResourcePermissions")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'remove-all-resource-permissions))
 (common-lisp:progn
@@ -4225,8 +4259,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"RemoveResourcePermission")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'remove-resource-permission))
 (common-lisp:progn
@@ -4246,8 +4281,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateDocument")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'update-document))
 (common-lisp:progn
@@ -4267,8 +4303,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateDocumentVersion")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'update-document-version))
 (common-lisp:progn
@@ -4288,8 +4325,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateFolder")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'update-folder))
 (common-lisp:progn
@@ -4309,7 +4347,8 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateUser")
                                   ("Version" ,@"2016-05-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateUserResponse" common-lisp:nil)))
  (common-lisp:export 'update-user))

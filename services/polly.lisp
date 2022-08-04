@@ -19,7 +19,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape delete-lexicon-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "Name"
+    (aws-sdk/generator/shape::to-query-params "LexiconName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -89,7 +89,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape get-lexicon-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "Name"
+    (aws-sdk/generator/shape::to-query-params "LexiconName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -429,7 +429,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape put-lexicon-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "Name"
+    (aws-sdk/generator/shape::to-query-params "LexiconName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -572,12 +572,12 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'audio-stream)))
-    (aws-sdk/generator/shape::to-query-params "ContentType"
+    (aws-sdk/generator/shape::to-query-params "Content-Type"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'content-type)))
-    (aws-sdk/generator/shape::to-query-params "RequestCharacters"
+    (aws-sdk/generator/shape::to-query-params "X-amzn-RequestCharacters"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -699,8 +699,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteLexicon")
                                   ("Version" ,@"2016-06-10"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteLexiconOutput" common-lisp:nil)))
  (common-lisp:export 'delete-lexicon))
 (common-lisp:progn
@@ -717,8 +718,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeVoices")
                                   ("Version" ,@"2016-06-10"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeVoicesOutput" common-lisp:nil)))
  (common-lisp:export 'describe-voices))
 (common-lisp:progn
@@ -735,8 +737,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetLexicon")
                                   ("Version" ,@"2016-06-10"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetLexiconOutput" common-lisp:nil)))
  (common-lisp:export 'get-lexicon))
 (common-lisp:progn
@@ -753,8 +756,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListLexicons")
                                   ("Version" ,@"2016-06-10"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListLexiconsOutput" common-lisp:nil)))
  (common-lisp:export 'list-lexicons))
 (common-lisp:progn
@@ -771,8 +775,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"PutLexicon")
                                   ("Version" ,@"2016-06-10"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "PutLexiconOutput" common-lisp:nil)))
  (common-lisp:export 'put-lexicon))
 (common-lisp:progn
@@ -792,7 +797,8 @@
                                (common-lisp:append
                                 `(("Action" ,@"SynthesizeSpeech")
                                   ("Version" ,@"2016-06-10"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "SynthesizeSpeechOutput" common-lisp:nil)))
  (common-lisp:export 'synthesize-speech))

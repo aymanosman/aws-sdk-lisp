@@ -175,7 +175,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape deletable-item))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "Name"
+    (aws-sdk/generator/shape::to-query-params "ItemName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -754,7 +754,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape replaceable-item))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "Name"
+    (aws-sdk/generator/shape::to-query-params "ItemName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -885,8 +885,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"BatchDeleteAttributes")
                                   ("Version" ,@"2009-04-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'batch-delete-attributes))
 (common-lisp:progn
@@ -903,8 +904,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"BatchPutAttributes")
                                   ("Version" ,@"2009-04-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'batch-put-attributes))
 (common-lisp:progn
@@ -921,8 +923,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateDomain")
                                   ("Version" ,@"2009-04-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'create-domain))
 (common-lisp:progn
@@ -941,8 +944,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteAttributes")
                                   ("Version" ,@"2009-04-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-attributes))
 (common-lisp:progn
@@ -959,8 +963,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteDomain")
                                   ("Version" ,@"2009-04-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-domain))
 (common-lisp:progn
@@ -977,8 +982,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DomainMetadata")
                                   ("Version" ,@"2009-04-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DomainMetadataResult" "DomainMetadataResult")))
  (common-lisp:export 'domain-metadata))
 (common-lisp:progn
@@ -998,8 +1004,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetAttributes")
                                   ("Version" ,@"2009-04-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetAttributesResult" "GetAttributesResult")))
  (common-lisp:export 'get-attributes))
 (common-lisp:progn
@@ -1017,8 +1024,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListDomains")
                                   ("Version" ,@"2009-04-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListDomainsResult" "ListDomainsResult")))
  (common-lisp:export 'list-domains))
 (common-lisp:progn
@@ -1037,8 +1045,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"PutAttributes")
                                   ("Version" ,@"2009-04-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'put-attributes))
 (common-lisp:progn
@@ -1057,7 +1066,8 @@
                                (common-lisp:append
                                 `(("Action" ,@"Select")
                                   ("Version" ,@"2009-04-15"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "SelectResult" "SelectResult")))
  (common-lisp:export 'select))

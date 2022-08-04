@@ -1676,8 +1676,9 @@
                                 `(("Action"
                                    ,@"AssociateConfigurationItemsToApplication")
                                   ("Version" ,@"2015-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "AssociateConfigurationItemsToApplicationResponse" common-lisp:nil)))
  (common-lisp:export 'associate-configuration-items-to-application))
 (common-lisp:progn
@@ -1694,8 +1695,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateApplication")
                                   ("Version" ,@"2015-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateApplicationResponse" common-lisp:nil)))
  (common-lisp:export 'create-application))
 (common-lisp:progn
@@ -1712,8 +1714,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateTags")
                                   ("Version" ,@"2015-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateTagsResponse" common-lisp:nil)))
  (common-lisp:export 'create-tags))
 (common-lisp:progn
@@ -1730,8 +1733,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteApplications")
                                   ("Version" ,@"2015-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteApplicationsResponse" common-lisp:nil)))
  (common-lisp:export 'delete-applications))
 (common-lisp:progn
@@ -1748,8 +1752,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteTags")
                                   ("Version" ,@"2015-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteTagsResponse" common-lisp:nil)))
  (common-lisp:export 'delete-tags))
 (common-lisp:progn
@@ -1767,8 +1772,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeAgents")
                                   ("Version" ,@"2015-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeAgentsResponse" common-lisp:nil)))
  (common-lisp:export 'describe-agents))
 (common-lisp:progn
@@ -1785,8 +1791,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeConfigurations")
                                   ("Version" ,@"2015-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeConfigurationsResponse" common-lisp:nil)))
  (common-lisp:export 'describe-configurations))
 (common-lisp:progn
@@ -1805,8 +1812,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeExportConfigurations")
                                   ("Version" ,@"2015-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeExportConfigurationsResponse" common-lisp:nil)))
  (common-lisp:export 'describe-export-configurations))
 (common-lisp:progn
@@ -1825,8 +1833,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeExportTasks")
                                   ("Version" ,@"2015-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeExportTasksResponse" common-lisp:nil)))
  (common-lisp:export 'describe-export-tasks))
 (common-lisp:progn
@@ -1843,8 +1852,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeTags")
                                   ("Version" ,@"2015-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeTagsResponse" common-lisp:nil)))
  (common-lisp:export 'describe-tags))
 (common-lisp:progn
@@ -1865,8 +1875,9 @@
                                 `(("Action"
                                    ,@"DisassociateConfigurationItemsFromApplication")
                                   ("Version" ,@"2015-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DisassociateConfigurationItemsFromApplicationResponse"
       common-lisp:nil)))
  (common-lisp:export 'disassociate-configuration-items-from-application))
@@ -1905,8 +1916,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListConfigurations")
                                   ("Version" ,@"2015-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListConfigurationsResponse" common-lisp:nil)))
  (common-lisp:export 'list-configurations))
 (common-lisp:progn
@@ -1926,8 +1938,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListServerNeighbors")
                                   ("Version" ,@"2015-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListServerNeighborsResponse" common-lisp:nil)))
  (common-lisp:export 'list-server-neighbors))
 (common-lisp:progn
@@ -1945,8 +1958,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"StartDataCollectionByAgentIds")
                                   ("Version" ,@"2015-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "StartDataCollectionByAgentIdsResponse" common-lisp:nil)))
  (common-lisp:export 'start-data-collection-by-agent-ids))
 (common-lisp:progn
@@ -1965,8 +1979,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"StartExportTask")
                                   ("Version" ,@"2015-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "StartExportTaskResponse" common-lisp:nil)))
  (common-lisp:export 'start-export-task))
 (common-lisp:progn
@@ -1984,8 +1999,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"StopDataCollectionByAgentIds")
                                   ("Version" ,@"2015-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "StopDataCollectionByAgentIdsResponse" common-lisp:nil)))
  (common-lisp:export 'stop-data-collection-by-agent-ids))
 (common-lisp:progn
@@ -2003,7 +2019,8 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateApplication")
                                   ("Version" ,@"2015-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateApplicationResponse" common-lisp:nil)))
  (common-lisp:export 'update-application))

@@ -1048,8 +1048,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"DescribeAffectedEntities")
                                   ("Version" ,@"2016-08-04"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeAffectedEntitiesResponse" common-lisp:nil)))
  (common-lisp:export 'describe-affected-entities))
 (common-lisp:progn
@@ -1067,8 +1068,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"DescribeEntityAggregates")
                                   ("Version" ,@"2016-08-04"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeEntityAggregatesResponse" common-lisp:nil)))
  (common-lisp:export 'describe-entity-aggregates))
 (common-lisp:progn
@@ -1088,8 +1090,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"DescribeEventAggregates")
                                   ("Version" ,@"2016-08-04"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeEventAggregatesResponse" common-lisp:nil)))
  (common-lisp:export 'describe-event-aggregates))
 (common-lisp:progn
@@ -1106,8 +1109,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"DescribeEventDetails")
                                   ("Version" ,@"2016-08-04"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeEventDetailsResponse" common-lisp:nil)))
  (common-lisp:export 'describe-event-details))
 (common-lisp:progn
@@ -1125,8 +1129,9 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"DescribeEventTypes")
                                   ("Version" ,@"2016-08-04"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeEventTypesResponse" common-lisp:nil)))
  (common-lisp:export 'describe-event-types))
 (common-lisp:progn
@@ -1144,7 +1149,8 @@ common-lisp:nil
                                (common-lisp:append
                                 `(("Action" ,@"DescribeEvents")
                                   ("Version" ,@"2016-08-04"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeEventsResponse" common-lisp:nil)))
  (common-lisp:export 'describe-events))

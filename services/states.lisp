@@ -1854,8 +1854,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateActivity")
                                   ("Version" ,@"2016-11-23"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateActivityOutput" common-lisp:nil)))
  (common-lisp:export 'create-activity))
 (common-lisp:progn
@@ -1872,8 +1873,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateStateMachine")
                                   ("Version" ,@"2016-11-23"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateStateMachineOutput" common-lisp:nil)))
  (common-lisp:export 'create-state-machine))
 (common-lisp:progn
@@ -1890,8 +1892,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteActivity")
                                   ("Version" ,@"2016-11-23"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteActivityOutput" common-lisp:nil)))
  (common-lisp:export 'delete-activity))
 (common-lisp:progn
@@ -1908,8 +1911,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteStateMachine")
                                   ("Version" ,@"2016-11-23"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteStateMachineOutput" common-lisp:nil)))
  (common-lisp:export 'delete-state-machine))
 (common-lisp:progn
@@ -1926,8 +1930,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeActivity")
                                   ("Version" ,@"2016-11-23"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeActivityOutput" common-lisp:nil)))
  (common-lisp:export 'describe-activity))
 (common-lisp:progn
@@ -1944,8 +1949,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeExecution")
                                   ("Version" ,@"2016-11-23"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeExecutionOutput" common-lisp:nil)))
  (common-lisp:export 'describe-execution))
 (common-lisp:progn
@@ -1962,8 +1968,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeStateMachine")
                                   ("Version" ,@"2016-11-23"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeStateMachineOutput" common-lisp:nil)))
  (common-lisp:export 'describe-state-machine))
 (common-lisp:progn
@@ -1980,8 +1987,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetActivityTask")
                                   ("Version" ,@"2016-11-23"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetActivityTaskOutput" common-lisp:nil)))
  (common-lisp:export 'get-activity-task))
 (common-lisp:progn
@@ -2000,8 +2008,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetExecutionHistory")
                                   ("Version" ,@"2016-11-23"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetExecutionHistoryOutput" common-lisp:nil)))
  (common-lisp:export 'get-execution-history))
 (common-lisp:progn
@@ -2018,8 +2027,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListActivities")
                                   ("Version" ,@"2016-11-23"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListActivitiesOutput" common-lisp:nil)))
  (common-lisp:export 'list-activities))
 (common-lisp:progn
@@ -2039,8 +2049,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListExecutions")
                                   ("Version" ,@"2016-11-23"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListExecutionsOutput" common-lisp:nil)))
  (common-lisp:export 'list-executions))
 (common-lisp:progn
@@ -2057,8 +2068,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListStateMachines")
                                   ("Version" ,@"2016-11-23"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListStateMachinesOutput" common-lisp:nil)))
  (common-lisp:export 'list-state-machines))
 (common-lisp:progn
@@ -2075,8 +2087,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"SendTaskFailure")
                                   ("Version" ,@"2016-11-23"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "SendTaskFailureOutput" common-lisp:nil)))
  (common-lisp:export 'send-task-failure))
 (common-lisp:progn
@@ -2093,8 +2106,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"SendTaskHeartbeat")
                                   ("Version" ,@"2016-11-23"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "SendTaskHeartbeatOutput" common-lisp:nil)))
  (common-lisp:export 'send-task-heartbeat))
 (common-lisp:progn
@@ -2111,8 +2125,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"SendTaskSuccess")
                                   ("Version" ,@"2016-11-23"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "SendTaskSuccessOutput" common-lisp:nil)))
  (common-lisp:export 'send-task-success))
 (common-lisp:progn
@@ -2129,8 +2144,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"StartExecution")
                                   ("Version" ,@"2016-11-23"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "StartExecutionOutput" common-lisp:nil)))
  (common-lisp:export 'start-execution))
 (common-lisp:progn
@@ -2147,7 +2163,8 @@
                                (common-lisp:append
                                 `(("Action" ,@"StopExecution")
                                   ("Version" ,@"2016-11-23"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "StopExecutionOutput" common-lisp:nil)))
  (common-lisp:export 'stop-execution))

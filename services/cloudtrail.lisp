@@ -1679,8 +1679,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"AddTags")
                                   ("Version" ,@"2013-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "AddTagsResponse" common-lisp:nil)))
  (common-lisp:export 'add-tags))
 (common-lisp:progn
@@ -1705,8 +1706,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateTrail")
                                   ("Version" ,@"2013-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateTrailResponse" common-lisp:nil)))
  (common-lisp:export 'create-trail))
 (common-lisp:progn
@@ -1723,8 +1725,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteTrail")
                                   ("Version" ,@"2013-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteTrailResponse" common-lisp:nil)))
  (common-lisp:export 'delete-trail))
 (common-lisp:progn
@@ -1742,8 +1745,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeTrails")
                                   ("Version" ,@"2013-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeTrailsResponse" common-lisp:nil)))
  (common-lisp:export 'describe-trails))
 (common-lisp:progn
@@ -1760,8 +1764,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetEventSelectors")
                                   ("Version" ,@"2013-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetEventSelectorsResponse" common-lisp:nil)))
  (common-lisp:export 'get-event-selectors))
 (common-lisp:progn
@@ -1778,8 +1783,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetTrailStatus")
                                   ("Version" ,@"2013-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetTrailStatusResponse" common-lisp:nil)))
  (common-lisp:export 'get-trail-status))
 (common-lisp:progn
@@ -1796,8 +1802,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListPublicKeys")
                                   ("Version" ,@"2013-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListPublicKeysResponse" common-lisp:nil)))
  (common-lisp:export 'list-public-keys))
 (common-lisp:progn
@@ -1814,8 +1821,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListTags")
                                   ("Version" ,@"2013-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListTagsResponse" common-lisp:nil)))
  (common-lisp:export 'list-tags))
 (common-lisp:progn
@@ -1835,8 +1843,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"LookupEvents")
                                   ("Version" ,@"2013-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "LookupEventsResponse" common-lisp:nil)))
  (common-lisp:export 'lookup-events))
 (common-lisp:progn
@@ -1853,8 +1862,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"PutEventSelectors")
                                   ("Version" ,@"2013-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "PutEventSelectorsResponse" common-lisp:nil)))
  (common-lisp:export 'put-event-selectors))
 (common-lisp:progn
@@ -1871,8 +1881,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"RemoveTags")
                                   ("Version" ,@"2013-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "RemoveTagsResponse" common-lisp:nil)))
  (common-lisp:export 'remove-tags))
 (common-lisp:progn
@@ -1889,8 +1900,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"StartLogging")
                                   ("Version" ,@"2013-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "StartLoggingResponse" common-lisp:nil)))
  (common-lisp:export 'start-logging))
 (common-lisp:progn
@@ -1907,8 +1919,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"StopLogging")
                                   ("Version" ,@"2013-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "StopLoggingResponse" common-lisp:nil)))
  (common-lisp:export 'stop-logging))
 (common-lisp:progn
@@ -1933,7 +1946,8 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateTrail")
                                   ("Version" ,@"2013-11-01"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateTrailResponse" common-lisp:nil)))
  (common-lisp:export 'update-trail))

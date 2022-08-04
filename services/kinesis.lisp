@@ -1431,8 +1431,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"AddTagsToStream")
                                   ("Version" ,@"2013-12-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'add-tags-to-stream))
 (common-lisp:progn
@@ -1449,8 +1450,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateStream")
                                   ("Version" ,@"2013-12-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'create-stream))
 (common-lisp:progn
@@ -1469,8 +1471,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DecreaseStreamRetentionPeriod")
                                   ("Version" ,@"2013-12-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'decrease-stream-retention-period))
 (common-lisp:progn
@@ -1487,8 +1490,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteStream")
                                   ("Version" ,@"2013-12-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'delete-stream))
 (common-lisp:progn
@@ -1515,8 +1519,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeStream")
                                   ("Version" ,@"2013-12-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeStreamOutput" common-lisp:nil)))
  (common-lisp:export 'describe-stream))
 (common-lisp:progn
@@ -1535,8 +1540,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DisableEnhancedMonitoring")
                                   ("Version" ,@"2013-12-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "EnhancedMonitoringOutput" common-lisp:nil)))
  (common-lisp:export 'disable-enhanced-monitoring))
 (common-lisp:progn
@@ -1554,8 +1560,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"EnableEnhancedMonitoring")
                                   ("Version" ,@"2013-12-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "EnhancedMonitoringOutput" common-lisp:nil)))
  (common-lisp:export 'enable-enhanced-monitoring))
 (common-lisp:progn
@@ -1572,8 +1579,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetRecords")
                                   ("Version" ,@"2013-12-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetRecordsOutput" common-lisp:nil)))
  (common-lisp:export 'get-records))
 (common-lisp:progn
@@ -1593,8 +1601,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetShardIterator")
                                   ("Version" ,@"2013-12-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetShardIteratorOutput" common-lisp:nil)))
  (common-lisp:export 'get-shard-iterator))
 (common-lisp:progn
@@ -1613,8 +1622,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"IncreaseStreamRetentionPeriod")
                                   ("Version" ,@"2013-12-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'increase-stream-retention-period))
 (common-lisp:progn
@@ -1632,8 +1642,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListStreams")
                                   ("Version" ,@"2013-12-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListStreamsOutput" common-lisp:nil)))
  (common-lisp:export 'list-streams))
 (common-lisp:progn
@@ -1652,8 +1663,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListTagsForStream")
                                   ("Version" ,@"2013-12-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListTagsForStreamOutput" common-lisp:nil)))
  (common-lisp:export 'list-tags-for-stream))
 (common-lisp:progn
@@ -1672,8 +1684,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"MergeShards")
                                   ("Version" ,@"2013-12-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'merge-shards))
 (common-lisp:progn
@@ -1693,8 +1706,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"PutRecord")
                                   ("Version" ,@"2013-12-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "PutRecordOutput" common-lisp:nil)))
  (common-lisp:export 'put-record))
 (common-lisp:progn
@@ -1711,8 +1725,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"PutRecords")
                                   ("Version" ,@"2013-12-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "PutRecordsOutput" common-lisp:nil)))
  (common-lisp:export 'put-records))
 (common-lisp:progn
@@ -1729,8 +1744,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"RemoveTagsFromStream")
                                   ("Version" ,@"2013-12-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'remove-tags-from-stream))
 (common-lisp:progn
@@ -1749,8 +1765,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"SplitShard")
                                   ("Version" ,@"2013-12-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'split-shard))
 (common-lisp:progn
@@ -1768,8 +1785,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"StartStreamEncryption")
                                   ("Version" ,@"2013-12-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'start-stream-encryption))
 (common-lisp:progn
@@ -1787,8 +1805,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"StopStreamEncryption")
                                   ("Version" ,@"2013-12-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'stop-stream-encryption))
 (common-lisp:progn
@@ -1807,7 +1826,8 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateShardCount")
                                   ("Version" ,@"2013-12-02"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateShardCountOutput" common-lisp:nil)))
  (common-lisp:export 'update-shard-count))

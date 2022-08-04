@@ -7,7 +7,8 @@
   (:import-from #:assoc-utils
                 #:alistp)
   (:export #:compile-shape
-           #:shape-to-params))
+           #:shape-to-params
+           #:*protocol*))
 (in-package #:aws-sdk/generator/shape)
 
 (defun composite-type-p (type-name)
@@ -36,7 +37,7 @@
 (defgeneric shape-to-params (shape)
   (:method (shape) shape))
 
-(defvar *request-format* :query)
+(defvar *protocol* :query)
 
 (defun to-query-params (key value)
   (typecase value
@@ -48,7 +49,7 @@
          (loop for i from 1
                for v in value
                append (to-query-params (cond
-                                         ((eq *request-format* :ec2)
+                                         ((eq *protocol* :ec2)
                                           (format nil "~A.~A" key i))
                                          (t
                                           (format nil "~A.member.~A" key i)))

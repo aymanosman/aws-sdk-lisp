@@ -32,7 +32,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-thing-shadow-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "thingName"
+    (aws-sdk/generator/shape::to-query-params "ThingName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -67,7 +67,7 @@
                          (aws-sdk/generator/shape::shape
                           get-thing-shadow-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "thingName"
+    (aws-sdk/generator/shape::to-query-params "ThingName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -155,12 +155,12 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape publish-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "topic"
+    (aws-sdk/generator/shape::to-query-params "Topic"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'topic)))
-    (aws-sdk/generator/shape::to-query-params "qos"
+    (aws-sdk/generator/shape::to-query-params "Qos"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -289,7 +289,7 @@
                          (aws-sdk/generator/shape::shape
                           update-thing-shadow-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "thingName"
+    (aws-sdk/generator/shape::to-query-params "ThingName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -332,8 +332,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteThingShadow")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteThingShadowResponse" common-lisp:nil)))
  (common-lisp:export 'delete-thing-shadow))
 (common-lisp:progn
@@ -350,8 +351,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetThingShadow")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetThingShadowResponse" common-lisp:nil)))
  (common-lisp:export 'get-thing-shadow))
 (common-lisp:progn
@@ -368,8 +370,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"Publish")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
  (common-lisp:export 'publish))
 (common-lisp:progn
@@ -386,7 +389,8 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateThingShadow")
                                   ("Version" ,@"2015-05-28"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateThingShadowResponse" common-lisp:nil)))
  (common-lisp:export 'update-thing-shadow))

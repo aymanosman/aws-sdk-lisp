@@ -1655,8 +1655,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CancelCluster")
                                   ("Version" ,@"2016-06-30"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CancelClusterResult" common-lisp:nil)))
  (common-lisp:export 'cancel-cluster))
 (common-lisp:progn
@@ -1673,8 +1674,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CancelJob")
                                   ("Version" ,@"2016-06-30"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CancelJobResult" common-lisp:nil)))
  (common-lisp:export 'cancel-job))
 (common-lisp:progn
@@ -1691,8 +1693,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateAddress")
                                   ("Version" ,@"2016-06-30"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateAddressResult" common-lisp:nil)))
  (common-lisp:export 'create-address))
 (common-lisp:progn
@@ -1714,8 +1717,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateCluster")
                                   ("Version" ,@"2016-06-30"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateClusterResult" common-lisp:nil)))
  (common-lisp:export 'create-cluster))
 (common-lisp:progn
@@ -1738,8 +1742,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateJob")
                                   ("Version" ,@"2016-06-30"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateJobResult" common-lisp:nil)))
  (common-lisp:export 'create-job))
 (common-lisp:progn
@@ -1756,8 +1761,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeAddress")
                                   ("Version" ,@"2016-06-30"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeAddressResult" common-lisp:nil)))
  (common-lisp:export 'describe-address))
 (common-lisp:progn
@@ -1774,8 +1780,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeAddresses")
                                   ("Version" ,@"2016-06-30"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeAddressesResult" common-lisp:nil)))
  (common-lisp:export 'describe-addresses))
 (common-lisp:progn
@@ -1792,8 +1799,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeCluster")
                                   ("Version" ,@"2016-06-30"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeClusterResult" common-lisp:nil)))
  (common-lisp:export 'describe-cluster))
 (common-lisp:progn
@@ -1810,8 +1818,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeJob")
                                   ("Version" ,@"2016-06-30"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeJobResult" common-lisp:nil)))
  (common-lisp:export 'describe-job))
 (common-lisp:progn
@@ -1828,8 +1837,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetJobManifest")
                                   ("Version" ,@"2016-06-30"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetJobManifestResult" common-lisp:nil)))
  (common-lisp:export 'get-job-manifest))
 (common-lisp:progn
@@ -1846,8 +1856,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"GetJobUnlockCode")
                                   ("Version" ,@"2016-06-30"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "GetJobUnlockCodeResult" common-lisp:nil)))
  (common-lisp:export 'get-job-unlock-code))
 (common-lisp:progn
@@ -1873,8 +1884,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListClusterJobs")
                                   ("Version" ,@"2016-06-30"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListClusterJobsResult" common-lisp:nil)))
  (common-lisp:export 'list-cluster-jobs))
 (common-lisp:progn
@@ -1891,8 +1903,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListClusters")
                                   ("Version" ,@"2016-06-30"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListClustersResult" common-lisp:nil)))
  (common-lisp:export 'list-clusters))
 (common-lisp:progn
@@ -1909,8 +1922,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListJobs")
                                   ("Version" ,@"2016-06-30"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListJobsResult" common-lisp:nil)))
  (common-lisp:export 'list-jobs))
 (common-lisp:progn
@@ -1931,8 +1945,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateCluster")
                                   ("Version" ,@"2016-06-30"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateClusterResult" common-lisp:nil)))
  (common-lisp:export 'update-cluster))
 (common-lisp:progn
@@ -1954,7 +1969,8 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateJob")
                                   ("Version" ,@"2016-06-30"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateJobResult" common-lisp:nil)))
  (common-lisp:export 'update-job))

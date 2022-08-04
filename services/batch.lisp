@@ -1881,8 +1881,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CancelJob")
                                   ("Version" ,@"2016-08-10"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CancelJobResponse" common-lisp:nil)))
  (common-lisp:export 'cancel-job))
 (common-lisp:progn
@@ -1903,8 +1904,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateComputeEnvironment")
                                   ("Version" ,@"2016-08-10"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateComputeEnvironmentResponse" common-lisp:nil)))
  (common-lisp:export 'create-compute-environment))
 (common-lisp:progn
@@ -1924,8 +1926,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateJobQueue")
                                   ("Version" ,@"2016-08-10"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateJobQueueResponse" common-lisp:nil)))
  (common-lisp:export 'create-job-queue))
 (common-lisp:progn
@@ -1943,8 +1946,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteComputeEnvironment")
                                   ("Version" ,@"2016-08-10"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteComputeEnvironmentResponse" common-lisp:nil)))
  (common-lisp:export 'delete-compute-environment))
 (common-lisp:progn
@@ -1961,8 +1965,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteJobQueue")
                                   ("Version" ,@"2016-08-10"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteJobQueueResponse" common-lisp:nil)))
  (common-lisp:export 'delete-job-queue))
 (common-lisp:progn
@@ -1980,8 +1985,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeregisterJobDefinition")
                                   ("Version" ,@"2016-08-10"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeregisterJobDefinitionResponse" common-lisp:nil)))
  (common-lisp:export 'deregister-job-definition))
 (common-lisp:progn
@@ -2001,8 +2007,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeComputeEnvironments")
                                   ("Version" ,@"2016-08-10"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeComputeEnvironmentsResponse" common-lisp:nil)))
  (common-lisp:export 'describe-compute-environments))
 (common-lisp:progn
@@ -2022,8 +2029,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeJobDefinitions")
                                   ("Version" ,@"2016-08-10"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeJobDefinitionsResponse" common-lisp:nil)))
  (common-lisp:export 'describe-job-definitions))
 (common-lisp:progn
@@ -2041,8 +2049,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeJobQueues")
                                   ("Version" ,@"2016-08-10"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeJobQueuesResponse" common-lisp:nil)))
  (common-lisp:export 'describe-job-queues))
 (common-lisp:progn
@@ -2059,8 +2068,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeJobs")
                                   ("Version" ,@"2016-08-10"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeJobsResponse" common-lisp:nil)))
  (common-lisp:export 'describe-jobs))
 (common-lisp:progn
@@ -2079,8 +2089,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ListJobs")
                                   ("Version" ,@"2016-08-10"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ListJobsResponse" common-lisp:nil)))
  (common-lisp:export 'list-jobs))
 (common-lisp:progn
@@ -2100,8 +2111,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"RegisterJobDefinition")
                                   ("Version" ,@"2016-08-10"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "RegisterJobDefinitionResponse" common-lisp:nil)))
  (common-lisp:export 'register-job-definition))
 (common-lisp:progn
@@ -2122,8 +2134,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"SubmitJob")
                                   ("Version" ,@"2016-08-10"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "SubmitJobResponse" common-lisp:nil)))
  (common-lisp:export 'submit-job))
 (common-lisp:progn
@@ -2140,8 +2153,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"TerminateJob")
                                   ("Version" ,@"2016-08-10"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "TerminateJobResponse" common-lisp:nil)))
  (common-lisp:export 'terminate-job))
 (common-lisp:progn
@@ -2162,8 +2176,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateComputeEnvironment")
                                   ("Version" ,@"2016-08-10"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateComputeEnvironmentResponse" common-lisp:nil)))
  (common-lisp:export 'update-compute-environment))
 (common-lisp:progn
@@ -2182,7 +2197,8 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateJobQueue")
                                   ("Version" ,@"2016-08-10"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UpdateJobQueueResponse" common-lisp:nil)))
  (common-lisp:export 'update-job-queue))

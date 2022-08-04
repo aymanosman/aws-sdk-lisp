@@ -2218,8 +2218,9 @@
                                 `(("Action"
                                    ,@"AllocateConnectionOnInterconnect")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "Connection" common-lisp:nil)))
  (common-lisp:export 'allocate-connection-on-interconnect))
 (common-lisp:progn
@@ -2240,8 +2241,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"AllocateHostedConnection")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "Connection" common-lisp:nil)))
  (common-lisp:export 'allocate-hosted-connection))
 (common-lisp:progn
@@ -2263,8 +2265,9 @@
                                 `(("Action"
                                    ,@"AllocatePrivateVirtualInterface")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "VirtualInterface" common-lisp:nil)))
  (common-lisp:export 'allocate-private-virtual-interface))
 (common-lisp:progn
@@ -2285,8 +2288,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"AllocatePublicVirtualInterface")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "VirtualInterface" common-lisp:nil)))
  (common-lisp:export 'allocate-public-virtual-interface))
 (common-lisp:progn
@@ -2304,8 +2308,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"AssociateConnectionWithLag")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "Connection" common-lisp:nil)))
  (common-lisp:export 'associate-connection-with-lag))
 (common-lisp:progn
@@ -2324,8 +2329,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"AssociateHostedConnection")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "Connection" common-lisp:nil)))
  (common-lisp:export 'associate-hosted-connection))
 (common-lisp:progn
@@ -2344,8 +2350,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"AssociateVirtualInterface")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "VirtualInterface" common-lisp:nil)))
  (common-lisp:export 'associate-virtual-interface))
 (common-lisp:progn
@@ -2362,8 +2369,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ConfirmConnection")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ConfirmConnectionResponse" common-lisp:nil)))
  (common-lisp:export 'confirm-connection))
 (common-lisp:progn
@@ -2382,8 +2390,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ConfirmPrivateVirtualInterface")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ConfirmPrivateVirtualInterfaceResponse" common-lisp:nil)))
  (common-lisp:export 'confirm-private-virtual-interface))
 (common-lisp:progn
@@ -2401,8 +2410,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"ConfirmPublicVirtualInterface")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "ConfirmPublicVirtualInterfaceResponse" common-lisp:nil)))
  (common-lisp:export 'confirm-public-virtual-interface))
 (common-lisp:progn
@@ -2420,8 +2430,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateBGPPeer")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "CreateBGPPeerResponse" common-lisp:nil)))
  (common-lisp:export 'create-bgppeer))
 (common-lisp:progn
@@ -2440,8 +2451,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateConnection")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "Connection" common-lisp:nil)))
  (common-lisp:export 'create-connection))
 (common-lisp:progn
@@ -2460,8 +2472,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateInterconnect")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "Interconnect" common-lisp:nil)))
  (common-lisp:export 'create-interconnect))
 (common-lisp:progn
@@ -2481,8 +2494,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreateLag")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "Lag" common-lisp:nil)))
  (common-lisp:export 'create-lag))
 (common-lisp:progn
@@ -2502,8 +2516,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreatePrivateVirtualInterface")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "VirtualInterface" common-lisp:nil)))
  (common-lisp:export 'create-private-virtual-interface))
 (common-lisp:progn
@@ -2523,8 +2538,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"CreatePublicVirtualInterface")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "VirtualInterface" common-lisp:nil)))
  (common-lisp:export 'create-public-virtual-interface))
 (common-lisp:progn
@@ -2543,8 +2559,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteBGPPeer")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteBGPPeerResponse" common-lisp:nil)))
  (common-lisp:export 'delete-bgppeer))
 (common-lisp:progn
@@ -2561,8 +2578,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteConnection")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "Connection" common-lisp:nil)))
  (common-lisp:export 'delete-connection))
 (common-lisp:progn
@@ -2579,8 +2597,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteInterconnect")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteInterconnectResponse" common-lisp:nil)))
  (common-lisp:export 'delete-interconnect))
 (common-lisp:progn
@@ -2597,8 +2616,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteLag")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "Lag" common-lisp:nil)))
  (common-lisp:export 'delete-lag))
 (common-lisp:progn
@@ -2615,8 +2635,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DeleteVirtualInterface")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DeleteVirtualInterfaceResponse" common-lisp:nil)))
  (common-lisp:export 'delete-virtual-interface))
 (common-lisp:progn
@@ -2635,8 +2656,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeConnectionLoa")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeConnectionLoaResponse" common-lisp:nil)))
  (common-lisp:export 'describe-connection-loa))
 (common-lisp:progn
@@ -2653,8 +2675,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeConnections")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "Connections" common-lisp:nil)))
  (common-lisp:export 'describe-connections))
 (common-lisp:progn
@@ -2673,8 +2696,9 @@
                                 `(("Action"
                                    ,@"DescribeConnectionsOnInterconnect")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "Connections" common-lisp:nil)))
  (common-lisp:export 'describe-connections-on-interconnect))
 (common-lisp:progn
@@ -2692,8 +2716,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeHostedConnections")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "Connections" common-lisp:nil)))
  (common-lisp:export 'describe-hosted-connections))
 (common-lisp:progn
@@ -2713,8 +2738,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeInterconnectLoa")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeInterconnectLoaResponse" common-lisp:nil)))
  (common-lisp:export 'describe-interconnect-loa))
 (common-lisp:progn
@@ -2731,8 +2757,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeInterconnects")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "Interconnects" common-lisp:nil)))
  (common-lisp:export 'describe-interconnects))
 (common-lisp:progn
@@ -2749,8 +2776,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeLags")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "Lags" common-lisp:nil)))
  (common-lisp:export 'describe-lags))
 (common-lisp:progn
@@ -2769,8 +2797,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeLoa")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "Loa" common-lisp:nil)))
  (common-lisp:export 'describe-loa))
 (common-lisp:progn
@@ -2795,8 +2824,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeTags")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "DescribeTagsResponse" common-lisp:nil)))
  (common-lisp:export 'describe-tags))
 (common-lisp:progn
@@ -2824,8 +2854,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DescribeVirtualInterfaces")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "VirtualInterfaces" common-lisp:nil)))
  (common-lisp:export 'describe-virtual-interfaces))
 (common-lisp:progn
@@ -2843,8 +2874,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"DisassociateConnectionFromLag")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "Connection" common-lisp:nil)))
  (common-lisp:export 'disassociate-connection-from-lag))
 (common-lisp:progn
@@ -2861,8 +2893,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"TagResource")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "TagResourceResponse" common-lisp:nil)))
  (common-lisp:export 'tag-resource))
 (common-lisp:progn
@@ -2879,8 +2912,9 @@
                                (common-lisp:append
                                 `(("Action" ,@"UntagResource")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "UntagResourceResponse" common-lisp:nil)))
  (common-lisp:export 'untag-resource))
 (common-lisp:progn
@@ -2897,7 +2931,8 @@
                                (common-lisp:append
                                 `(("Action" ,@"UpdateLag")
                                   ("Version" ,@"2012-10-25"))
-                                (aws-sdk/generator/shape:shape-to-params
-                                 aws-sdk/generator/operation::input)))
+                                (common-lisp:let ()
+                                  (aws-sdk/generator/shape:shape-to-params
+                                   aws-sdk/generator/operation::input))))
       "Lag" common-lisp:nil)))
  (common-lisp:export 'update-lag))
