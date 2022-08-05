@@ -354,7 +354,7 @@
                          (aws-sdk/generator/shape::shape
                           create-bot-version-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "name"
+    (aws-sdk/generator/shape::to-query-params "Name"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -487,7 +487,7 @@
                          (aws-sdk/generator/shape::shape
                           create-intent-version-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "name"
+    (aws-sdk/generator/shape::to-query-params "Name"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -623,7 +623,7 @@
                          (aws-sdk/generator/shape::shape
                           create-slot-type-version-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "name"
+    (aws-sdk/generator/shape::to-query-params "Name"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -705,12 +705,12 @@
                          (aws-sdk/generator/shape::shape
                           delete-bot-alias-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "name"
+    (aws-sdk/generator/shape::to-query-params "Name"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'name)))
-    (aws-sdk/generator/shape::to-query-params "botName"
+    (aws-sdk/generator/shape::to-query-params "BotName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -732,17 +732,17 @@
                          (aws-sdk/generator/shape::shape
                           delete-bot-channel-association-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "name"
+    (aws-sdk/generator/shape::to-query-params "Name"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'name)))
-    (aws-sdk/generator/shape::to-query-params "botName"
+    (aws-sdk/generator/shape::to-query-params "BotName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bot-name)))
-    (aws-sdk/generator/shape::to-query-params "botAlias"
+    (aws-sdk/generator/shape::to-query-params "AliasName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -756,7 +756,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape delete-bot-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "name"
+    (aws-sdk/generator/shape::to-query-params "Name"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -775,12 +775,12 @@
                          (aws-sdk/generator/shape::shape
                           delete-bot-version-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "name"
+    (aws-sdk/generator/shape::to-query-params "Name"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'name)))
-    (aws-sdk/generator/shape::to-query-params "version"
+    (aws-sdk/generator/shape::to-query-params "Version"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -796,7 +796,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-intent-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "name"
+    (aws-sdk/generator/shape::to-query-params "Name"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -816,12 +816,12 @@
                          (aws-sdk/generator/shape::shape
                           delete-intent-version-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "name"
+    (aws-sdk/generator/shape::to-query-params "Name"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'name)))
-    (aws-sdk/generator/shape::to-query-params "version"
+    (aws-sdk/generator/shape::to-query-params "Version"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -837,7 +837,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-slot-type-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "name"
+    (aws-sdk/generator/shape::to-query-params "Name"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -857,12 +857,12 @@
                          (aws-sdk/generator/shape::shape
                           delete-slot-type-version-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "name"
+    (aws-sdk/generator/shape::to-query-params "Name"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'name)))
-    (aws-sdk/generator/shape::to-query-params "version"
+    (aws-sdk/generator/shape::to-query-params "Version"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -881,12 +881,12 @@
                          (aws-sdk/generator/shape::shape
                           delete-utterances-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "botName"
+    (aws-sdk/generator/shape::to-query-params "BotName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bot-name)))
-    (aws-sdk/generator/shape::to-query-params "userId"
+    (aws-sdk/generator/shape::to-query-params "UserId"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -970,12 +970,12 @@
                          (aws-sdk/generator/shape::shape
                           get-bot-alias-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "name"
+    (aws-sdk/generator/shape::to-query-params "Name"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'name)))
-    (aws-sdk/generator/shape::to-query-params "botName"
+    (aws-sdk/generator/shape::to-query-params "BotName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1052,22 +1052,22 @@
                          (aws-sdk/generator/shape::shape
                           get-bot-aliases-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "botName"
+    (aws-sdk/generator/shape::to-query-params "BotName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bot-name)))
-    (aws-sdk/generator/shape::to-query-params "nextToken"
+    (aws-sdk/generator/shape::to-query-params "NextToken"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'next-token)))
-    (aws-sdk/generator/shape::to-query-params "maxResults"
+    (aws-sdk/generator/shape::to-query-params "MaxResults"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'max-results)))
-    (aws-sdk/generator/shape::to-query-params "nameContains"
+    (aws-sdk/generator/shape::to-query-params "NameContains"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1112,17 +1112,17 @@
                          (aws-sdk/generator/shape::shape
                           get-bot-channel-association-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "name"
+    (aws-sdk/generator/shape::to-query-params "Name"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'name)))
-    (aws-sdk/generator/shape::to-query-params "botName"
+    (aws-sdk/generator/shape::to-query-params "BotName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bot-name)))
-    (aws-sdk/generator/shape::to-query-params "botAlias"
+    (aws-sdk/generator/shape::to-query-params "AliasName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1206,27 +1206,27 @@
                          (aws-sdk/generator/shape::shape
                           get-bot-channel-associations-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "botName"
+    (aws-sdk/generator/shape::to-query-params "BotName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bot-name)))
-    (aws-sdk/generator/shape::to-query-params "botAlias"
+    (aws-sdk/generator/shape::to-query-params "AliasName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bot-alias)))
-    (aws-sdk/generator/shape::to-query-params "nextToken"
+    (aws-sdk/generator/shape::to-query-params "NextToken"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'next-token)))
-    (aws-sdk/generator/shape::to-query-params "maxResults"
+    (aws-sdk/generator/shape::to-query-params "MaxResults"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'max-results)))
-    (aws-sdk/generator/shape::to-query-params "nameContains"
+    (aws-sdk/generator/shape::to-query-params "NameContains"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1266,12 +1266,12 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape get-bot-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "name"
+    (aws-sdk/generator/shape::to-query-params "Name"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'name)))
-    (aws-sdk/generator/shape::to-query-params "versionOrAlias"
+    (aws-sdk/generator/shape::to-query-params "Versionoralias"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1397,17 +1397,17 @@
                          (aws-sdk/generator/shape::shape
                           get-bot-versions-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "name"
+    (aws-sdk/generator/shape::to-query-params "Name"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'name)))
-    (aws-sdk/generator/shape::to-query-params "nextToken"
+    (aws-sdk/generator/shape::to-query-params "NextToken"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'next-token)))
-    (aws-sdk/generator/shape::to-query-params "maxResults"
+    (aws-sdk/generator/shape::to-query-params "MaxResults"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1449,17 +1449,17 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape get-bots-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "nextToken"
+    (aws-sdk/generator/shape::to-query-params "NextToken"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'next-token)))
-    (aws-sdk/generator/shape::to-query-params "maxResults"
+    (aws-sdk/generator/shape::to-query-params "MaxResults"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'max-results)))
-    (aws-sdk/generator/shape::to-query-params "nameContains"
+    (aws-sdk/generator/shape::to-query-params "NameContains"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1497,7 +1497,7 @@
                          (aws-sdk/generator/shape::shape
                           get-builtin-intent-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "signature"
+    (aws-sdk/generator/shape::to-query-params "Signature"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1550,22 +1550,22 @@
                          (aws-sdk/generator/shape::shape
                           get-builtin-intents-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "locale"
+    (aws-sdk/generator/shape::to-query-params "Locale"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'locale)))
-    (aws-sdk/generator/shape::to-query-params "signatureContains"
+    (aws-sdk/generator/shape::to-query-params "SignatureContains"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'signature-contains)))
-    (aws-sdk/generator/shape::to-query-params "nextToken"
+    (aws-sdk/generator/shape::to-query-params "NextToken"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'next-token)))
-    (aws-sdk/generator/shape::to-query-params "maxResults"
+    (aws-sdk/generator/shape::to-query-params "MaxResults"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1613,22 +1613,22 @@
                          (aws-sdk/generator/shape::shape
                           get-builtin-slot-types-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "locale"
+    (aws-sdk/generator/shape::to-query-params "Locale"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'locale)))
-    (aws-sdk/generator/shape::to-query-params "signatureContains"
+    (aws-sdk/generator/shape::to-query-params "SignatureContains"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'signature-contains)))
-    (aws-sdk/generator/shape::to-query-params "nextToken"
+    (aws-sdk/generator/shape::to-query-params "NextToken"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'next-token)))
-    (aws-sdk/generator/shape::to-query-params "maxResults"
+    (aws-sdk/generator/shape::to-query-params "MaxResults"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1669,12 +1669,12 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape get-intent-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "name"
+    (aws-sdk/generator/shape::to-query-params "Name"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'name)))
-    (aws-sdk/generator/shape::to-query-params "version"
+    (aws-sdk/generator/shape::to-query-params "Version"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1803,17 +1803,17 @@
                          (aws-sdk/generator/shape::shape
                           get-intent-versions-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "name"
+    (aws-sdk/generator/shape::to-query-params "Name"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'name)))
-    (aws-sdk/generator/shape::to-query-params "nextToken"
+    (aws-sdk/generator/shape::to-query-params "NextToken"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'next-token)))
-    (aws-sdk/generator/shape::to-query-params "maxResults"
+    (aws-sdk/generator/shape::to-query-params "MaxResults"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1856,17 +1856,17 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape get-intents-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "nextToken"
+    (aws-sdk/generator/shape::to-query-params "NextToken"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'next-token)))
-    (aws-sdk/generator/shape::to-query-params "maxResults"
+    (aws-sdk/generator/shape::to-query-params "MaxResults"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'max-results)))
-    (aws-sdk/generator/shape::to-query-params "nameContains"
+    (aws-sdk/generator/shape::to-query-params "NameContains"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1905,12 +1905,12 @@
                          (aws-sdk/generator/shape::shape
                           get-slot-type-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "name"
+    (aws-sdk/generator/shape::to-query-params "Name"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'name)))
-    (aws-sdk/generator/shape::to-query-params "version"
+    (aws-sdk/generator/shape::to-query-params "Version"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1988,17 +1988,17 @@
                          (aws-sdk/generator/shape::shape
                           get-slot-type-versions-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "name"
+    (aws-sdk/generator/shape::to-query-params "Name"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'name)))
-    (aws-sdk/generator/shape::to-query-params "nextToken"
+    (aws-sdk/generator/shape::to-query-params "NextToken"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'next-token)))
-    (aws-sdk/generator/shape::to-query-params "maxResults"
+    (aws-sdk/generator/shape::to-query-params "MaxResults"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2043,17 +2043,17 @@
                          (aws-sdk/generator/shape::shape
                           get-slot-types-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "nextToken"
+    (aws-sdk/generator/shape::to-query-params "NextToken"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'next-token)))
-    (aws-sdk/generator/shape::to-query-params "maxResults"
+    (aws-sdk/generator/shape::to-query-params "MaxResults"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'max-results)))
-    (aws-sdk/generator/shape::to-query-params "nameContains"
+    (aws-sdk/generator/shape::to-query-params "NameContains"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2097,17 +2097,17 @@
                          (aws-sdk/generator/shape::shape
                           get-utterances-view-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "botName"
+    (aws-sdk/generator/shape::to-query-params "Botname"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bot-name)))
-    (aws-sdk/generator/shape::to-query-params "botVersions"
+    (aws-sdk/generator/shape::to-query-params "Bot_versions"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bot-versions)))
-    (aws-sdk/generator/shape::to-query-params "statusType"
+    (aws-sdk/generator/shape::to-query-params "Status_type"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2248,7 +2248,7 @@
                          (aws-sdk/generator/shape::shape
                           limit-exceeded-exception))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "retryAfterSeconds"
+    (aws-sdk/generator/shape::to-query-params "Retry-After"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2392,7 +2392,7 @@
                          (aws-sdk/generator/shape::shape
                           put-bot-alias-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "name"
+    (aws-sdk/generator/shape::to-query-params "Name"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2407,7 +2407,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bot-version)))
-    (aws-sdk/generator/shape::to-query-params "botName"
+    (aws-sdk/generator/shape::to-query-params "BotName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2498,7 +2498,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape put-bot-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "name"
+    (aws-sdk/generator/shape::to-query-params "Name"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2688,7 +2688,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape put-intent-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "name"
+    (aws-sdk/generator/shape::to-query-params "Name"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2872,7 +2872,7 @@
                          (aws-sdk/generator/shape::shape
                           put-slot-type-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "name"
+    (aws-sdk/generator/shape::to-query-params "Name"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape

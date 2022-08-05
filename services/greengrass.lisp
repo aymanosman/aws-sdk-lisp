@@ -207,7 +207,7 @@
                          (aws-sdk/generator/shape::shape
                           create-core-definition-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AmznClientToken"
+    (aws-sdk/generator/shape::to-query-params "X-Amzn-Client-Token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -296,7 +296,7 @@
                          (aws-sdk/generator/shape::shape
                           create-core-definition-version-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AmznClientToken"
+    (aws-sdk/generator/shape::to-query-params "X-Amzn-Client-Token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -368,7 +368,7 @@
                          (aws-sdk/generator/shape::shape
                           create-deployment-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AmznClientToken"
+    (aws-sdk/generator/shape::to-query-params "X-Amzn-Client-Token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -433,7 +433,7 @@
                          (aws-sdk/generator/shape::shape
                           create-device-definition-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AmznClientToken"
+    (aws-sdk/generator/shape::to-query-params "X-Amzn-Client-Token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -523,7 +523,7 @@
                          (aws-sdk/generator/shape::shape
                           create-device-definition-version-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AmznClientToken"
+    (aws-sdk/generator/shape::to-query-params "X-Amzn-Client-Token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -591,7 +591,7 @@
                          (aws-sdk/generator/shape::shape
                           create-function-definition-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AmznClientToken"
+    (aws-sdk/generator/shape::to-query-params "X-Amzn-Client-Token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -681,7 +681,7 @@
                          (aws-sdk/generator/shape::shape
                           create-function-definition-version-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AmznClientToken"
+    (aws-sdk/generator/shape::to-query-params "X-Amzn-Client-Token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -748,7 +748,7 @@
                          (aws-sdk/generator/shape::shape
                           create-group-certificate-authority-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AmznClientToken"
+    (aws-sdk/generator/shape::to-query-params "X-Amzn-Client-Token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -788,7 +788,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape create-group-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AmznClientToken"
+    (aws-sdk/generator/shape::to-query-params "X-Amzn-Client-Token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -883,7 +883,7 @@
                          (aws-sdk/generator/shape::shape
                           create-group-version-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AmznClientToken"
+    (aws-sdk/generator/shape::to-query-params "X-Amzn-Client-Token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -971,7 +971,7 @@
                          (aws-sdk/generator/shape::shape
                           create-logger-definition-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AmznClientToken"
+    (aws-sdk/generator/shape::to-query-params "X-Amzn-Client-Token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1061,7 +1061,7 @@
                          (aws-sdk/generator/shape::shape
                           create-logger-definition-version-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AmznClientToken"
+    (aws-sdk/generator/shape::to-query-params "X-Amzn-Client-Token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1129,7 +1129,7 @@
                          (aws-sdk/generator/shape::shape
                           create-subscription-definition-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AmznClientToken"
+    (aws-sdk/generator/shape::to-query-params "X-Amzn-Client-Token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1219,7 +1219,7 @@
                          (aws-sdk/generator/shape::shape
                           create-subscription-definition-version-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AmznClientToken"
+    (aws-sdk/generator/shape::to-query-params "X-Amzn-Client-Token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape

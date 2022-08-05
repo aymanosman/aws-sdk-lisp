@@ -73,8 +73,11 @@
                    ',(intern (format nil "~:@(~A-~A~)" '#:make (lispify* name)))))
      (defmethod shape-to-params ((shape ,(lispify* name)))
        (append
-        ,@(loop for key being each hash-key of members
-                collect `(to-query-params ,key
+        ,@(loop for key being each hash-key of members using (hash-value val)
+                collect `(to-query-params ,(or (let ((key (gethash "locationName" val)))
+                                                 (when key
+                                                   (string-upcase key :end 1)))
+                                               key)
                                           (shape-to-params (slot-value shape ',(lispify key)))))))))
 
 (defun compile-list-shape (name member)

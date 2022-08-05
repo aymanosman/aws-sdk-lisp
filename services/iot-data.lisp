@@ -32,7 +32,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-thing-shadow-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "thingName"
+    (aws-sdk/generator/shape::to-query-params "ThingName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -67,7 +67,7 @@
                          (aws-sdk/generator/shape::shape
                           get-thing-shadow-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "thingName"
+    (aws-sdk/generator/shape::to-query-params "ThingName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -155,12 +155,12 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape publish-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "topic"
+    (aws-sdk/generator/shape::to-query-params "Topic"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'topic)))
-    (aws-sdk/generator/shape::to-query-params "qos"
+    (aws-sdk/generator/shape::to-query-params "Qos"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -289,7 +289,7 @@
                          (aws-sdk/generator/shape::shape
                           update-thing-shadow-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "thingName"
+    (aws-sdk/generator/shape::to-query-params "ThingName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape

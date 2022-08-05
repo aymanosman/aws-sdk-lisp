@@ -1454,7 +1454,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'sync-session-token)))
-    (aws-sdk/generator/shape::to-query-params "ClientContext"
+    (aws-sdk/generator/shape::to-query-params "X-amz-Client-Context"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape

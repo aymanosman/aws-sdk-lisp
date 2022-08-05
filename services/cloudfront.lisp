@@ -1069,7 +1069,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'id)))
-    (aws-sdk/generator/shape::to-query-params "IfMatch"
+    (aws-sdk/generator/shape::to-query-params "If-Match"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1093,7 +1093,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'id)))
-    (aws-sdk/generator/shape::to-query-params "IfMatch"
+    (aws-sdk/generator/shape::to-query-params "If-Match"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1118,7 +1118,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'id)))
-    (aws-sdk/generator/shape::to-query-params "IfMatch"
+    (aws-sdk/generator/shape::to-query-params "If-Match"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4100,7 +4100,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'id)))
-    (aws-sdk/generator/shape::to-query-params "IfMatch"
+    (aws-sdk/generator/shape::to-query-params "If-Match"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4157,7 +4157,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'id)))
-    (aws-sdk/generator/shape::to-query-params "IfMatch"
+    (aws-sdk/generator/shape::to-query-params "If-Match"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4214,7 +4214,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'id)))
-    (aws-sdk/generator/shape::to-query-params "IfMatch"
+    (aws-sdk/generator/shape::to-query-params "If-Match"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape

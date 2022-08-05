@@ -309,7 +309,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'queue-name)))
-    (aws-sdk/generator/shape::to-query-params "Attributes"
+    (aws-sdk/generator/shape::to-query-params "Attribute"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -518,7 +518,7 @@
                          (aws-sdk/generator/shape::shape
                           get-queue-attributes-result))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "Attributes"
+    (aws-sdk/generator/shape::to-query-params "Attribute"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -695,7 +695,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'body)))
-    (aws-sdk/generator/shape::to-query-params "Attributes"
+    (aws-sdk/generator/shape::to-query-params "Attribute"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -705,7 +705,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'md5of-message-attributes)))
-    (aws-sdk/generator/shape::to-query-params "MessageAttributes"
+    (aws-sdk/generator/shape::to-query-params "MessageAttribute"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -748,12 +748,12 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'binary-value)))
-    (aws-sdk/generator/shape::to-query-params "StringListValues"
+    (aws-sdk/generator/shape::to-query-params "StringListValue"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'string-list-values)))
-    (aws-sdk/generator/shape::to-query-params "BinaryListValues"
+    (aws-sdk/generator/shape::to-query-params "BinaryListValue"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1026,7 +1026,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'delay-seconds)))
-    (aws-sdk/generator/shape::to-query-params "MessageAttributes"
+    (aws-sdk/generator/shape::to-query-params "MessageAttribute"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1163,7 +1163,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'delay-seconds)))
-    (aws-sdk/generator/shape::to-query-params "MessageAttributes"
+    (aws-sdk/generator/shape::to-query-params "MessageAttribute"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1232,7 +1232,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'queue-url)))
-    (aws-sdk/generator/shape::to-query-params "Attributes"
+    (aws-sdk/generator/shape::to-query-params "Attribute"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape

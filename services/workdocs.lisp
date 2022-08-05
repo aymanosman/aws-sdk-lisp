@@ -23,7 +23,7 @@
                          (aws-sdk/generator/shape::shape
                           abort-document-version-upload-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -56,7 +56,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'user-id)))
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -155,7 +155,7 @@
                          (aws-sdk/generator/shape::shape
                           add-resource-permissions-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -353,7 +353,7 @@
                          (aws-sdk/generator/shape::shape
                           create-comment-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -427,7 +427,7 @@
                          (aws-sdk/generator/shape::shape
                           create-custom-metadata-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -437,7 +437,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'resource-id)))
-    (aws-sdk/generator/shape::to-query-params "VersionId"
+    (aws-sdk/generator/shape::to-query-params "Versionid"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -473,7 +473,7 @@
                          (aws-sdk/generator/shape::shape
                           create-folder-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -529,7 +529,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'labels)))
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -665,7 +665,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'storage-rule)))
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -736,7 +736,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'user-id)))
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -769,7 +769,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-comment-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -810,7 +810,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-custom-metadata-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -859,7 +859,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-document-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -884,7 +884,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-folder-contents-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -907,7 +907,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-folder-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -938,7 +938,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'resource-id)))
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -998,7 +998,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape delete-user-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1030,7 +1030,7 @@
                          (aws-sdk/generator/shape::shape
                           describe-activities-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1109,7 +1109,7 @@
                          (aws-sdk/generator/shape::shape
                           describe-comments-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1180,7 +1180,7 @@
                          (aws-sdk/generator/shape::shape
                           describe-document-versions-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1260,7 +1260,7 @@
                          (aws-sdk/generator/shape::shape
                           describe-folder-contents-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1406,7 +1406,7 @@
                          (aws-sdk/generator/shape::shape
                           describe-resource-permissions-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1468,7 +1468,7 @@
                          (aws-sdk/generator/shape::shape
                           describe-root-folders-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1535,7 +1535,7 @@
                          (aws-sdk/generator/shape::shape
                           describe-users-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2016,7 +2016,7 @@
                          (aws-sdk/generator/shape::shape
                           get-current-user-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2056,7 +2056,7 @@
                          (aws-sdk/generator/shape::shape
                           get-document-path-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2111,7 +2111,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape get-document-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2170,7 +2170,7 @@
                          (aws-sdk/generator/shape::shape
                           get-document-version-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2238,7 +2238,7 @@
                          (aws-sdk/generator/shape::shape
                           get-folder-path-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2292,7 +2292,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape get-folder-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2405,7 +2405,7 @@
                          (aws-sdk/generator/shape::shape
                           initiate-document-version-upload-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2657,7 +2657,7 @@
                          (aws-sdk/generator/shape::shape
                           remove-all-resource-permissions-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2686,7 +2686,7 @@
                          (aws-sdk/generator/shape::shape
                           remove-resource-permission-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2701,7 +2701,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'principal-id)))
-    (aws-sdk/generator/shape::to-query-params "PrincipalType"
+    (aws-sdk/generator/shape::to-query-params "Type"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3120,7 +3120,7 @@
                          (aws-sdk/generator/shape::shape
                           update-document-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3164,7 +3164,7 @@
                          (aws-sdk/generator/shape::shape
                           update-document-version-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3203,7 +3203,7 @@
                          (aws-sdk/generator/shape::shape
                           update-folder-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3250,7 +3250,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape update-user-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AuthenticationToken"
+    (aws-sdk/generator/shape::to-query-params "Authentication"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape

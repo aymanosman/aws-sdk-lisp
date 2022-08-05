@@ -19,7 +19,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape delete-lexicon-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "Name"
+    (aws-sdk/generator/shape::to-query-params "LexiconName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -89,7 +89,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape get-lexicon-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "Name"
+    (aws-sdk/generator/shape::to-query-params "LexiconName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -429,7 +429,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape put-lexicon-input))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "Name"
+    (aws-sdk/generator/shape::to-query-params "LexiconName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -572,12 +572,12 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'audio-stream)))
-    (aws-sdk/generator/shape::to-query-params "ContentType"
+    (aws-sdk/generator/shape::to-query-params "Content-Type"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'content-type)))
-    (aws-sdk/generator/shape::to-query-params "RequestCharacters"
+    (aws-sdk/generator/shape::to-query-params "X-amzn-RequestCharacters"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape

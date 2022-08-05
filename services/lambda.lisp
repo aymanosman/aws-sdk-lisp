@@ -1256,17 +1256,17 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'function-name)))
-    (aws-sdk/generator/shape::to-query-params "InvocationType"
+    (aws-sdk/generator/shape::to-query-params "X-Amz-Invocation-Type"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'invocation-type)))
-    (aws-sdk/generator/shape::to-query-params "LogType"
+    (aws-sdk/generator/shape::to-query-params "X-Amz-Log-Type"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'log-type)))
-    (aws-sdk/generator/shape::to-query-params "ClientContext"
+    (aws-sdk/generator/shape::to-query-params "X-Amz-Client-Context"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1299,12 +1299,12 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'status-code)))
-    (aws-sdk/generator/shape::to-query-params "FunctionError"
+    (aws-sdk/generator/shape::to-query-params "X-Amz-Function-Error"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'function-error)))
-    (aws-sdk/generator/shape::to-query-params "LogResult"
+    (aws-sdk/generator/shape::to-query-params "X-Amz-Log-Result"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1624,7 +1624,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape list-tags-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "Resource"
+    (aws-sdk/generator/shape::to-query-params "ARN"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1945,7 +1945,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape tag-resource-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "Resource"
+    (aws-sdk/generator/shape::to-query-params "ARN"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1981,7 +1981,7 @@
                          (aws-sdk/generator/shape::shape
                           too-many-requests-exception))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "retryAfterSeconds"
+    (aws-sdk/generator/shape::to-query-params "Retry-After"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2065,7 +2065,7 @@
                          (aws-sdk/generator/shape::shape
                           untag-resource-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "Resource"
+    (aws-sdk/generator/shape::to-query-params "ARN"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape

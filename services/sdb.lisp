@@ -175,7 +175,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape deletable-item))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "Name"
+    (aws-sdk/generator/shape::to-query-params "ItemName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -754,7 +754,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape replaceable-item))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "Name"
+    (aws-sdk/generator/shape::to-query-params "ItemName"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape

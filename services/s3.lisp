@@ -38,7 +38,7 @@
                          (aws-sdk/generator/shape::shape
                           abort-multipart-upload-output))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "RequestCharged"
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-charged"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -77,7 +77,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'upload-id)))
-    (aws-sdk/generator/shape::to-query-params "RequestPayer"
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-payer"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -111,7 +111,7 @@
                          (aws-sdk/generator/shape::shape
                           access-control-policy))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "Grants"
+    (aws-sdk/generator/shape::to-query-params "AccessControlList"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -165,7 +165,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'prefix)))
-    (aws-sdk/generator/shape::to-query-params "Tags"
+    (aws-sdk/generator/shape::to-query-params "Tag"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -350,7 +350,7 @@
                          (aws-sdk/generator/shape::shape
                           bucket-lifecycle-configuration))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "Rules"
+    (aws-sdk/generator/shape::to-query-params "Rule"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -391,7 +391,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape corsconfiguration))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "CORSRules"
+    (aws-sdk/generator/shape::to-query-params "CORSRule"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -412,22 +412,22 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape corsrule))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AllowedHeaders"
+    (aws-sdk/generator/shape::to-query-params "AllowedHeader"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'allowed-headers)))
-    (aws-sdk/generator/shape::to-query-params "AllowedMethods"
+    (aws-sdk/generator/shape::to-query-params "AllowedMethod"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'allowed-methods)))
-    (aws-sdk/generator/shape::to-query-params "AllowedOrigins"
+    (aws-sdk/generator/shape::to-query-params "AllowedOrigin"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'allowed-origins)))
-    (aws-sdk/generator/shape::to-query-params "ExposeHeaders"
+    (aws-sdk/generator/shape::to-query-params "ExposeHeader"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -474,7 +474,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'event)))
-    (aws-sdk/generator/shape::to-query-params "Events"
+    (aws-sdk/generator/shape::to-query-params "Event"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -551,7 +551,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'key)))
-    (aws-sdk/generator/shape::to-query-params "Expiration"
+    (aws-sdk/generator/shape::to-query-params "X-amz-expiration"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -561,22 +561,21 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'etag)))
-    (aws-sdk/generator/shape::to-query-params "ServerSideEncryption"
+    (aws-sdk/generator/shape::to-query-params "X-amz-server-side-encryption"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'server-side-encryption)))
-    (aws-sdk/generator/shape::to-query-params "VersionId"
+    (aws-sdk/generator/shape::to-query-params "X-amz-version-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'version-id)))
-    (aws-sdk/generator/shape::to-query-params "SSEKMSKeyId"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssekmskey-id)))
-    (aws-sdk/generator/shape::to-query-params "RequestCharged"
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-aws-kms-key-id"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape 'ssekmskey-id)))
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-charged"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -612,7 +611,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'key)))
-    (aws-sdk/generator/shape::to-query-params "MultipartUpload"
+    (aws-sdk/generator/shape::to-query-params "CompleteMultipartUpload"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -622,7 +621,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'upload-id)))
-    (aws-sdk/generator/shape::to-query-params "RequestPayer"
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-payer"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -639,7 +638,7 @@
                          (aws-sdk/generator/shape::shape
                           completed-multipart-upload))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "Parts"
+    (aws-sdk/generator/shape::to-query-params "Part"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -728,42 +727,41 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'copy-object-result)))
-    (aws-sdk/generator/shape::to-query-params "Expiration"
+    (aws-sdk/generator/shape::to-query-params "X-amz-expiration"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'expiration)))
-    (aws-sdk/generator/shape::to-query-params "CopySourceVersionId"
+    (aws-sdk/generator/shape::to-query-params "X-amz-copy-source-version-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'copy-source-version-id)))
-    (aws-sdk/generator/shape::to-query-params "VersionId"
+    (aws-sdk/generator/shape::to-query-params "X-amz-version-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'version-id)))
-    (aws-sdk/generator/shape::to-query-params "ServerSideEncryption"
+    (aws-sdk/generator/shape::to-query-params "X-amz-server-side-encryption"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'server-side-encryption)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerAlgorithm"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-algorithm)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerKeyMD5"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-key-md5)))
-    (aws-sdk/generator/shape::to-query-params "SSEKMSKeyId"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssekmskey-id)))
-    (aws-sdk/generator/shape::to-query-params "RequestCharged"
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-algorithm"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-algorithm)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-key-MD5"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-key-md5)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-aws-kms-key-id"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape 'ssekmskey-id)))
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-charged"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -839,7 +837,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape copy-object-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ACL"
+    (aws-sdk/generator/shape::to-query-params "X-amz-acl"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -849,77 +847,77 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bucket)))
-    (aws-sdk/generator/shape::to-query-params "CacheControl"
+    (aws-sdk/generator/shape::to-query-params "Cache-Control"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'cache-control)))
-    (aws-sdk/generator/shape::to-query-params "ContentDisposition"
+    (aws-sdk/generator/shape::to-query-params "Content-Disposition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'content-disposition)))
-    (aws-sdk/generator/shape::to-query-params "ContentEncoding"
+    (aws-sdk/generator/shape::to-query-params "Content-Encoding"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'content-encoding)))
-    (aws-sdk/generator/shape::to-query-params "ContentLanguage"
+    (aws-sdk/generator/shape::to-query-params "Content-Language"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'content-language)))
-    (aws-sdk/generator/shape::to-query-params "ContentType"
+    (aws-sdk/generator/shape::to-query-params "Content-Type"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'content-type)))
-    (aws-sdk/generator/shape::to-query-params "CopySource"
+    (aws-sdk/generator/shape::to-query-params "X-amz-copy-source"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'copy-source)))
-    (aws-sdk/generator/shape::to-query-params "CopySourceIfMatch"
+    (aws-sdk/generator/shape::to-query-params "X-amz-copy-source-if-match"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'copy-source-if-match)))
-    (aws-sdk/generator/shape::to-query-params "CopySourceIfModifiedSince"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'copy-source-if-modified-since)))
-    (aws-sdk/generator/shape::to-query-params "CopySourceIfNoneMatch"
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-copy-source-if-modified-since"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'copy-source-if-modified-since)))
+    (aws-sdk/generator/shape::to-query-params "X-amz-copy-source-if-none-match"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'copy-source-if-none-match)))
-    (aws-sdk/generator/shape::to-query-params "CopySourceIfUnmodifiedSince"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'copy-source-if-unmodified-since)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-copy-source-if-unmodified-since"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'copy-source-if-unmodified-since)))
     (aws-sdk/generator/shape::to-query-params "Expires"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'expires)))
-    (aws-sdk/generator/shape::to-query-params "GrantFullControl"
+    (aws-sdk/generator/shape::to-query-params "X-amz-grant-full-control"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'grant-full-control)))
-    (aws-sdk/generator/shape::to-query-params "GrantRead"
+    (aws-sdk/generator/shape::to-query-params "X-amz-grant-read"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'grant-read)))
-    (aws-sdk/generator/shape::to-query-params "GrantReadACP"
+    (aws-sdk/generator/shape::to-query-params "X-amz-grant-read-acp"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'grant-read-acp)))
-    (aws-sdk/generator/shape::to-query-params "GrantWriteACP"
+    (aws-sdk/generator/shape::to-query-params "X-amz-grant-write-acp"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -929,77 +927,76 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'key)))
-    (aws-sdk/generator/shape::to-query-params "Metadata"
+    (aws-sdk/generator/shape::to-query-params "X-amz-meta-"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'metadata)))
-    (aws-sdk/generator/shape::to-query-params "MetadataDirective"
+    (aws-sdk/generator/shape::to-query-params "X-amz-metadata-directive"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'metadata-directive)))
-    (aws-sdk/generator/shape::to-query-params "TaggingDirective"
+    (aws-sdk/generator/shape::to-query-params "X-amz-tagging-directive"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'tagging-directive)))
-    (aws-sdk/generator/shape::to-query-params "ServerSideEncryption"
+    (aws-sdk/generator/shape::to-query-params "X-amz-server-side-encryption"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'server-side-encryption)))
-    (aws-sdk/generator/shape::to-query-params "StorageClass"
+    (aws-sdk/generator/shape::to-query-params "X-amz-storage-class"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'storage-class)))
-    (aws-sdk/generator/shape::to-query-params "WebsiteRedirectLocation"
+    (aws-sdk/generator/shape::to-query-params "X-amz-website-redirect-location"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'website-redirect-location)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerAlgorithm"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-algorithm)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerKey"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-key)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerKeyMD5"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-key-md5)))
-    (aws-sdk/generator/shape::to-query-params "SSEKMSKeyId"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssekmskey-id)))
-    (aws-sdk/generator/shape::to-query-params "CopySourceSSECustomerAlgorithm"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'copy-source-ssecustomer-algorithm)))
-    (aws-sdk/generator/shape::to-query-params "CopySourceSSECustomerKey"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'copy-source-ssecustomer-key)))
-    (aws-sdk/generator/shape::to-query-params "CopySourceSSECustomerKeyMD5"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'copy-source-ssecustomer-key-md5)))
-    (aws-sdk/generator/shape::to-query-params "RequestPayer"
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-algorithm"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-algorithm)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-key"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-key)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-key-MD5"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-key-md5)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-aws-kms-key-id"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape 'ssekmskey-id)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-copy-source-server-side-encryption-customer-algorithm"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'copy-source-ssecustomer-algorithm)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-copy-source-server-side-encryption-customer-key"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'copy-source-ssecustomer-key)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-copy-source-server-side-encryption-customer-key-MD5"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'copy-source-ssecustomer-key-md5)))
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-payer"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'request-payer)))
-    (aws-sdk/generator/shape::to-query-params "Tagging"
+    (aws-sdk/generator/shape::to-query-params "X-amz-tagging"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1109,7 +1106,7 @@
                          (aws-sdk/generator/shape::shape
                           create-bucket-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ACL"
+    (aws-sdk/generator/shape::to-query-params "X-amz-acl"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1124,27 +1121,27 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'create-bucket-configuration)))
-    (aws-sdk/generator/shape::to-query-params "GrantFullControl"
+    (aws-sdk/generator/shape::to-query-params "X-amz-grant-full-control"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'grant-full-control)))
-    (aws-sdk/generator/shape::to-query-params "GrantRead"
+    (aws-sdk/generator/shape::to-query-params "X-amz-grant-read"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'grant-read)))
-    (aws-sdk/generator/shape::to-query-params "GrantReadACP"
+    (aws-sdk/generator/shape::to-query-params "X-amz-grant-read-acp"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'grant-read-acp)))
-    (aws-sdk/generator/shape::to-query-params "GrantWrite"
+    (aws-sdk/generator/shape::to-query-params "X-amz-grant-write"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'grant-write)))
-    (aws-sdk/generator/shape::to-query-params "GrantWriteACP"
+    (aws-sdk/generator/shape::to-query-params "X-amz-grant-write-acp"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1178,12 +1175,12 @@
                          (aws-sdk/generator/shape::shape
                           create-multipart-upload-output))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AbortDate"
+    (aws-sdk/generator/shape::to-query-params "X-amz-abort-date"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'abort-date)))
-    (aws-sdk/generator/shape::to-query-params "AbortRuleId"
+    (aws-sdk/generator/shape::to-query-params "X-amz-abort-rule-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1203,27 +1200,26 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'upload-id)))
-    (aws-sdk/generator/shape::to-query-params "ServerSideEncryption"
+    (aws-sdk/generator/shape::to-query-params "X-amz-server-side-encryption"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'server-side-encryption)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerAlgorithm"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-algorithm)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerKeyMD5"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-key-md5)))
-    (aws-sdk/generator/shape::to-query-params "SSEKMSKeyId"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssekmskey-id)))
-    (aws-sdk/generator/shape::to-query-params "RequestCharged"
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-algorithm"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-algorithm)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-key-MD5"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-key-md5)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-aws-kms-key-id"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape 'ssekmskey-id)))
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-charged"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1283,7 +1279,7 @@
                          (aws-sdk/generator/shape::shape
                           create-multipart-upload-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ACL"
+    (aws-sdk/generator/shape::to-query-params "X-amz-acl"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1293,27 +1289,27 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bucket)))
-    (aws-sdk/generator/shape::to-query-params "CacheControl"
+    (aws-sdk/generator/shape::to-query-params "Cache-Control"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'cache-control)))
-    (aws-sdk/generator/shape::to-query-params "ContentDisposition"
+    (aws-sdk/generator/shape::to-query-params "Content-Disposition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'content-disposition)))
-    (aws-sdk/generator/shape::to-query-params "ContentEncoding"
+    (aws-sdk/generator/shape::to-query-params "Content-Encoding"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'content-encoding)))
-    (aws-sdk/generator/shape::to-query-params "ContentLanguage"
+    (aws-sdk/generator/shape::to-query-params "Content-Language"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'content-language)))
-    (aws-sdk/generator/shape::to-query-params "ContentType"
+    (aws-sdk/generator/shape::to-query-params "Content-Type"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1323,22 +1319,22 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'expires)))
-    (aws-sdk/generator/shape::to-query-params "GrantFullControl"
+    (aws-sdk/generator/shape::to-query-params "X-amz-grant-full-control"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'grant-full-control)))
-    (aws-sdk/generator/shape::to-query-params "GrantRead"
+    (aws-sdk/generator/shape::to-query-params "X-amz-grant-read"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'grant-read)))
-    (aws-sdk/generator/shape::to-query-params "GrantReadACP"
+    (aws-sdk/generator/shape::to-query-params "X-amz-grant-read-acp"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'grant-read-acp)))
-    (aws-sdk/generator/shape::to-query-params "GrantWriteACP"
+    (aws-sdk/generator/shape::to-query-params "X-amz-grant-write-acp"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1348,52 +1344,51 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'key)))
-    (aws-sdk/generator/shape::to-query-params "Metadata"
+    (aws-sdk/generator/shape::to-query-params "X-amz-meta-"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'metadata)))
-    (aws-sdk/generator/shape::to-query-params "ServerSideEncryption"
+    (aws-sdk/generator/shape::to-query-params "X-amz-server-side-encryption"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'server-side-encryption)))
-    (aws-sdk/generator/shape::to-query-params "StorageClass"
+    (aws-sdk/generator/shape::to-query-params "X-amz-storage-class"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'storage-class)))
-    (aws-sdk/generator/shape::to-query-params "WebsiteRedirectLocation"
+    (aws-sdk/generator/shape::to-query-params "X-amz-website-redirect-location"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'website-redirect-location)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerAlgorithm"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-algorithm)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerKey"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-key)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerKeyMD5"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-key-md5)))
-    (aws-sdk/generator/shape::to-query-params "SSEKMSKeyId"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssekmskey-id)))
-    (aws-sdk/generator/shape::to-query-params "RequestPayer"
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-algorithm"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-algorithm)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-key"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-key)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-key-MD5"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-key-md5)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-aws-kms-key-id"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape 'ssekmskey-id)))
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-payer"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'request-payer)))
-    (aws-sdk/generator/shape::to-query-params "Tagging"
+    (aws-sdk/generator/shape::to-query-params "X-amz-tagging"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1411,7 +1406,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape delete))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "Objects"
+    (aws-sdk/generator/shape::to-query-params "Object"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1682,17 +1677,17 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape delete-object-output))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DeleteMarker"
+    (aws-sdk/generator/shape::to-query-params "X-amz-delete-marker"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'delete-marker)))
-    (aws-sdk/generator/shape::to-query-params "VersionId"
+    (aws-sdk/generator/shape::to-query-params "X-amz-version-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'version-id)))
-    (aws-sdk/generator/shape::to-query-params "RequestCharged"
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-charged"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1725,7 +1720,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'key)))
-    (aws-sdk/generator/shape::to-query-params "MFA"
+    (aws-sdk/generator/shape::to-query-params "X-amz-mfa"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1735,7 +1730,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'version-id)))
-    (aws-sdk/generator/shape::to-query-params "RequestPayer"
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-payer"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1753,7 +1748,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-object-tagging-output))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "VersionId"
+    (aws-sdk/generator/shape::to-query-params "X-amz-version-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1809,12 +1804,12 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'deleted)))
-    (aws-sdk/generator/shape::to-query-params "RequestCharged"
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-charged"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'request-charged)))
-    (aws-sdk/generator/shape::to-query-params "Errors"
+    (aws-sdk/generator/shape::to-query-params "Error"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1845,12 +1840,12 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'delete)))
-    (aws-sdk/generator/shape::to-query-params "MFA"
+    (aws-sdk/generator/shape::to-query-params "X-amz-mfa"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'mfa)))
-    (aws-sdk/generator/shape::to-query-params "RequestPayer"
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-payer"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2076,7 +2071,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'owner)))
-    (aws-sdk/generator/shape::to-query-params "Grants"
+    (aws-sdk/generator/shape::to-query-params "AccessControlList"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2151,7 +2146,7 @@
                          (aws-sdk/generator/shape::shape
                           get-bucket-cors-output))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "CORSRules"
+    (aws-sdk/generator/shape::to-query-params "CORSRule"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2228,7 +2223,7 @@
                          (aws-sdk/generator/shape::shape
                           get-bucket-lifecycle-configuration-output))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "Rules"
+    (aws-sdk/generator/shape::to-query-params "Rule"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2262,7 +2257,7 @@
                          (aws-sdk/generator/shape::shape
                           get-bucket-lifecycle-output))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "Rules"
+    (aws-sdk/generator/shape::to-query-params "Rule"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2571,7 +2566,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'status)))
-    (aws-sdk/generator/shape::to-query-params "MFADelete"
+    (aws-sdk/generator/shape::to-query-params "MfaDelete"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2667,12 +2662,12 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'owner)))
-    (aws-sdk/generator/shape::to-query-params "Grants"
+    (aws-sdk/generator/shape::to-query-params "AccessControlList"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'grants)))
-    (aws-sdk/generator/shape::to-query-params "RequestCharged"
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-charged"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2709,7 +2704,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'version-id)))
-    (aws-sdk/generator/shape::to-query-params "RequestPayer"
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-payer"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2777,32 +2772,32 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'body)))
-    (aws-sdk/generator/shape::to-query-params "DeleteMarker"
+    (aws-sdk/generator/shape::to-query-params "X-amz-delete-marker"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'delete-marker)))
-    (aws-sdk/generator/shape::to-query-params "AcceptRanges"
+    (aws-sdk/generator/shape::to-query-params "Accept-ranges"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'accept-ranges)))
-    (aws-sdk/generator/shape::to-query-params "Expiration"
+    (aws-sdk/generator/shape::to-query-params "X-amz-expiration"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'expiration)))
-    (aws-sdk/generator/shape::to-query-params "Restore"
+    (aws-sdk/generator/shape::to-query-params "X-amz-restore"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'restore)))
-    (aws-sdk/generator/shape::to-query-params "LastModified"
+    (aws-sdk/generator/shape::to-query-params "Last-Modified"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'last-modified)))
-    (aws-sdk/generator/shape::to-query-params "ContentLength"
+    (aws-sdk/generator/shape::to-query-params "Content-Length"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2812,42 +2807,42 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'etag)))
-    (aws-sdk/generator/shape::to-query-params "MissingMeta"
+    (aws-sdk/generator/shape::to-query-params "X-amz-missing-meta"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'missing-meta)))
-    (aws-sdk/generator/shape::to-query-params "VersionId"
+    (aws-sdk/generator/shape::to-query-params "X-amz-version-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'version-id)))
-    (aws-sdk/generator/shape::to-query-params "CacheControl"
+    (aws-sdk/generator/shape::to-query-params "Cache-Control"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'cache-control)))
-    (aws-sdk/generator/shape::to-query-params "ContentDisposition"
+    (aws-sdk/generator/shape::to-query-params "Content-Disposition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'content-disposition)))
-    (aws-sdk/generator/shape::to-query-params "ContentEncoding"
+    (aws-sdk/generator/shape::to-query-params "Content-Encoding"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'content-encoding)))
-    (aws-sdk/generator/shape::to-query-params "ContentLanguage"
+    (aws-sdk/generator/shape::to-query-params "Content-Language"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'content-language)))
-    (aws-sdk/generator/shape::to-query-params "ContentRange"
+    (aws-sdk/generator/shape::to-query-params "Content-Range"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'content-range)))
-    (aws-sdk/generator/shape::to-query-params "ContentType"
+    (aws-sdk/generator/shape::to-query-params "Content-Type"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2857,57 +2852,56 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'expires)))
-    (aws-sdk/generator/shape::to-query-params "WebsiteRedirectLocation"
+    (aws-sdk/generator/shape::to-query-params "X-amz-website-redirect-location"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'website-redirect-location)))
-    (aws-sdk/generator/shape::to-query-params "ServerSideEncryption"
+    (aws-sdk/generator/shape::to-query-params "X-amz-server-side-encryption"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'server-side-encryption)))
-    (aws-sdk/generator/shape::to-query-params "Metadata"
+    (aws-sdk/generator/shape::to-query-params "X-amz-meta-"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'metadata)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerAlgorithm"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-algorithm)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerKeyMD5"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-key-md5)))
-    (aws-sdk/generator/shape::to-query-params "SSEKMSKeyId"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssekmskey-id)))
-    (aws-sdk/generator/shape::to-query-params "StorageClass"
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-algorithm"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-algorithm)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-key-MD5"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-key-md5)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-aws-kms-key-id"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape 'ssekmskey-id)))
+    (aws-sdk/generator/shape::to-query-params "X-amz-storage-class"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'storage-class)))
-    (aws-sdk/generator/shape::to-query-params "RequestCharged"
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-charged"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'request-charged)))
-    (aws-sdk/generator/shape::to-query-params "ReplicationStatus"
+    (aws-sdk/generator/shape::to-query-params "X-amz-replication-status"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'replication-status)))
-    (aws-sdk/generator/shape::to-query-params "PartsCount"
+    (aws-sdk/generator/shape::to-query-params "X-amz-mp-parts-count"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'parts-count)))
-    (aws-sdk/generator/shape::to-query-params "TagCount"
+    (aws-sdk/generator/shape::to-query-params "X-amz-tagging-count"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2960,22 +2954,22 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bucket)))
-    (aws-sdk/generator/shape::to-query-params "IfMatch"
+    (aws-sdk/generator/shape::to-query-params "If-Match"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'if-match)))
-    (aws-sdk/generator/shape::to-query-params "IfModifiedSince"
+    (aws-sdk/generator/shape::to-query-params "If-Modified-Since"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'if-modified-since)))
-    (aws-sdk/generator/shape::to-query-params "IfNoneMatch"
+    (aws-sdk/generator/shape::to-query-params "If-None-Match"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'if-none-match)))
-    (aws-sdk/generator/shape::to-query-params "IfUnmodifiedSince"
+    (aws-sdk/generator/shape::to-query-params "If-Unmodified-Since"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2990,32 +2984,32 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'range)))
-    (aws-sdk/generator/shape::to-query-params "ResponseCacheControl"
+    (aws-sdk/generator/shape::to-query-params "Response-cache-control"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'response-cache-control)))
-    (aws-sdk/generator/shape::to-query-params "ResponseContentDisposition"
+    (aws-sdk/generator/shape::to-query-params "Response-content-disposition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'response-content-disposition)))
-    (aws-sdk/generator/shape::to-query-params "ResponseContentEncoding"
+    (aws-sdk/generator/shape::to-query-params "Response-content-encoding"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'response-content-encoding)))
-    (aws-sdk/generator/shape::to-query-params "ResponseContentLanguage"
+    (aws-sdk/generator/shape::to-query-params "Response-content-language"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'response-content-language)))
-    (aws-sdk/generator/shape::to-query-params "ResponseContentType"
+    (aws-sdk/generator/shape::to-query-params "Response-content-type"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'response-content-type)))
-    (aws-sdk/generator/shape::to-query-params "ResponseExpires"
+    (aws-sdk/generator/shape::to-query-params "Response-expires"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3025,22 +3019,22 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'version-id)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerAlgorithm"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-algorithm)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerKey"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-key)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerKeyMD5"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-key-md5)))
-    (aws-sdk/generator/shape::to-query-params "RequestPayer"
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-algorithm"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-algorithm)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-key"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-key)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-key-MD5"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-key-md5)))
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-payer"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3064,7 +3058,7 @@
                          (aws-sdk/generator/shape::shape
                           get-object-tagging-output))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "VersionId"
+    (aws-sdk/generator/shape::to-query-params "X-amz-version-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3123,7 +3117,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'body)))
-    (aws-sdk/generator/shape::to-query-params "RequestCharged"
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-charged"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3154,7 +3148,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'key)))
-    (aws-sdk/generator/shape::to-query-params "RequestPayer"
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-payer"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3228,7 +3222,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'id)))
-    (aws-sdk/generator/shape::to-query-params "Type"
+    (aws-sdk/generator/shape::to-query-params "Xsi:type"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3312,32 +3306,32 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape head-object-output))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DeleteMarker"
+    (aws-sdk/generator/shape::to-query-params "X-amz-delete-marker"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'delete-marker)))
-    (aws-sdk/generator/shape::to-query-params "AcceptRanges"
+    (aws-sdk/generator/shape::to-query-params "Accept-ranges"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'accept-ranges)))
-    (aws-sdk/generator/shape::to-query-params "Expiration"
+    (aws-sdk/generator/shape::to-query-params "X-amz-expiration"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'expiration)))
-    (aws-sdk/generator/shape::to-query-params "Restore"
+    (aws-sdk/generator/shape::to-query-params "X-amz-restore"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'restore)))
-    (aws-sdk/generator/shape::to-query-params "LastModified"
+    (aws-sdk/generator/shape::to-query-params "Last-Modified"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'last-modified)))
-    (aws-sdk/generator/shape::to-query-params "ContentLength"
+    (aws-sdk/generator/shape::to-query-params "Content-Length"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3347,37 +3341,37 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'etag)))
-    (aws-sdk/generator/shape::to-query-params "MissingMeta"
+    (aws-sdk/generator/shape::to-query-params "X-amz-missing-meta"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'missing-meta)))
-    (aws-sdk/generator/shape::to-query-params "VersionId"
+    (aws-sdk/generator/shape::to-query-params "X-amz-version-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'version-id)))
-    (aws-sdk/generator/shape::to-query-params "CacheControl"
+    (aws-sdk/generator/shape::to-query-params "Cache-Control"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'cache-control)))
-    (aws-sdk/generator/shape::to-query-params "ContentDisposition"
+    (aws-sdk/generator/shape::to-query-params "Content-Disposition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'content-disposition)))
-    (aws-sdk/generator/shape::to-query-params "ContentEncoding"
+    (aws-sdk/generator/shape::to-query-params "Content-Encoding"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'content-encoding)))
-    (aws-sdk/generator/shape::to-query-params "ContentLanguage"
+    (aws-sdk/generator/shape::to-query-params "Content-Language"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'content-language)))
-    (aws-sdk/generator/shape::to-query-params "ContentType"
+    (aws-sdk/generator/shape::to-query-params "Content-Type"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3387,52 +3381,51 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'expires)))
-    (aws-sdk/generator/shape::to-query-params "WebsiteRedirectLocation"
+    (aws-sdk/generator/shape::to-query-params "X-amz-website-redirect-location"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'website-redirect-location)))
-    (aws-sdk/generator/shape::to-query-params "ServerSideEncryption"
+    (aws-sdk/generator/shape::to-query-params "X-amz-server-side-encryption"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'server-side-encryption)))
-    (aws-sdk/generator/shape::to-query-params "Metadata"
+    (aws-sdk/generator/shape::to-query-params "X-amz-meta-"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'metadata)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerAlgorithm"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-algorithm)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerKeyMD5"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-key-md5)))
-    (aws-sdk/generator/shape::to-query-params "SSEKMSKeyId"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssekmskey-id)))
-    (aws-sdk/generator/shape::to-query-params "StorageClass"
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-algorithm"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-algorithm)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-key-MD5"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-key-md5)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-aws-kms-key-id"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape 'ssekmskey-id)))
+    (aws-sdk/generator/shape::to-query-params "X-amz-storage-class"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'storage-class)))
-    (aws-sdk/generator/shape::to-query-params "RequestCharged"
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-charged"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'request-charged)))
-    (aws-sdk/generator/shape::to-query-params "ReplicationStatus"
+    (aws-sdk/generator/shape::to-query-params "X-amz-replication-status"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'replication-status)))
-    (aws-sdk/generator/shape::to-query-params "PartsCount"
+    (aws-sdk/generator/shape::to-query-params "X-amz-mp-parts-count"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3473,22 +3466,22 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bucket)))
-    (aws-sdk/generator/shape::to-query-params "IfMatch"
+    (aws-sdk/generator/shape::to-query-params "If-Match"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'if-match)))
-    (aws-sdk/generator/shape::to-query-params "IfModifiedSince"
+    (aws-sdk/generator/shape::to-query-params "If-Modified-Since"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'if-modified-since)))
-    (aws-sdk/generator/shape::to-query-params "IfNoneMatch"
+    (aws-sdk/generator/shape::to-query-params "If-None-Match"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'if-none-match)))
-    (aws-sdk/generator/shape::to-query-params "IfUnmodifiedSince"
+    (aws-sdk/generator/shape::to-query-params "If-Unmodified-Since"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3508,22 +3501,22 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'version-id)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerAlgorithm"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-algorithm)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerKey"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-key)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerKeyMD5"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-key-md5)))
-    (aws-sdk/generator/shape::to-query-params "RequestPayer"
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-algorithm"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-algorithm)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-key"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-key)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-key-MD5"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-key-md5)))
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-payer"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3768,12 +3761,12 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'id)))
-    (aws-sdk/generator/shape::to-query-params "LambdaFunctionArn"
+    (aws-sdk/generator/shape::to-query-params "CloudFunction"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'lambda-function-arn)))
-    (aws-sdk/generator/shape::to-query-params "Events"
+    (aws-sdk/generator/shape::to-query-params "Event"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3804,7 +3797,7 @@
                          (aws-sdk/generator/shape::shape
                           lifecycle-configuration))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "Rules"
+    (aws-sdk/generator/shape::to-query-params "Rule"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3882,12 +3875,12 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'status)))
-    (aws-sdk/generator/shape::to-query-params "Transitions"
+    (aws-sdk/generator/shape::to-query-params "Transition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'transitions)))
-    (aws-sdk/generator/shape::to-query-params "NoncurrentVersionTransitions"
+    (aws-sdk/generator/shape::to-query-params "NoncurrentVersionTransition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3919,7 +3912,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'prefix)))
-    (aws-sdk/generator/shape::to-query-params "Tags"
+    (aws-sdk/generator/shape::to-query-params "Tag"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3994,7 +3987,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'next-continuation-token)))
-    (aws-sdk/generator/shape::to-query-params "AnalyticsConfigurationList"
+    (aws-sdk/generator/shape::to-query-params "AnalyticsConfiguration"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4019,7 +4012,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bucket)))
-    (aws-sdk/generator/shape::to-query-params "ContinuationToken"
+    (aws-sdk/generator/shape::to-query-params "Continuation-token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4048,7 +4041,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'continuation-token)))
-    (aws-sdk/generator/shape::to-query-params "InventoryConfigurationList"
+    (aws-sdk/generator/shape::to-query-params "InventoryConfiguration"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4083,7 +4076,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bucket)))
-    (aws-sdk/generator/shape::to-query-params "ContinuationToken"
+    (aws-sdk/generator/shape::to-query-params "Continuation-token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4122,7 +4115,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'next-continuation-token)))
-    (aws-sdk/generator/shape::to-query-params "MetricsConfigurationList"
+    (aws-sdk/generator/shape::to-query-params "MetricsConfiguration"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4147,7 +4140,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bucket)))
-    (aws-sdk/generator/shape::to-query-params "ContinuationToken"
+    (aws-sdk/generator/shape::to-query-params "Continuation-token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4249,7 +4242,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'is-truncated)))
-    (aws-sdk/generator/shape::to-query-params "Uploads"
+    (aws-sdk/generator/shape::to-query-params "Upload"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4298,17 +4291,17 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'delimiter)))
-    (aws-sdk/generator/shape::to-query-params "EncodingType"
+    (aws-sdk/generator/shape::to-query-params "Encoding-type"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'encoding-type)))
-    (aws-sdk/generator/shape::to-query-params "KeyMarker"
+    (aws-sdk/generator/shape::to-query-params "Key-marker"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'key-marker)))
-    (aws-sdk/generator/shape::to-query-params "MaxUploads"
+    (aws-sdk/generator/shape::to-query-params "Max-uploads"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4318,7 +4311,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'prefix)))
-    (aws-sdk/generator/shape::to-query-params "UploadIdMarker"
+    (aws-sdk/generator/shape::to-query-params "Upload-id-marker"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4381,12 +4374,12 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'next-version-id-marker)))
-    (aws-sdk/generator/shape::to-query-params "Versions"
+    (aws-sdk/generator/shape::to-query-params "Version"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'versions)))
-    (aws-sdk/generator/shape::to-query-params "DeleteMarkers"
+    (aws-sdk/generator/shape::to-query-params "DeleteMarker"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4454,17 +4447,17 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'delimiter)))
-    (aws-sdk/generator/shape::to-query-params "EncodingType"
+    (aws-sdk/generator/shape::to-query-params "Encoding-type"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'encoding-type)))
-    (aws-sdk/generator/shape::to-query-params "KeyMarker"
+    (aws-sdk/generator/shape::to-query-params "Key-marker"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'key-marker)))
-    (aws-sdk/generator/shape::to-query-params "MaxKeys"
+    (aws-sdk/generator/shape::to-query-params "Max-keys"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4474,7 +4467,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'prefix)))
-    (aws-sdk/generator/shape::to-query-params "VersionIdMarker"
+    (aws-sdk/generator/shape::to-query-params "Version-id-marker"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4580,7 +4573,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'delimiter)))
-    (aws-sdk/generator/shape::to-query-params "EncodingType"
+    (aws-sdk/generator/shape::to-query-params "Encoding-type"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4590,7 +4583,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'marker)))
-    (aws-sdk/generator/shape::to-query-params "MaxKeys"
+    (aws-sdk/generator/shape::to-query-params "Max-keys"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4600,7 +4593,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'prefix)))
-    (aws-sdk/generator/shape::to-query-params "RequestPayer"
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-payer"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4730,12 +4723,12 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'delimiter)))
-    (aws-sdk/generator/shape::to-query-params "EncodingType"
+    (aws-sdk/generator/shape::to-query-params "Encoding-type"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'encoding-type)))
-    (aws-sdk/generator/shape::to-query-params "MaxKeys"
+    (aws-sdk/generator/shape::to-query-params "Max-keys"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4745,22 +4738,22 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'prefix)))
-    (aws-sdk/generator/shape::to-query-params "ContinuationToken"
+    (aws-sdk/generator/shape::to-query-params "Continuation-token"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'continuation-token)))
-    (aws-sdk/generator/shape::to-query-params "FetchOwner"
+    (aws-sdk/generator/shape::to-query-params "Fetch-owner"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'fetch-owner)))
-    (aws-sdk/generator/shape::to-query-params "StartAfter"
+    (aws-sdk/generator/shape::to-query-params "Start-after"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'start-after)))
-    (aws-sdk/generator/shape::to-query-params "RequestPayer"
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-payer"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4796,12 +4789,12 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape list-parts-output))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "AbortDate"
+    (aws-sdk/generator/shape::to-query-params "X-amz-abort-date"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'abort-date)))
-    (aws-sdk/generator/shape::to-query-params "AbortRuleId"
+    (aws-sdk/generator/shape::to-query-params "X-amz-abort-rule-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4841,7 +4834,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'is-truncated)))
-    (aws-sdk/generator/shape::to-query-params "Parts"
+    (aws-sdk/generator/shape::to-query-params "Part"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4861,7 +4854,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'storage-class)))
-    (aws-sdk/generator/shape::to-query-params "RequestCharged"
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-charged"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4895,12 +4888,12 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'key)))
-    (aws-sdk/generator/shape::to-query-params "MaxParts"
+    (aws-sdk/generator/shape::to-query-params "Max-parts"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'max-parts)))
-    (aws-sdk/generator/shape::to-query-params "PartNumberMarker"
+    (aws-sdk/generator/shape::to-query-params "Part-number-marker"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4910,7 +4903,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'upload-id)))
-    (aws-sdk/generator/shape::to-query-params "RequestPayer"
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-payer"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4975,7 +4968,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'prefix)))
-    (aws-sdk/generator/shape::to-query-params "Tags"
+    (aws-sdk/generator/shape::to-query-params "Tag"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -5186,17 +5179,17 @@
                          (aws-sdk/generator/shape::shape
                           notification-configuration))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "TopicConfigurations"
+    (aws-sdk/generator/shape::to-query-params "TopicConfiguration"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'topic-configurations)))
-    (aws-sdk/generator/shape::to-query-params "QueueConfigurations"
+    (aws-sdk/generator/shape::to-query-params "QueueConfiguration"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'queue-configurations)))
-    (aws-sdk/generator/shape::to-query-params "LambdaFunctionConfigurations"
+    (aws-sdk/generator/shape::to-query-params "CloudFunctionConfiguration"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -5245,7 +5238,7 @@
                          (aws-sdk/generator/shape::shape
                           notification-configuration-filter))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "Key"
+    (aws-sdk/generator/shape::to-query-params "S3Key"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -5543,7 +5536,7 @@
                          (aws-sdk/generator/shape::shape
                           put-bucket-acl-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ACL"
+    (aws-sdk/generator/shape::to-query-params "X-amz-acl"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -5558,32 +5551,32 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bucket)))
-    (aws-sdk/generator/shape::to-query-params "ContentMD5"
+    (aws-sdk/generator/shape::to-query-params "Content-MD5"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'content-md5)))
-    (aws-sdk/generator/shape::to-query-params "GrantFullControl"
+    (aws-sdk/generator/shape::to-query-params "X-amz-grant-full-control"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'grant-full-control)))
-    (aws-sdk/generator/shape::to-query-params "GrantRead"
+    (aws-sdk/generator/shape::to-query-params "X-amz-grant-read"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'grant-read)))
-    (aws-sdk/generator/shape::to-query-params "GrantReadACP"
+    (aws-sdk/generator/shape::to-query-params "X-amz-grant-read-acp"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'grant-read-acp)))
-    (aws-sdk/generator/shape::to-query-params "GrantWrite"
+    (aws-sdk/generator/shape::to-query-params "X-amz-grant-write"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'grant-write)))
-    (aws-sdk/generator/shape::to-query-params "GrantWriteACP"
+    (aws-sdk/generator/shape::to-query-params "X-amz-grant-write-acp"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -5646,7 +5639,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'corsconfiguration)))
-    (aws-sdk/generator/shape::to-query-params "ContentMD5"
+    (aws-sdk/generator/shape::to-query-params "Content-MD5"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -5731,7 +5724,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bucket)))
-    (aws-sdk/generator/shape::to-query-params "ContentMD5"
+    (aws-sdk/generator/shape::to-query-params "Content-MD5"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -5768,7 +5761,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bucket-logging-status)))
-    (aws-sdk/generator/shape::to-query-params "ContentMD5"
+    (aws-sdk/generator/shape::to-query-params "Content-MD5"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -5855,7 +5848,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bucket)))
-    (aws-sdk/generator/shape::to-query-params "ContentMD5"
+    (aws-sdk/generator/shape::to-query-params "Content-MD5"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -5886,7 +5879,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bucket)))
-    (aws-sdk/generator/shape::to-query-params "ContentMD5"
+    (aws-sdk/generator/shape::to-query-params "Content-MD5"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -5919,7 +5912,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bucket)))
-    (aws-sdk/generator/shape::to-query-params "ContentMD5"
+    (aws-sdk/generator/shape::to-query-params "Content-MD5"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -5952,7 +5945,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bucket)))
-    (aws-sdk/generator/shape::to-query-params "ContentMD5"
+    (aws-sdk/generator/shape::to-query-params "Content-MD5"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -5983,7 +5976,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bucket)))
-    (aws-sdk/generator/shape::to-query-params "ContentMD5"
+    (aws-sdk/generator/shape::to-query-params "Content-MD5"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -6017,12 +6010,12 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bucket)))
-    (aws-sdk/generator/shape::to-query-params "ContentMD5"
+    (aws-sdk/generator/shape::to-query-params "Content-MD5"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'content-md5)))
-    (aws-sdk/generator/shape::to-query-params "MFA"
+    (aws-sdk/generator/shape::to-query-params "X-amz-mfa"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -6054,7 +6047,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bucket)))
-    (aws-sdk/generator/shape::to-query-params "ContentMD5"
+    (aws-sdk/generator/shape::to-query-params "Content-MD5"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -6075,7 +6068,7 @@
                          (aws-sdk/generator/shape::shape
                           put-object-acl-output))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "RequestCharged"
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-charged"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -6113,7 +6106,7 @@
                          (aws-sdk/generator/shape::shape
                           put-object-acl-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ACL"
+    (aws-sdk/generator/shape::to-query-params "X-amz-acl"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -6128,32 +6121,32 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bucket)))
-    (aws-sdk/generator/shape::to-query-params "ContentMD5"
+    (aws-sdk/generator/shape::to-query-params "Content-MD5"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'content-md5)))
-    (aws-sdk/generator/shape::to-query-params "GrantFullControl"
+    (aws-sdk/generator/shape::to-query-params "X-amz-grant-full-control"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'grant-full-control)))
-    (aws-sdk/generator/shape::to-query-params "GrantRead"
+    (aws-sdk/generator/shape::to-query-params "X-amz-grant-read"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'grant-read)))
-    (aws-sdk/generator/shape::to-query-params "GrantReadACP"
+    (aws-sdk/generator/shape::to-query-params "X-amz-grant-read-acp"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'grant-read-acp)))
-    (aws-sdk/generator/shape::to-query-params "GrantWrite"
+    (aws-sdk/generator/shape::to-query-params "X-amz-grant-write"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'grant-write)))
-    (aws-sdk/generator/shape::to-query-params "GrantWriteACP"
+    (aws-sdk/generator/shape::to-query-params "X-amz-grant-write-acp"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -6163,7 +6156,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'key)))
-    (aws-sdk/generator/shape::to-query-params "RequestPayer"
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-payer"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -6195,7 +6188,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape put-object-output))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "Expiration"
+    (aws-sdk/generator/shape::to-query-params "X-amz-expiration"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -6205,32 +6198,31 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'etag)))
-    (aws-sdk/generator/shape::to-query-params "ServerSideEncryption"
+    (aws-sdk/generator/shape::to-query-params "X-amz-server-side-encryption"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'server-side-encryption)))
-    (aws-sdk/generator/shape::to-query-params "VersionId"
+    (aws-sdk/generator/shape::to-query-params "X-amz-version-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'version-id)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerAlgorithm"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-algorithm)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerKeyMD5"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-key-md5)))
-    (aws-sdk/generator/shape::to-query-params "SSEKMSKeyId"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssekmskey-id)))
-    (aws-sdk/generator/shape::to-query-params "RequestCharged"
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-algorithm"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-algorithm)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-key-MD5"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-key-md5)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-aws-kms-key-id"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape 'ssekmskey-id)))
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-charged"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -6291,7 +6283,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape put-object-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ACL"
+    (aws-sdk/generator/shape::to-query-params "X-amz-acl"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -6306,37 +6298,37 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bucket)))
-    (aws-sdk/generator/shape::to-query-params "CacheControl"
+    (aws-sdk/generator/shape::to-query-params "Cache-Control"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'cache-control)))
-    (aws-sdk/generator/shape::to-query-params "ContentDisposition"
+    (aws-sdk/generator/shape::to-query-params "Content-Disposition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'content-disposition)))
-    (aws-sdk/generator/shape::to-query-params "ContentEncoding"
+    (aws-sdk/generator/shape::to-query-params "Content-Encoding"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'content-encoding)))
-    (aws-sdk/generator/shape::to-query-params "ContentLanguage"
+    (aws-sdk/generator/shape::to-query-params "Content-Language"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'content-language)))
-    (aws-sdk/generator/shape::to-query-params "ContentLength"
+    (aws-sdk/generator/shape::to-query-params "Content-Length"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'content-length)))
-    (aws-sdk/generator/shape::to-query-params "ContentMD5"
+    (aws-sdk/generator/shape::to-query-params "Content-MD5"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'content-md5)))
-    (aws-sdk/generator/shape::to-query-params "ContentType"
+    (aws-sdk/generator/shape::to-query-params "Content-Type"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -6346,22 +6338,22 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'expires)))
-    (aws-sdk/generator/shape::to-query-params "GrantFullControl"
+    (aws-sdk/generator/shape::to-query-params "X-amz-grant-full-control"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'grant-full-control)))
-    (aws-sdk/generator/shape::to-query-params "GrantRead"
+    (aws-sdk/generator/shape::to-query-params "X-amz-grant-read"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'grant-read)))
-    (aws-sdk/generator/shape::to-query-params "GrantReadACP"
+    (aws-sdk/generator/shape::to-query-params "X-amz-grant-read-acp"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'grant-read-acp)))
-    (aws-sdk/generator/shape::to-query-params "GrantWriteACP"
+    (aws-sdk/generator/shape::to-query-params "X-amz-grant-write-acp"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -6371,52 +6363,51 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'key)))
-    (aws-sdk/generator/shape::to-query-params "Metadata"
+    (aws-sdk/generator/shape::to-query-params "X-amz-meta-"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'metadata)))
-    (aws-sdk/generator/shape::to-query-params "ServerSideEncryption"
+    (aws-sdk/generator/shape::to-query-params "X-amz-server-side-encryption"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'server-side-encryption)))
-    (aws-sdk/generator/shape::to-query-params "StorageClass"
+    (aws-sdk/generator/shape::to-query-params "X-amz-storage-class"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'storage-class)))
-    (aws-sdk/generator/shape::to-query-params "WebsiteRedirectLocation"
+    (aws-sdk/generator/shape::to-query-params "X-amz-website-redirect-location"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'website-redirect-location)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerAlgorithm"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-algorithm)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerKey"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-key)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerKeyMD5"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-key-md5)))
-    (aws-sdk/generator/shape::to-query-params "SSEKMSKeyId"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssekmskey-id)))
-    (aws-sdk/generator/shape::to-query-params "RequestPayer"
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-algorithm"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-algorithm)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-key"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-key)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-key-MD5"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-key-md5)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-aws-kms-key-id"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape 'ssekmskey-id)))
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-payer"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'request-payer)))
-    (aws-sdk/generator/shape::to-query-params "Tagging"
+    (aws-sdk/generator/shape::to-query-params "X-amz-tagging"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -6433,7 +6424,7 @@
                          (aws-sdk/generator/shape::shape
                           put-object-tagging-output))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "VersionId"
+    (aws-sdk/generator/shape::to-query-params "X-amz-version-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -6473,7 +6464,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'version-id)))
-    (aws-sdk/generator/shape::to-query-params "ContentMD5"
+    (aws-sdk/generator/shape::to-query-params "Content-MD5"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -6503,12 +6494,12 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'id)))
-    (aws-sdk/generator/shape::to-query-params "QueueArn"
+    (aws-sdk/generator/shape::to-query-params "Queue"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'queue-arn)))
-    (aws-sdk/generator/shape::to-query-params "Events"
+    (aws-sdk/generator/shape::to-query-params "Event"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -6543,7 +6534,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'event)))
-    (aws-sdk/generator/shape::to-query-params "Events"
+    (aws-sdk/generator/shape::to-query-params "Event"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -6646,7 +6637,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'role)))
-    (aws-sdk/generator/shape::to-query-params "Rules"
+    (aws-sdk/generator/shape::to-query-params "Rule"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -6733,7 +6724,7 @@
                          (aws-sdk/generator/shape::shape
                           restore-object-output))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "RequestCharged"
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-charged"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -6777,7 +6768,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'restore-request)))
-    (aws-sdk/generator/shape::to-query-params "RequestPayer"
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-payer"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -6907,7 +6898,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape s3key-filter))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "FilterRules"
+    (aws-sdk/generator/shape::to-query-params "FilterRule"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -7059,12 +7050,12 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'id)))
-    (aws-sdk/generator/shape::to-query-params "TopicArn"
+    (aws-sdk/generator/shape::to-query-params "Topic"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'topic-arn)))
-    (aws-sdk/generator/shape::to-query-params "Events"
+    (aws-sdk/generator/shape::to-query-params "Event"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -7094,7 +7085,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'id)))
-    (aws-sdk/generator/shape::to-query-params "Events"
+    (aws-sdk/generator/shape::to-query-params "Event"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -7177,7 +7168,7 @@
                          (aws-sdk/generator/shape::shape
                           upload-part-copy-output))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "CopySourceVersionId"
+    (aws-sdk/generator/shape::to-query-params "X-amz-copy-source-version-id"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -7187,27 +7178,26 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'copy-part-result)))
-    (aws-sdk/generator/shape::to-query-params "ServerSideEncryption"
+    (aws-sdk/generator/shape::to-query-params "X-amz-server-side-encryption"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'server-side-encryption)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerAlgorithm"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-algorithm)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerKeyMD5"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-key-md5)))
-    (aws-sdk/generator/shape::to-query-params "SSEKMSKeyId"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssekmskey-id)))
-    (aws-sdk/generator/shape::to-query-params "RequestCharged"
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-algorithm"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-algorithm)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-key-MD5"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-key-md5)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-aws-kms-key-id"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape 'ssekmskey-id)))
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-charged"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -7260,32 +7250,32 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bucket)))
-    (aws-sdk/generator/shape::to-query-params "CopySource"
+    (aws-sdk/generator/shape::to-query-params "X-amz-copy-source"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'copy-source)))
-    (aws-sdk/generator/shape::to-query-params "CopySourceIfMatch"
+    (aws-sdk/generator/shape::to-query-params "X-amz-copy-source-if-match"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'copy-source-if-match)))
-    (aws-sdk/generator/shape::to-query-params "CopySourceIfModifiedSince"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'copy-source-if-modified-since)))
-    (aws-sdk/generator/shape::to-query-params "CopySourceIfNoneMatch"
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-copy-source-if-modified-since"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'copy-source-if-modified-since)))
+    (aws-sdk/generator/shape::to-query-params "X-amz-copy-source-if-none-match"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'copy-source-if-none-match)))
-    (aws-sdk/generator/shape::to-query-params "CopySourceIfUnmodifiedSince"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'copy-source-if-unmodified-since)))
-    (aws-sdk/generator/shape::to-query-params "CopySourceRange"
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-copy-source-if-unmodified-since"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'copy-source-if-unmodified-since)))
+    (aws-sdk/generator/shape::to-query-params "X-amz-copy-source-range"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -7305,37 +7295,37 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'upload-id)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerAlgorithm"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-algorithm)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerKey"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-key)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerKeyMD5"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-key-md5)))
-    (aws-sdk/generator/shape::to-query-params "CopySourceSSECustomerAlgorithm"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'copy-source-ssecustomer-algorithm)))
-    (aws-sdk/generator/shape::to-query-params "CopySourceSSECustomerKey"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'copy-source-ssecustomer-key)))
-    (aws-sdk/generator/shape::to-query-params "CopySourceSSECustomerKeyMD5"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'copy-source-ssecustomer-key-md5)))
-    (aws-sdk/generator/shape::to-query-params "RequestPayer"
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-algorithm"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-algorithm)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-key"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-key)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-key-MD5"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-key-md5)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-copy-source-server-side-encryption-customer-algorithm"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'copy-source-ssecustomer-algorithm)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-copy-source-server-side-encryption-customer-key"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'copy-source-ssecustomer-key)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-copy-source-server-side-encryption-customer-key-MD5"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'copy-source-ssecustomer-key-md5)))
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-payer"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -7358,7 +7348,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape upload-part-output))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ServerSideEncryption"
+    (aws-sdk/generator/shape::to-query-params "X-amz-server-side-encryption"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -7368,22 +7358,21 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'etag)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerAlgorithm"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-algorithm)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerKeyMD5"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-key-md5)))
-    (aws-sdk/generator/shape::to-query-params "SSEKMSKeyId"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssekmskey-id)))
-    (aws-sdk/generator/shape::to-query-params "RequestCharged"
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-algorithm"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-algorithm)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-key-MD5"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-key-md5)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-aws-kms-key-id"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape 'ssekmskey-id)))
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-charged"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -7426,12 +7415,12 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'bucket)))
-    (aws-sdk/generator/shape::to-query-params "ContentLength"
+    (aws-sdk/generator/shape::to-query-params "Content-Length"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'content-length)))
-    (aws-sdk/generator/shape::to-query-params "ContentMD5"
+    (aws-sdk/generator/shape::to-query-params "Content-MD5"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -7451,22 +7440,22 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'upload-id)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerAlgorithm"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-algorithm)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerKey"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-key)))
-    (aws-sdk/generator/shape::to-query-params "SSECustomerKeyMD5"
-                                              (aws-sdk/generator/shape:shape-to-params
-                                               (common-lisp:slot-value
-                                                aws-sdk/generator/shape::shape
-                                                'ssecustomer-key-md5)))
-    (aws-sdk/generator/shape::to-query-params "RequestPayer"
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-algorithm"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-algorithm)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-key"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-key)))
+    (aws-sdk/generator/shape::to-query-params
+     "X-amz-server-side-encryption-customer-key-MD5"
+     (aws-sdk/generator/shape:shape-to-params
+      (common-lisp:slot-value aws-sdk/generator/shape::shape
+                              'ssecustomer-key-md5)))
+    (aws-sdk/generator/shape::to-query-params "X-amz-request-payer"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -7486,7 +7475,7 @@
                          (aws-sdk/generator/shape::shape
                           versioning-configuration))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "MFADelete"
+    (aws-sdk/generator/shape::to-query-params "MfaDelete"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape

@@ -40,7 +40,7 @@
                          (aws-sdk/generator/shape::shape
                           add-facet-to-object-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -88,7 +88,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'published-schema-arn)))
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -140,7 +140,7 @@
                          (aws-sdk/generator/shape::shape
                           attach-object-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -190,7 +190,7 @@
                          (aws-sdk/generator/shape::shape
                           attach-policy-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -229,7 +229,7 @@
                          (aws-sdk/generator/shape::shape
                           attach-to-index-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -282,7 +282,7 @@
                          (aws-sdk/generator/shape::shape
                           attach-typed-link-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1750,7 +1750,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape batch-read-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -1760,7 +1760,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'operations)))
-    (aws-sdk/generator/shape::to-query-params "ConsistencyLevel"
+    (aws-sdk/generator/shape::to-query-params "X-amz-consistency-level"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2223,7 +2223,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape batch-write-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2288,7 +2288,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'name)))
-    (aws-sdk/generator/shape::to-query-params "SchemaArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2346,7 +2346,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape create-facet-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "SchemaArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2393,7 +2393,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape create-index-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2453,7 +2453,7 @@
                          (aws-sdk/generator/shape::shape
                           create-object-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2540,7 +2540,7 @@
                          (aws-sdk/generator/shape::shape
                           create-typed-link-facet-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "SchemaArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2574,7 +2574,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-directory-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2607,7 +2607,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape delete-facet-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "SchemaArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2639,7 +2639,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-object-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2669,7 +2669,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-schema-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "SchemaArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2704,7 +2704,7 @@
                          (aws-sdk/generator/shape::shape
                           delete-typed-link-facet-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "SchemaArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2741,7 +2741,7 @@
                          (aws-sdk/generator/shape::shape
                           detach-from-index-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2788,7 +2788,7 @@
                          (aws-sdk/generator/shape::shape
                           detach-object-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2834,7 +2834,7 @@
                          (aws-sdk/generator/shape::shape
                           detach-policy-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -2873,7 +2873,7 @@
                          (aws-sdk/generator/shape::shape
                           detach-typed-link-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3010,7 +3010,7 @@
                          (aws-sdk/generator/shape::shape
                           disable-directory-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3043,7 +3043,7 @@
                          (aws-sdk/generator/shape::shape
                           enable-directory-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3308,7 +3308,7 @@
                          (aws-sdk/generator/shape::shape
                           get-directory-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3340,7 +3340,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape get-facet-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "SchemaArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3380,7 +3380,7 @@
                          (aws-sdk/generator/shape::shape
                           get-object-information-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3390,7 +3390,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'object-reference)))
-    (aws-sdk/generator/shape::to-query-params "ConsistencyLevel"
+    (aws-sdk/generator/shape::to-query-params "X-amz-consistency-level"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3432,7 +3432,7 @@
                          (aws-sdk/generator/shape::shape
                           get-schema-as-json-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "SchemaArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3475,7 +3475,7 @@
                          (aws-sdk/generator/shape::shape
                           get-typed-link-facet-information-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "SchemaArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3807,7 +3807,7 @@
                          (aws-sdk/generator/shape::shape
                           list-attached-indices-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3827,7 +3827,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'max-results)))
-    (aws-sdk/generator/shape::to-query-params "ConsistencyLevel"
+    (aws-sdk/generator/shape::to-query-params "X-amz-consistency-level"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -3979,7 +3979,7 @@
                          (aws-sdk/generator/shape::shape
                           list-facet-attributes-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "SchemaArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4039,7 +4039,7 @@
                          (aws-sdk/generator/shape::shape
                           list-facet-names-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "SchemaArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4103,7 +4103,7 @@
                          (aws-sdk/generator/shape::shape
                           list-incoming-typed-links-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4182,7 +4182,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape list-index-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4207,7 +4207,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'next-token)))
-    (aws-sdk/generator/shape::to-query-params "ConsistencyLevel"
+    (aws-sdk/generator/shape::to-query-params "X-amz-consistency-level"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4256,7 +4256,7 @@
                          (aws-sdk/generator/shape::shape
                           list-object-attributes-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4276,7 +4276,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'max-results)))
-    (aws-sdk/generator/shape::to-query-params "ConsistencyLevel"
+    (aws-sdk/generator/shape::to-query-params "X-amz-consistency-level"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4332,7 +4332,7 @@
                          (aws-sdk/generator/shape::shape
                           list-object-children-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4352,7 +4352,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'max-results)))
-    (aws-sdk/generator/shape::to-query-params "ConsistencyLevel"
+    (aws-sdk/generator/shape::to-query-params "X-amz-consistency-level"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4401,7 +4401,7 @@
                          (aws-sdk/generator/shape::shape
                           list-object-parent-paths-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4466,7 +4466,7 @@
                          (aws-sdk/generator/shape::shape
                           list-object-parents-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4486,7 +4486,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'max-results)))
-    (aws-sdk/generator/shape::to-query-params "ConsistencyLevel"
+    (aws-sdk/generator/shape::to-query-params "X-amz-consistency-level"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4537,7 +4537,7 @@
                          (aws-sdk/generator/shape::shape
                           list-object-policies-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4557,7 +4557,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'max-results)))
-    (aws-sdk/generator/shape::to-query-params "ConsistencyLevel"
+    (aws-sdk/generator/shape::to-query-params "X-amz-consistency-level"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4612,7 +4612,7 @@
                          (aws-sdk/generator/shape::shape
                           list-outgoing-typed-links-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4693,7 +4693,7 @@
                          (aws-sdk/generator/shape::shape
                           list-policy-attachments-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4713,7 +4713,7 @@
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
                                                 'max-results)))
-    (aws-sdk/generator/shape::to-query-params "ConsistencyLevel"
+    (aws-sdk/generator/shape::to-query-params "X-amz-consistency-level"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4867,7 +4867,7 @@
                          (aws-sdk/generator/shape::shape
                           list-typed-link-facet-attributes-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "SchemaArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4929,7 +4929,7 @@
                          (aws-sdk/generator/shape::shape
                           list-typed-link-facet-names-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "SchemaArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -4986,7 +4986,7 @@
                          (aws-sdk/generator/shape::shape
                           lookup-policy-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -5337,7 +5337,7 @@
                          (aws-sdk/generator/shape::shape
                           publish-schema-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DevelopmentSchemaArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -5383,7 +5383,7 @@
                          (aws-sdk/generator/shape::shape
                           put-schema-from-json-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "SchemaArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -5428,7 +5428,7 @@
                          (aws-sdk/generator/shape::shape
                           remove-facet-from-object-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -6060,7 +6060,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape update-facet-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "SchemaArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -6106,7 +6106,7 @@
                          (aws-sdk/generator/shape::shape
                           update-object-attributes-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "DirectoryArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -6152,7 +6152,7 @@
                          (aws-sdk/generator/shape::shape
                           update-schema-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "SchemaArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
@@ -6198,7 +6198,7 @@
                          (aws-sdk/generator/shape::shape
                           update-typed-link-facet-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "SchemaArn"
+    (aws-sdk/generator/shape::to-query-params "X-amz-data-partition"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape

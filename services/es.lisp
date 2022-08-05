@@ -1025,7 +1025,7 @@
  (common-lisp:defmethod aws-sdk/generator/shape:shape-to-params
                         ((aws-sdk/generator/shape::shape list-tags-request))
    (common-lisp:append
-    (aws-sdk/generator/shape::to-query-params "ARN"
+    (aws-sdk/generator/shape::to-query-params "Arn"
                                               (aws-sdk/generator/shape:shape-to-params
                                                (common-lisp:slot-value
                                                 aws-sdk/generator/shape::shape
