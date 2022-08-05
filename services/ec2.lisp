@@ -23095,7 +23095,7 @@
                                    ,@"AcceptReservedInstancesExchangeQuote")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "AcceptReservedInstancesExchangeQuoteResult" common-lisp:nil)))
@@ -23117,7 +23117,7 @@
                                 `(("Action" ,@"AcceptVpcPeeringConnection")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "AcceptVpcPeeringConnectionResult" common-lisp:nil)))
@@ -23137,7 +23137,7 @@
                                 `(("Action" ,@"AllocateAddress")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "AllocateAddressResult" common-lisp:nil)))
@@ -23160,7 +23160,7 @@
                                 `(("Action" ,@"AllocateHosts")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "AllocateHostsResult" common-lisp:nil)))
@@ -23183,7 +23183,7 @@
                                 `(("Action" ,@"AssignIpv6Addresses")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "AssignIpv6AddressesResult" common-lisp:nil)))
@@ -23207,7 +23207,7 @@
                                 `(("Action" ,@"AssignPrivateIpAddresses")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -23231,7 +23231,7 @@
                                 `(("Action" ,@"AssociateAddress")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "AssociateAddressResult" common-lisp:nil)))
@@ -23251,7 +23251,7 @@
                                 `(("Action" ,@"AssociateDhcpOptions")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -23273,7 +23273,7 @@
                                 `(("Action" ,@"AssociateIamInstanceProfile")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "AssociateIamInstanceProfileResult" common-lisp:nil)))
@@ -23294,7 +23294,7 @@
                                 `(("Action" ,@"AssociateRouteTable")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "AssociateRouteTableResult" common-lisp:nil)))
@@ -23315,7 +23315,7 @@
                                 `(("Action" ,@"AssociateSubnetCidrBlock")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "AssociateSubnetCidrBlockResult" common-lisp:nil)))
@@ -23336,7 +23336,7 @@
                                 `(("Action" ,@"AssociateVpcCidrBlock")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "AssociateVpcCidrBlockResult" common-lisp:nil)))
@@ -23357,7 +23357,7 @@
                                 `(("Action" ,@"AttachClassicLinkVpc")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "AttachClassicLinkVpcResult" common-lisp:nil)))
@@ -23378,7 +23378,7 @@
                                 `(("Action" ,@"AttachInternetGateway")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -23401,7 +23401,7 @@
                                 `(("Action" ,@"AttachNetworkInterface")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "AttachNetworkInterfaceResult" common-lisp:nil)))
@@ -23422,7 +23422,7 @@
                                 `(("Action" ,@"AttachVolume")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "VolumeAttachment" common-lisp:nil)))
@@ -23442,7 +23442,7 @@
                                 `(("Action" ,@"AttachVpnGateway")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "AttachVpnGatewayResult" common-lisp:nil)))
@@ -23468,7 +23468,7 @@
                                 `(("Action" ,@"AuthorizeSecurityGroupEgress")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -23494,7 +23494,7 @@
                                 `(("Action" ,@"AuthorizeSecurityGroupIngress")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -23514,7 +23514,7 @@
                                 `(("Action" ,@"BundleInstance")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "BundleInstanceResult" common-lisp:nil)))
@@ -23534,7 +23534,7 @@
                                 `(("Action" ,@"CancelBundleTask")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CancelBundleTaskResult" common-lisp:nil)))
@@ -23556,7 +23556,7 @@
                                 `(("Action" ,@"CancelConversionTask")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -23576,7 +23576,7 @@
                                 `(("Action" ,@"CancelExportTask")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -23597,7 +23597,7 @@
                                 `(("Action" ,@"CancelImportTask")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CancelImportTaskResult" common-lisp:nil)))
@@ -23618,7 +23618,7 @@
                                 `(("Action" ,@"CancelReservedInstancesListing")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CancelReservedInstancesListingResult" common-lisp:nil)))
@@ -23641,7 +23641,7 @@
                                 `(("Action" ,@"CancelSpotFleetRequests")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CancelSpotFleetRequestsResponse" common-lisp:nil)))
@@ -23663,7 +23663,7 @@
                                 `(("Action" ,@"CancelSpotInstanceRequests")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CancelSpotInstanceRequestsResult" common-lisp:nil)))
@@ -23684,7 +23684,7 @@
                                 `(("Action" ,@"ConfirmProductInstance")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "ConfirmProductInstanceResult" common-lisp:nil)))
@@ -23707,7 +23707,7 @@
                                 `(("Action" ,@"CopyImage")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CopyImageResult" common-lisp:nil)))
@@ -23731,7 +23731,7 @@
                                 `(("Action" ,@"CopySnapshot")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CopySnapshotResult" common-lisp:nil)))
@@ -23751,7 +23751,7 @@
                                 `(("Action" ,@"CreateCustomerGateway")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CreateCustomerGatewayResult" common-lisp:nil)))
@@ -23771,7 +23771,7 @@
                                 `(("Action" ,@"CreateDefaultVpc")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CreateDefaultVpcResult" common-lisp:nil)))
@@ -23791,7 +23791,7 @@
                                 `(("Action" ,@"CreateDhcpOptions")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CreateDhcpOptionsResult" common-lisp:nil)))
@@ -23813,7 +23813,7 @@
                                    ,@"CreateEgressOnlyInternetGateway")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CreateEgressOnlyInternetGatewayResult" common-lisp:nil)))
@@ -23836,7 +23836,7 @@
                                 `(("Action" ,@"CreateFlowLogs")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CreateFlowLogsResult" common-lisp:nil)))
@@ -23859,7 +23859,7 @@
                                 `(("Action" ,@"CreateFpgaImage")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CreateFpgaImageResult" common-lisp:nil)))
@@ -23882,7 +23882,7 @@
                                 `(("Action" ,@"CreateImage")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CreateImageResult" common-lisp:nil)))
@@ -23906,7 +23906,7 @@
                                 `(("Action" ,@"CreateInstanceExportTask")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CreateInstanceExportTaskResult" common-lisp:nil)))
@@ -23926,7 +23926,7 @@
                                 `(("Action" ,@"CreateInternetGateway")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CreateInternetGatewayResult" common-lisp:nil)))
@@ -23946,7 +23946,7 @@
                                 `(("Action" ,@"CreateKeyPair")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "KeyPair" common-lisp:nil)))
@@ -23967,7 +23967,7 @@
                                 `(("Action" ,@"CreateNatGateway")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CreateNatGatewayResult" common-lisp:nil)))
@@ -23987,7 +23987,7 @@
                                 `(("Action" ,@"CreateNetworkAcl")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CreateNetworkAclResult" common-lisp:nil)))
@@ -24012,7 +24012,7 @@
                                 `(("Action" ,@"CreateNetworkAclEntry")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -24038,7 +24038,7 @@
                                 `(("Action" ,@"CreateNetworkInterface")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CreateNetworkInterfaceResult" common-lisp:nil)))
@@ -24063,7 +24063,7 @@
                                    ,@"CreateNetworkInterfacePermission")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CreateNetworkInterfacePermissionResult" common-lisp:nil)))
@@ -24083,7 +24083,7 @@
                                 `(("Action" ,@"CreatePlacementGroup")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -24107,7 +24107,7 @@
                                 `(("Action" ,@"CreateReservedInstancesListing")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CreateReservedInstancesListingResult" common-lisp:nil)))
@@ -24135,7 +24135,7 @@
                                 `(("Action" ,@"CreateRoute")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CreateRouteResult" common-lisp:nil)))
@@ -24155,7 +24155,7 @@
                                 `(("Action" ,@"CreateRouteTable")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CreateRouteTableResult" common-lisp:nil)))
@@ -24176,7 +24176,7 @@
                                 `(("Action" ,@"CreateSecurityGroup")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CreateSecurityGroupResult" common-lisp:nil)))
@@ -24196,7 +24196,7 @@
                                 `(("Action" ,@"CreateSnapshot")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "Snapshot" common-lisp:nil)))
@@ -24217,7 +24217,7 @@
                                 `(("Action" ,@"CreateSpotDatafeedSubscription")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CreateSpotDatafeedSubscriptionResult" common-lisp:nil)))
@@ -24240,7 +24240,7 @@
                                 `(("Action" ,@"CreateSubnet")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CreateSubnetResult" common-lisp:nil)))
@@ -24260,7 +24260,7 @@
                                 `(("Action" ,@"CreateTags")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -24284,7 +24284,7 @@
                                 `(("Action" ,@"CreateVolume")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "Volume" common-lisp:nil)))
@@ -24307,7 +24307,7 @@
                                 `(("Action" ,@"CreateVpc")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CreateVpcResult" common-lisp:nil)))
@@ -24330,7 +24330,7 @@
                                 `(("Action" ,@"CreateVpcEndpoint")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CreateVpcEndpointResult" common-lisp:nil)))
@@ -24352,7 +24352,7 @@
                                 `(("Action" ,@"CreateVpcPeeringConnection")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CreateVpcPeeringConnectionResult" common-lisp:nil)))
@@ -24375,7 +24375,7 @@
                                 `(("Action" ,@"CreateVpnConnection")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CreateVpnConnectionResult" common-lisp:nil)))
@@ -24397,7 +24397,7 @@
                                 `(("Action" ,@"CreateVpnConnectionRoute")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -24417,7 +24417,7 @@
                                 `(("Action" ,@"CreateVpnGateway")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "CreateVpnGatewayResult" common-lisp:nil)))
@@ -24437,7 +24437,7 @@
                                 `(("Action" ,@"DeleteCustomerGateway")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -24457,7 +24457,7 @@
                                 `(("Action" ,@"DeleteDhcpOptions")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -24480,7 +24480,7 @@
                                    ,@"DeleteEgressOnlyInternetGateway")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DeleteEgressOnlyInternetGatewayResult" common-lisp:nil)))
@@ -24500,7 +24500,7 @@
                                 `(("Action" ,@"DeleteFlowLogs")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DeleteFlowLogsResult" common-lisp:nil)))
@@ -24520,7 +24520,7 @@
                                 `(("Action" ,@"DeleteInternetGateway")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -24540,7 +24540,7 @@
                                 `(("Action" ,@"DeleteKeyPair")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -24560,7 +24560,7 @@
                                 `(("Action" ,@"DeleteNatGateway")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DeleteNatGatewayResult" common-lisp:nil)))
@@ -24580,7 +24580,7 @@
                                 `(("Action" ,@"DeleteNetworkAcl")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -24602,7 +24602,7 @@
                                 `(("Action" ,@"DeleteNetworkAclEntry")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -24622,7 +24622,7 @@
                                 `(("Action" ,@"DeleteNetworkInterface")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -24646,7 +24646,7 @@
                                    ,@"DeleteNetworkInterfacePermission")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DeleteNetworkInterfacePermissionResult" common-lisp:nil)))
@@ -24666,7 +24666,7 @@
                                 `(("Action" ,@"DeletePlacementGroup")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -24689,7 +24689,7 @@
                                 `(("Action" ,@"DeleteRoute")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -24709,7 +24709,7 @@
                                 `(("Action" ,@"DeleteRouteTable")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -24729,7 +24729,7 @@
                                 `(("Action" ,@"DeleteSecurityGroup")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -24749,7 +24749,7 @@
                                 `(("Action" ,@"DeleteSnapshot")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -24770,7 +24770,7 @@
                                 `(("Action" ,@"DeleteSpotDatafeedSubscription")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -24790,7 +24790,7 @@
                                 `(("Action" ,@"DeleteSubnet")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -24810,7 +24810,7 @@
                                 `(("Action" ,@"DeleteTags")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -24830,7 +24830,7 @@
                                 `(("Action" ,@"DeleteVolume")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -24850,7 +24850,7 @@
                                 `(("Action" ,@"DeleteVpc")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -24870,7 +24870,7 @@
                                 `(("Action" ,@"DeleteVpcEndpoints")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DeleteVpcEndpointsResult" common-lisp:nil)))
@@ -24892,7 +24892,7 @@
                                 `(("Action" ,@"DeleteVpcPeeringConnection")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DeleteVpcPeeringConnectionResult" common-lisp:nil)))
@@ -24912,7 +24912,7 @@
                                 `(("Action" ,@"DeleteVpnConnection")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -24934,7 +24934,7 @@
                                 `(("Action" ,@"DeleteVpnConnectionRoute")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -24954,7 +24954,7 @@
                                 `(("Action" ,@"DeleteVpnGateway")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -24974,7 +24974,7 @@
                                 `(("Action" ,@"DeregisterImage")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -24995,7 +24995,7 @@
                                 `(("Action" ,@"DescribeAccountAttributes")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeAccountAttributesResult" common-lisp:nil)))
@@ -25017,7 +25017,7 @@
                                 `(("Action" ,@"DescribeAddresses")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeAddressesResult" common-lisp:nil)))
@@ -25038,7 +25038,7 @@
                                 `(("Action" ,@"DescribeAvailabilityZones")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeAvailabilityZonesResult" common-lisp:nil)))
@@ -25058,7 +25058,7 @@
                                 `(("Action" ,@"DescribeBundleTasks")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeBundleTasksResult" common-lisp:nil)))
@@ -25082,7 +25082,7 @@
                                 `(("Action" ,@"DescribeClassicLinkInstances")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeClassicLinkInstancesResult" common-lisp:nil)))
@@ -25103,7 +25103,7 @@
                                 `(("Action" ,@"DescribeConversionTasks")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeConversionTasksResult" common-lisp:nil)))
@@ -25125,7 +25125,7 @@
                                 `(("Action" ,@"DescribeCustomerGateways")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeCustomerGatewaysResult" common-lisp:nil)))
@@ -25146,7 +25146,7 @@
                                 `(("Action" ,@"DescribeDhcpOptions")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeDhcpOptionsResult" common-lisp:nil)))
@@ -25171,7 +25171,7 @@
                                    ,@"DescribeEgressOnlyInternetGateways")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeEgressOnlyInternetGatewaysResult" common-lisp:nil)))
@@ -25194,7 +25194,7 @@
                                 `(("Action" ,@"DescribeElasticGpus")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeElasticGpusResult" common-lisp:nil)))
@@ -25214,7 +25214,7 @@
                                 `(("Action" ,@"DescribeExportTasks")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeExportTasksResult" common-lisp:nil)))
@@ -25236,7 +25236,7 @@
                                 `(("Action" ,@"DescribeFlowLogs")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeFlowLogsResult" common-lisp:nil)))
@@ -25259,7 +25259,7 @@
                                 `(("Action" ,@"DescribeFpgaImages")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeFpgaImagesResult" common-lisp:nil)))
@@ -25284,7 +25284,7 @@
                                    ,@"DescribeHostReservationOfferings")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeHostReservationOfferingsResult" common-lisp:nil)))
@@ -25308,7 +25308,7 @@
                                 `(("Action" ,@"DescribeHostReservations")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeHostReservationsResult" common-lisp:nil)))
@@ -25329,7 +25329,7 @@
                                 `(("Action" ,@"DescribeHosts")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeHostsResult" common-lisp:nil)))
@@ -25353,7 +25353,7 @@
                                    ,@"DescribeIamInstanceProfileAssociations")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeIamInstanceProfileAssociationsResult" common-lisp:nil)))
@@ -25373,7 +25373,7 @@
                                 `(("Action" ,@"DescribeIdFormat")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeIdFormatResult" common-lisp:nil)))
@@ -25394,7 +25394,7 @@
                                 `(("Action" ,@"DescribeIdentityIdFormat")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeIdentityIdFormatResult" common-lisp:nil)))
@@ -25414,7 +25414,7 @@
                                 `(("Action" ,@"DescribeImageAttribute")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "ImageAttribute" common-lisp:nil)))
@@ -25436,7 +25436,7 @@
                                 `(("Action" ,@"DescribeImages")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeImagesResult" common-lisp:nil)))
@@ -25460,7 +25460,7 @@
                                 `(("Action" ,@"DescribeImportImageTasks")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeImportImageTasksResult" common-lisp:nil)))
@@ -25484,7 +25484,7 @@
                                 `(("Action" ,@"DescribeImportSnapshotTasks")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeImportSnapshotTasksResult" common-lisp:nil)))
@@ -25505,7 +25505,7 @@
                                 `(("Action" ,@"DescribeInstanceAttribute")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "InstanceAttribute" common-lisp:nil)))
@@ -25528,7 +25528,7 @@
                                 `(("Action" ,@"DescribeInstanceStatus")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeInstanceStatusResult" common-lisp:nil)))
@@ -25551,7 +25551,7 @@
                                 `(("Action" ,@"DescribeInstances")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeInstancesResult" common-lisp:nil)))
@@ -25573,7 +25573,7 @@
                                 `(("Action" ,@"DescribeInternetGateways")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeInternetGatewaysResult" common-lisp:nil)))
@@ -25593,7 +25593,7 @@
                                 `(("Action" ,@"DescribeKeyPairs")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeKeyPairsResult" common-lisp:nil)))
@@ -25616,7 +25616,7 @@
                                 `(("Action" ,@"DescribeMovingAddresses")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeMovingAddressesResult" common-lisp:nil)))
@@ -25638,7 +25638,7 @@
                                 `(("Action" ,@"DescribeNatGateways")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeNatGatewaysResult" common-lisp:nil)))
@@ -25659,7 +25659,7 @@
                                 `(("Action" ,@"DescribeNetworkAcls")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeNetworkAclsResult" common-lisp:nil)))
@@ -25682,7 +25682,7 @@
                                    ,@"DescribeNetworkInterfaceAttribute")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeNetworkInterfaceAttributeResult" common-lisp:nil)))
@@ -25707,7 +25707,7 @@
                                    ,@"DescribeNetworkInterfacePermissions")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeNetworkInterfacePermissionsResult" common-lisp:nil)))
@@ -25729,7 +25729,7 @@
                                 `(("Action" ,@"DescribeNetworkInterfaces")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeNetworkInterfacesResult" common-lisp:nil)))
@@ -25750,7 +25750,7 @@
                                 `(("Action" ,@"DescribePlacementGroups")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribePlacementGroupsResult" common-lisp:nil)))
@@ -25773,7 +25773,7 @@
                                 `(("Action" ,@"DescribePrefixLists")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribePrefixListsResult" common-lisp:nil)))
@@ -25793,7 +25793,7 @@
                                 `(("Action" ,@"DescribeRegions")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeRegionsResult" common-lisp:nil)))
@@ -25817,7 +25817,7 @@
                                 `(("Action" ,@"DescribeReservedInstances")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeReservedInstancesResult" common-lisp:nil)))
@@ -25842,7 +25842,7 @@
                                    ,@"DescribeReservedInstancesListings")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeReservedInstancesListingsResult" common-lisp:nil)))
@@ -25867,7 +25867,7 @@
                                    ,@"DescribeReservedInstancesModifications")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeReservedInstancesModificationsResult" common-lisp:nil)))
@@ -25898,7 +25898,7 @@
                                    ,@"DescribeReservedInstancesOfferings")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeReservedInstancesOfferingsResult" common-lisp:nil)))
@@ -25919,7 +25919,7 @@
                                 `(("Action" ,@"DescribeRouteTables")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeRouteTablesResult" common-lisp:nil)))
@@ -25947,7 +25947,7 @@
                                    ,@"DescribeScheduledInstanceAvailability")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeScheduledInstanceAvailabilityResult" common-lisp:nil)))
@@ -25971,7 +25971,7 @@
                                 `(("Action" ,@"DescribeScheduledInstances")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeScheduledInstancesResult" common-lisp:nil)))
@@ -25993,7 +25993,7 @@
                                    ,@"DescribeSecurityGroupReferences")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeSecurityGroupReferencesResult" common-lisp:nil)))
@@ -26014,7 +26014,7 @@
                                 `(("Action" ,@"DescribeSecurityGroups")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeSecurityGroupsResult" common-lisp:nil)))
@@ -26035,7 +26035,7 @@
                                 `(("Action" ,@"DescribeSnapshotAttribute")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeSnapshotAttributeResult" common-lisp:nil)))
@@ -26058,7 +26058,7 @@
                                 `(("Action" ,@"DescribeSnapshots")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeSnapshotsResult" common-lisp:nil)))
@@ -26080,7 +26080,7 @@
                                    ,@"DescribeSpotDatafeedSubscription")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeSpotDatafeedSubscriptionResult" common-lisp:nil)))
@@ -26104,7 +26104,7 @@
                                 `(("Action" ,@"DescribeSpotFleetInstances")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeSpotFleetInstancesResponse" common-lisp:nil)))
@@ -26129,7 +26129,7 @@
                                    ,@"DescribeSpotFleetRequestHistory")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeSpotFleetRequestHistoryResponse" common-lisp:nil)))
@@ -26153,7 +26153,7 @@
                                 `(("Action" ,@"DescribeSpotFleetRequests")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeSpotFleetRequestsResponse" common-lisp:nil)))
@@ -26176,7 +26176,7 @@
                                 `(("Action" ,@"DescribeSpotInstanceRequests")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeSpotInstanceRequestsResult" common-lisp:nil)))
@@ -26201,7 +26201,7 @@
                                 `(("Action" ,@"DescribeSpotPriceHistory")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeSpotPriceHistoryResult" common-lisp:nil)))
@@ -26223,7 +26223,7 @@
                                 `(("Action" ,@"DescribeStaleSecurityGroups")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeStaleSecurityGroupsResult" common-lisp:nil)))
@@ -26243,7 +26243,7 @@
                                 `(("Action" ,@"DescribeSubnets")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeSubnetsResult" common-lisp:nil)))
@@ -26264,7 +26264,7 @@
                                 `(("Action" ,@"DescribeTags")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeTagsResult" common-lisp:nil)))
@@ -26285,7 +26285,7 @@
                                 `(("Action" ,@"DescribeVolumeAttribute")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeVolumeAttributeResult" common-lisp:nil)))
@@ -26307,7 +26307,7 @@
                                 `(("Action" ,@"DescribeVolumeStatus")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeVolumeStatusResult" common-lisp:nil)))
@@ -26329,7 +26329,7 @@
                                 `(("Action" ,@"DescribeVolumes")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeVolumesResult" common-lisp:nil)))
@@ -26352,7 +26352,7 @@
                                 `(("Action" ,@"DescribeVolumesModifications")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeVolumesModificationsResult" common-lisp:nil)))
@@ -26372,7 +26372,7 @@
                                 `(("Action" ,@"DescribeVpcAttribute")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeVpcAttributeResult" common-lisp:nil)))
@@ -26393,7 +26393,7 @@
                                 `(("Action" ,@"DescribeVpcClassicLink")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeVpcClassicLinkResult" common-lisp:nil)))
@@ -26415,7 +26415,7 @@
                                    ,@"DescribeVpcClassicLinkDnsSupport")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeVpcClassicLinkDnsSupportResult" common-lisp:nil)))
@@ -26436,7 +26436,7 @@
                                 `(("Action" ,@"DescribeVpcEndpointServices")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeVpcEndpointServicesResult" common-lisp:nil)))
@@ -26459,7 +26459,7 @@
                                 `(("Action" ,@"DescribeVpcEndpoints")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeVpcEndpointsResult" common-lisp:nil)))
@@ -26482,7 +26482,7 @@
                                 `(("Action" ,@"DescribeVpcPeeringConnections")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeVpcPeeringConnectionsResult" common-lisp:nil)))
@@ -26502,7 +26502,7 @@
                                 `(("Action" ,@"DescribeVpcs")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeVpcsResult" common-lisp:nil)))
@@ -26523,7 +26523,7 @@
                                 `(("Action" ,@"DescribeVpnConnections")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeVpnConnectionsResult" common-lisp:nil)))
@@ -26544,7 +26544,7 @@
                                 `(("Action" ,@"DescribeVpnGateways")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DescribeVpnGatewaysResult" common-lisp:nil)))
@@ -26564,7 +26564,7 @@
                                 `(("Action" ,@"DetachClassicLinkVpc")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DetachClassicLinkVpcResult" common-lisp:nil)))
@@ -26585,7 +26585,7 @@
                                 `(("Action" ,@"DetachInternetGateway")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -26605,7 +26605,7 @@
                                 `(("Action" ,@"DetachNetworkInterface")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -26627,7 +26627,7 @@
                                 `(("Action" ,@"DetachVolume")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "VolumeAttachment" common-lisp:nil)))
@@ -26647,7 +26647,7 @@
                                 `(("Action" ,@"DetachVpnGateway")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -26668,7 +26668,7 @@
                                 `(("Action" ,@"DisableVgwRoutePropagation")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -26688,7 +26688,7 @@
                                 `(("Action" ,@"DisableVpcClassicLink")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DisableVpcClassicLinkResult" common-lisp:nil)))
@@ -26710,7 +26710,7 @@
                                    ,@"DisableVpcClassicLinkDnsSupport")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DisableVpcClassicLinkDnsSupportResult" common-lisp:nil)))
@@ -26731,7 +26731,7 @@
                                 `(("Action" ,@"DisassociateAddress")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -26752,7 +26752,7 @@
                                 `(("Action" ,@"DisassociateIamInstanceProfile")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DisassociateIamInstanceProfileResult" common-lisp:nil)))
@@ -26772,7 +26772,7 @@
                                 `(("Action" ,@"DisassociateRouteTable")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -26793,7 +26793,7 @@
                                 `(("Action" ,@"DisassociateSubnetCidrBlock")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DisassociateSubnetCidrBlockResult" common-lisp:nil)))
@@ -26814,7 +26814,7 @@
                                 `(("Action" ,@"DisassociateVpcCidrBlock")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "DisassociateVpcCidrBlockResult" common-lisp:nil)))
@@ -26835,7 +26835,7 @@
                                 `(("Action" ,@"EnableVgwRoutePropagation")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -26855,7 +26855,7 @@
                                 `(("Action" ,@"EnableVolumeIO")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -26875,7 +26875,7 @@
                                 `(("Action" ,@"EnableVpcClassicLink")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "EnableVpcClassicLinkResult" common-lisp:nil)))
@@ -26896,7 +26896,7 @@
                                 `(("Action" ,@"EnableVpcClassicLinkDnsSupport")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "EnableVpcClassicLinkDnsSupportResult" common-lisp:nil)))
@@ -26916,7 +26916,7 @@
                                 `(("Action" ,@"GetConsoleOutput")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "GetConsoleOutputResult" common-lisp:nil)))
@@ -26936,7 +26936,7 @@
                                 `(("Action" ,@"GetConsoleScreenshot")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "GetConsoleScreenshotResult" common-lisp:nil)))
@@ -26958,7 +26958,7 @@
                                    ,@"GetHostReservationPurchasePreview")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "GetHostReservationPurchasePreviewResult" common-lisp:nil)))
@@ -26978,7 +26978,7 @@
                                 `(("Action" ,@"GetPasswordData")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "GetPasswordDataResult" common-lisp:nil)))
@@ -27003,7 +27003,7 @@
                                    ,@"GetReservedInstancesExchangeQuote")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "GetReservedInstancesExchangeQuoteResult" common-lisp:nil)))
@@ -27027,7 +27027,7 @@
                                 `(("Action" ,@"ImportImage")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "ImportImageResult" common-lisp:nil)))
@@ -27050,7 +27050,7 @@
                                 `(("Action" ,@"ImportInstance")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "ImportInstanceResult" common-lisp:nil)))
@@ -27071,7 +27071,7 @@
                                 `(("Action" ,@"ImportKeyPair")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "ImportKeyPairResult" common-lisp:nil)))
@@ -27094,7 +27094,7 @@
                                 `(("Action" ,@"ImportSnapshot")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "ImportSnapshotResult" common-lisp:nil)))
@@ -27116,7 +27116,7 @@
                                 `(("Action" ,@"ImportVolume")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "ImportVolumeResult" common-lisp:nil)))
@@ -27136,7 +27136,7 @@
                                 `(("Action" ,@"ModifyHosts")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "ModifyHostsResult" common-lisp:nil)))
@@ -27156,7 +27156,7 @@
                                 `(("Action" ,@"ModifyIdFormat")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -27178,7 +27178,7 @@
                                 `(("Action" ,@"ModifyIdentityIdFormat")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -27202,7 +27202,7 @@
                                 `(("Action" ,@"ModifyImageAttribute")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -27231,7 +27231,7 @@
                                 `(("Action" ,@"ModifyInstanceAttribute")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -27253,7 +27253,7 @@
                                 `(("Action" ,@"ModifyInstancePlacement")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "ModifyInstancePlacementResult" common-lisp:nil)))
@@ -27278,7 +27278,7 @@
                                    ,@"ModifyNetworkInterfaceAttribute")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -27302,7 +27302,7 @@
                                 `(("Action" ,@"ModifyReservedInstances")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "ModifyReservedInstancesResult" common-lisp:nil)))
@@ -27326,7 +27326,7 @@
                                 `(("Action" ,@"ModifySnapshotAttribute")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -27350,7 +27350,7 @@
                                 `(("Action" ,@"ModifySpotFleetRequest")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "ModifySpotFleetRequestResponse" common-lisp:nil)))
@@ -27373,7 +27373,7 @@
                                 `(("Action" ,@"ModifySubnetAttribute")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -27394,7 +27394,7 @@
                                 `(("Action" ,@"ModifyVolume")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "ModifyVolumeResult" common-lisp:nil)))
@@ -27415,7 +27415,7 @@
                                 `(("Action" ,@"ModifyVolumeAttribute")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -27437,7 +27437,7 @@
                                 `(("Action" ,@"ModifyVpcAttribute")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -27461,7 +27461,7 @@
                                 `(("Action" ,@"ModifyVpcEndpoint")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "ModifyVpcEndpointResult" common-lisp:nil)))
@@ -27487,7 +27487,7 @@
                                    ,@"ModifyVpcPeeringConnectionOptions")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "ModifyVpcPeeringConnectionOptionsResult" common-lisp:nil)))
@@ -27507,7 +27507,7 @@
                                 `(("Action" ,@"MonitorInstances")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "MonitorInstancesResult" common-lisp:nil)))
@@ -27527,7 +27527,7 @@
                                 `(("Action" ,@"MoveAddressToVpc")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "MoveAddressToVpcResult" common-lisp:nil)))
@@ -27551,7 +27551,7 @@
                                 `(("Action" ,@"PurchaseHostReservation")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "PurchaseHostReservationResult" common-lisp:nil)))
@@ -27576,7 +27576,7 @@
                                    ,@"PurchaseReservedInstancesOffering")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "PurchaseReservedInstancesOfferingResult" common-lisp:nil)))
@@ -27598,7 +27598,7 @@
                                 `(("Action" ,@"PurchaseScheduledInstances")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "PurchaseScheduledInstancesResult" common-lisp:nil)))
@@ -27618,7 +27618,7 @@
                                 `(("Action" ,@"RebootInstances")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -27644,7 +27644,7 @@
                                 `(("Action" ,@"RegisterImage")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "RegisterImageResult" common-lisp:nil)))
@@ -27666,7 +27666,7 @@
                                 `(("Action" ,@"RejectVpcPeeringConnection")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "RejectVpcPeeringConnectionResult" common-lisp:nil)))
@@ -27687,7 +27687,7 @@
                                 `(("Action" ,@"ReleaseAddress")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -27707,7 +27707,7 @@
                                 `(("Action" ,@"ReleaseHosts")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "ReleaseHostsResult" common-lisp:nil)))
@@ -27730,7 +27730,7 @@
                                    ,@"ReplaceIamInstanceProfileAssociation")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "ReplaceIamInstanceProfileAssociationResult" common-lisp:nil)))
@@ -27752,7 +27752,7 @@
                                 `(("Action" ,@"ReplaceNetworkAclAssociation")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "ReplaceNetworkAclAssociationResult" common-lisp:nil)))
@@ -27778,7 +27778,7 @@
                                 `(("Action" ,@"ReplaceNetworkAclEntry")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -27806,7 +27806,7 @@
                                 `(("Action" ,@"ReplaceRoute")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -27828,7 +27828,7 @@
                                 `(("Action" ,@"ReplaceRouteTableAssociation")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "ReplaceRouteTableAssociationResult" common-lisp:nil)))
@@ -27851,7 +27851,7 @@
                                 `(("Action" ,@"ReportInstanceStatus")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -27872,7 +27872,7 @@
                                 `(("Action" ,@"RequestSpotFleet")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "RequestSpotFleetResponse" common-lisp:nil)))
@@ -27898,7 +27898,7 @@
                                 `(("Action" ,@"RequestSpotInstances")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "RequestSpotInstancesResult" common-lisp:nil)))
@@ -27918,7 +27918,7 @@
                                 `(("Action" ,@"ResetImageAttribute")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -27938,7 +27938,7 @@
                                 `(("Action" ,@"ResetInstanceAttribute")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -27961,7 +27961,7 @@
                                 `(("Action" ,@"ResetNetworkInterfaceAttribute")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -27981,7 +27981,7 @@
                                 `(("Action" ,@"ResetSnapshotAttribute")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -28002,7 +28002,7 @@
                                 `(("Action" ,@"RestoreAddressToClassic")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "RestoreAddressToClassicResult" common-lisp:nil)))
@@ -28028,7 +28028,7 @@
                                 `(("Action" ,@"RevokeSecurityGroupEgress")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -28054,7 +28054,7 @@
                                 `(("Action" ,@"RevokeSecurityGroupIngress")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -28089,7 +28089,7 @@
                                 `(("Action" ,@"RunInstances")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "Reservation" common-lisp:nil)))
@@ -28112,7 +28112,7 @@
                                 `(("Action" ,@"RunScheduledInstances")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "RunScheduledInstancesResult" common-lisp:nil)))
@@ -28133,7 +28133,7 @@
                                 `(("Action" ,@"StartInstances")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "StartInstancesResult" common-lisp:nil)))
@@ -28153,7 +28153,7 @@
                                 `(("Action" ,@"StopInstances")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "StopInstancesResult" common-lisp:nil)))
@@ -28173,7 +28173,7 @@
                                 `(("Action" ,@"TerminateInstances")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "TerminateInstancesResult" common-lisp:nil)))
@@ -28194,7 +28194,7 @@
                                 `(("Action" ,@"UnassignIpv6Addresses")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "UnassignIpv6AddressesResult" common-lisp:nil)))
@@ -28217,7 +28217,7 @@
                                 `(("Action" ,@"UnassignPrivateIpAddresses")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       common-lisp:nil common-lisp:nil)))
@@ -28237,7 +28237,7 @@
                                 `(("Action" ,@"UnmonitorInstances")
                                   ("Version" ,@"2016-11-15"))
                                 (common-lisp:let ((aws-sdk/api::*protocol*
-                                                   :query))
+                                                   :ec2))
                                   (aws-sdk/generator/shape:shape-to-params
                                    aws-sdk/generator/operation::input))))
       "UnmonitorInstancesResult" common-lisp:nil)))

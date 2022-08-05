@@ -45,7 +45,11 @@
                   (aws-request :service ,service
                                :method ,(intern (gethash "method" (gethash "http" options)) :keyword)
                                :params (append `(("Action" . ,,name) ("Version" . ,,version))
-                                               (let ((*protocol* :query))
+                                               (let ,(cond
+                                                       ((equal service "ec2")
+                                                        '((*protocol* :ec2)))
+                                                       (t
+                                                        '((*protocol* :query))))
                                                  (shape-to-params input))))
                   ,(and output
                         (gethash "shape" output))
