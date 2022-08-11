@@ -43,20 +43,20 @@
     (null)
     (cons
      (if (alistp value)
-         (mapcar (lambda (kv)
-                   (cons
-                    (format nil "~A.~A" key (car kv))
-                    (cdr kv)))
-                 (loop for (k . v) in value
-                       append (to-query-params k v)))
+         (loop for (k . v) in value
+               append (to-query-params (format nil "~A.~A" key k) v))
          (loop for i from 1
                for v in value
-               collect (cons (ecase *protocol*
-                               (:query
-                                (format nil "~A.member.~A" key i))
-                               (:ec2
-                                (format nil "~A.~A" key i)))
-                             v))))
+               append (to-query-params (ecase *protocol*
+                                         (:query
+                                          (format nil "~A.member.~A" key i))
+                                         (:ec2
+                                          (format nil "~A.~A" key i)))
+                                       v))))
+    (structure-object
+     (loop for (k . v) in (shape-to-params value)
+           append (to-query-params (format nil "~A.~A" key k)
+                                   v)))
     (otherwise (list (cons key value)))))
 
 (defun compile-structure-shape (name &key required members)
